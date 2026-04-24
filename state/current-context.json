@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "purpose": "保存当前学习上下文，便于 agent 接续生成内容",
+    "last_updated": "2026-04-23",
+    "maintainer": "ai-agent"
+  },
+  "dynamic_outline_ref": "state/dynamic-outline.json",
+  "day_plan": {
+    "current_day_id": "day-001",
+    "current_day_plan_path": "plan/days/day-001.md",
+    "units_for_today": [
+      {
+        "major_unit": "Python基础",
+        "minor_unit": "5.1-数据类型和变量",
+        "fixed_outline_ref": "outline-5-1",
+        "unit_path": "study/units/Python基础/5.1-数据类型和变量/"
+      }
+    ]
+  },
+  "focus": {
+    "major_unit": "Python基础",
+    "minor_unit": "5.1-数据类型和变量",
+    "fixed_outline_ref": "outline-5-1",
+    "theme": "数据类型、变量和最小 Python 表达"
+  },
+  "routing": {
+    "current_stage_id": "stage-1",
+    "current_node_id": "node-basic-syntax",
+    "next_intent": "review_session_result",
+    "task_mode": "mainline",
+    "next_task_reason": "day-001 的学习计划与任务已经生成，下一步应先完成学习，再根据 notes / mistakes 回写结果"
+  },
+  "source_binding": {
+    "primary_materials": [
+      "source/《Python基础教程第3版》.pdf"
+    ],
+    "style_reference": "https://liaoxuefeng.com/books/python/basic/data-types/index.html",
+    "preferred_output_root": "study/units/"
+  },
+  "next_actions": [
+    "完成 plan/days/day-001.md 中的学习安排",
+    "运行并完成 study/units/Python基础/5.1-数据类型和变量/practice.py",
+    "填写 notes.md 和 mistakes.md",
+    "学习结束后调用 review_session_result 回写结果"
+  ],
+  "open_questions": [
+    "day-001 完成后是否需要在 day-002 中把 5.1 和 5.2 做一次组合复用",
+    "当前是否需要在 5.1 单元内追加 reinforcement"
+  ]
+}

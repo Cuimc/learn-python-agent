@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-13-2",
+  "major_unit": "IO编程",
+  "minor_unit": "StringIO和BytesIO",
+  "fixed_outline_ref": "outline-13-2",
+  "parent_outline_ref": "outline-13",
+  "path_titles": [
+    "IO编程",
+    "StringIO和BytesIO"
+  ],
+  "prerequisites": [
+    "outline-13-1"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

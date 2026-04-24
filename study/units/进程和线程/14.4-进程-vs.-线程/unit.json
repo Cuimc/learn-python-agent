@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-14-4",
+  "major_unit": "进程和线程",
+  "minor_unit": "进程 vs. 线程",
+  "fixed_outline_ref": "outline-14-4",
+  "parent_outline_ref": "outline-14",
+  "path_titles": [
+    "进程和线程",
+    "进程 vs. 线程"
+  ],
+  "prerequisites": [
+    "outline-14-3"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

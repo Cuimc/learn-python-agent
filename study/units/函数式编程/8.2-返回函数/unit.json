@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-8-2",
+  "major_unit": "函数式编程",
+  "minor_unit": "返回函数",
+  "fixed_outline_ref": "outline-8-2",
+  "parent_outline_ref": "outline-8",
+  "path_titles": [
+    "函数式编程",
+    "返回函数"
+  ],
+  "prerequisites": [
+    "outline-8-1-3"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

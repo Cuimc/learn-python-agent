@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-5-5",
+  "major_unit": "Python基础",
+  "minor_unit": "模式匹配",
+  "fixed_outline_ref": "outline-5-5",
+  "parent_outline_ref": "outline-5",
+  "path_titles": [
+    "Python基础",
+    "模式匹配"
+  ],
+  "prerequisites": [
+    "outline-5-4"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

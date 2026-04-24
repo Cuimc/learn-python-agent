@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "purpose": "记录阶段性学习进度和可恢复的里程碑",
+    "last_updated": "2026-04-23",
+    "maintainer": "ai-agent"
+  },
+  "dynamic_outline_ref": "state/dynamic-outline.json",
+  "day_learning_mode": "day-driven-unit-backed",
+  "current_day_id": "day-001",
+  "current_day_plan_path": "plan/days/day-001.md",
+  "current_major_unit": "Python基础",
+  "current_minor_unit": "5.1-数据类型和变量",
+  "current_fixed_outline_id": "outline-5-1",
+  "current_unit_path": "study/units/Python基础/5.1-数据类型和变量/",
+  "active_track": "frontend-to-python-agent",
+  "current_stage_id": "stage-1",
+  "current_node_id": "node-basic-syntax",
+  "in_progress_topics": [
+    "int / float / str / bool / None",
+    "变量绑定与重新赋值",
+    "表达式和最小格式化输出"
+  ],
+  "current_day_units": [
+    {
+      "major_unit": "Python基础",
+      "minor_unit": "5.1-数据类型和变量",
+      "fixed_outline_ref": "outline-5-1",
+      "unit_path": "study/units/Python基础/5.1-数据类型和变量/"
+    }
+  ],
+  "completed_days": [],
+  "completed_units": [],
+  "project_milestones": [
+    {
+      "name": "study-log-cleaner",
+      "status": "queued"
+    }
+  ],
+  "next_recommended_topics": [
+    "变量、字符串和数字",
+    "list / dict 基础"
+  ],
+  "task_generation_notes": [
+    "单日计划写入 plan/days/，知识内容写入 study/units/",
+    "day-001 已生成，当前聚焦 Python基础 / 5.1-数据类型和变量",
+    "初始阶段优先按固定大纲推进，不插入跨单元偏移"
+  ]
+}

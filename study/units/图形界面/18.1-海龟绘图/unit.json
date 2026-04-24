@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-18-1",
+  "major_unit": "图形界面",
+  "minor_unit": "海龟绘图",
+  "fixed_outline_ref": "outline-18-1",
+  "parent_outline_ref": "outline-18",
+  "path_titles": [
+    "图形界面",
+    "海龟绘图"
+  ],
+  "prerequisites": [
+    "outline-18"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

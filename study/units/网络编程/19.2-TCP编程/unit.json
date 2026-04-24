@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-19-2",
+  "major_unit": "网络编程",
+  "minor_unit": "TCP编程",
+  "fixed_outline_ref": "outline-19-2",
+  "parent_outline_ref": "outline-19",
+  "path_titles": [
+    "网络编程",
+    "TCP编程"
+  ],
+  "prerequisites": [
+    "outline-19-1"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

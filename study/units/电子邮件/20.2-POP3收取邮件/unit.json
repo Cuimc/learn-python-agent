@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-20-2",
+  "major_unit": "电子邮件",
+  "minor_unit": "POP3收取邮件",
+  "fixed_outline_ref": "outline-20-2",
+  "parent_outline_ref": "outline-20",
+  "path_titles": [
+    "电子邮件",
+    "POP3收取邮件"
+  ],
+  "prerequisites": [
+    "outline-20-1"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "file": "《与孩子一起学编程》.pdf",
+  "pages": 49,
+  "title": "",
+  "author": "",
+  "outline": [
+    {
+      "depth": 0,
+      "title": "第1章 出发吧"
+    },
+    {
+      "depth": 1,
+      "title": "1.1 安装Python"
+    },
+    {
+      "depth": 1,
+      "title": "1.2 从IDLE启动Python"
+    },
+    {
+      "depth": 1,
+      "title": "1.3 来点指令吧"
+    },
+    {
+      "depth": 1,
+      "title": "1.4 与Python交互"
+    },
+    {
+      "depth": 1,
+      "title": "1.5 该编程了"
+    },
+    {
+      "depth": 1,
+      "title": "1.6 运行你的第一个程序"
+    },
+    {
+      "depth": 1,
+      "title": "1.7 如果出问题"
+    },
+    {
+      "depth": 1,
+      "title": "1.8 你的第二个程序"
+    },
+    {
+      "depth": 0,
+      "title": "第2章 记住内存和变量"
+    },
+    {
+      "depth": 1,
+      "title": "2.1 输入、处理和输出"
+    },
+    {
+      "depth": 1,
+      "title": "2.2 名字"
+    },
+    {
+      "depth": 1,
+      "title": "2.3 名字里是什么"
+    },
+    {
+      "depth": 1,
+      "title": "2.4 数字和字符串"
+    },
+    {
+      "depth": 1,
+      "title": "2.5 它们有多“可变”"
+    },
+    {
+      "depth": 1,
+      "title": "2.6 全新的我"
+    },
+    {
+      "depth": 0,
+      "title": "第3章 基本数学运算"
+    },
+    {
+      "depth": 1,
+      "title": "3.1 四大基本运算"
+    },
+    {
+      "depth": 1,
+      "title": "3.2 操作符"
+    },
+    {
+      "depth": 1,
+      "title": "3.3 运算顺序"
+    },
+    {
+      "depth": 1,
+      "title": "3.4 另外两个操作符"
+    },
+    {
+      "depth": 1,
+      "title": "3.5 非常大和非常小"
+    },
+    {
+      "depth": 0,
+      "title": "第4章 数据的类型"
+    },
+    {
+      "depth": 1,
+      "title": "4.1 改变类型"
+    },
+    {
+      "depth": 1,
+      "title": "4.2 得到更多信息：type()"
+    },
+    {
+      "depth": 1,
+      "title": "4.3 类型转换错误"
+    },
+    {
+      "depth": 1,
+      "title": "4.4 使用类型转换"
+    },
+    {
+      "depth": 0,
+      "title": "第5章 输入"
+    },
+    {
+      "depth": 1,
+      "title": "5.1 raw_input()"
+    },
+    {
+      "depth": 1,
+      "title": "5.2 Print命令和逗号"
+    },
+    {
+      "depth": 1,
+      "title": "5.3 输入数字"
+    },
+    {
+      "depth": 1,
+      "title": "5.4 来自互联网的输入"
+    },
+    {
+      "depth": 0,
+      "title": "第6章 GUI——图形用户界面"
+    },
+    {
+      "depth": 1,
+      "title": "6.1 什么是GUI"
+    },
+    {
+      "depth": 1,
+      "title": "6.2 第一个GUI"
+    },
+    {
+      "depth": 1,
+      "title": "6.3 GUI输入"
+    },
+    {
+      "depth": 1,
+      "title": "6.4 选择你的口味"
+    },
+    {
+      "depth": 1,
+      "title": "6.5 再看猜数游戏"
+    },
+    {
+      "depth": 1,
+      "title": "6.6 其他GUI组件"
+    },
+    {
+      "depth": 0,
+      "title": "第7章 判断再判断"
+    },
+    {
+      "depth": 1,
+      "title": "7.1 测试，测试"
+    },
+    {
+      "depth": 1,
+      "title": "7.2 缩进"
+    },
+    {
+      "depth": 1,
+      "title": "7.3 是不是有问题"
+    },
+    {
+      "depth": 1,
+      "title": "7.4 其他类型的测试"
+    },
+    {
+      "depth": 1,
+      "title": "7.5 如果测试为假会怎么样"
+    },
+    {
+      "depth": 1,
+      "title": "7.6 测试多个条件"
+    },
+    {
+      "depth": 1,
+      "title": "7.7 使用and"
+    },
+    {
+      "depth": 1,
+      "title": "7.8 使用or"
+    },
+    {
+      "depth": 1,
+      "title": "7.9 使用not"
+    },
+    {
+      "depth": 0,
+      "title": "第8章 转圇圇"
+    },
+    {
+      "depth": 1,
+      "title": "8.1 计数循环"
+    },
+    {
+      "depth": 1,
+      "title": "8.2 使用计数循环"
+    },
+    {
+      "depth": 1,
+      "title": "8.3 一条捷径——range()"
+    },
+    {
+      "depth": 1,
+      "title": "8.4 风格问题——循环变量名"
+    },
+    {
+      "depth": 1,
+      "title": "8.5 按步长计数"
+    },
+    {
+      "depth": 1,
+      "title": "8.7 关于这个问题"
+    },
+    {
+      "depth": 1,
+      "title": "8.6 没有数字的计数"
+    },
+    {
+      "depth": 1,
+      "title": "8.8 跳出循环——break和continue"
+    },
+    {
+      "depth": 0,
+      "title": "第9章 全都为了你——注释"
+    },
+    {
+      "depth": 1,
+      "title": "9.1 增加注释"
+    },
+    {
+      "depth": 1,
+      "title": "9.2 单行注释"
+    },
+    {
+      "depth": 1,
+      "title": "9.3 行末注释"
+    },
+    {
+      "depth": 1,
+      "title": "9.4 多行注释"
+    },
+    {
+      "depth": 1,
+      "title": "9.5 注释风格"
+    },
+    {
+      "depth": 1,
+      "title": "9.6 注释掉"
+    },
+    {
+      "depth": 0,
+      "title": "第10章 游戏时间到了"
+    },
+    {
+      "depth": 0,
+      "title": "第11章 嵌套与可变循环"
+    },
+    {
+      "depth": 1,
+      "title": "11.1 嵌套循环"
+    },
+    {
+      "depth": 1,
+      "title": "11.2 可变循环"
+    },
+    {
+      "depth": 1,
+      "title": "11.3 可变嵌套循环"
+    },
+    {
+      "depth": 1,
+      "title": "11.4 更多可变嵌套循环"
+    },
+    {
+      "depth": 1,
+      "title": "11.5 使用嵌套循环"
+    },
+    {
+      "depth": 0,
+      "title": "第12章 收集起来——列表"
+    },
+    {
+      "depth": 1,
+      "title": "12.1 什么是列表"
+    },
+    {
+      "depth": 1,
+      "title": "12.2 创建列表"
+    },
+    {
+      "depth": 1,
+      "title": "12.3 向列表增加元素"
+    },
+    {
+      "depth": 1,
+      "title": "12.4 这个点是什么"
+    },
+    {
+      "depth": 1,
+      "title": "12.5 列表可以包含任何内容"
+    },
+    {
+      "depth": 1,
+      "title": "12.6 从列表获取元素"
+    },
+    {
+      "depth": 1,
+      "title": "12.7 列表“分片”"
+    },
+    {
+      "depth": 1,
+      "title": "12.8 修改元素"
+    },
+    {
+      "depth": 1,
+      "title": "12.9 向列表增加元素的其他方法"
+    },
+    {
+      "depth": 1,
+      "title": "12.10 从列表删除元素"
+    },
+    {
+      "depth": 1,
+      "title": "12.11 搜索列表"
+    },
+    {
+      "depth": 1,
+      "title": "12.12 循环处理列表"
+    },
+    {
+      "depth": 1,
+      "title": "12.13 列表排序"
+    },
+    {
+      "depth": 1,
+      "title": "12.14 可改变和不可改变"
+    },
+    {
+      "depth": 1,
+      "title": "12.15 双重列表：数据表"
+    },
+    {
+      "depth": 0,
+      "title": "第13章 函数"
+    },
+    {
+      "depth": 1,
+      "title": "13.1 函数——积木"
+    },
+    {
+      "depth": 1,
+      "title": "13.2 调用函数"
+    },
+    {
+      "depth": 1,
+      "title": "13.3 向函数传递参数"
+    },
+    {
+      "depth": 1,
+      "title": "13.4 有多个参数的函数"
+    },
+    {
+      "depth": 1,
+      "title": "13.5 返回值的函数"
+    },
+    {
+      "depth": 1,
+      "title": "13.6 变量作用域"
+    },
+    {
+      "depth": 1,
+      "title": "13.7 强制为全局"
+    },
+    {
+      "depth": 1,
+      "title": "13.8 关于变量命名的一点建议"
+    },
+    {
+      "depth": 0,
+      "title": "第14章 对象"
+    },
+    {
+      "depth": 1,
+      "title": "14.1 真实世界中的对象"
+    },
+    {
+      "depth": 1,
+      "title": "14.2 Python中的对象"
+    },
+    {
+      "depth": 1,
+      "title": "14.3 对象＝属性＋方法"
+    },
+    {
+      "depth": 1,
+      "title": "14.4 这个点是什么"
+    },
+    {
+      "depth": 1,
+      "title": "14.5 创建对象"
+    },
+    {
+      "depth": 1,
+      "title": "14.6 一个示例类——HotDog"
+    },
+    {
+      "depth": 1,
+      "title": "14.7 隐藏数据"
+    },
+    {
+      "depth": 1,
+      "title": "14.8 多态和继承"
+    },
+    {
+      "depth": 1,
+      "title": "14.9 未雨绸缪"
+    },
+    {
+      "depth": 0,
+      "title": "第15章 模块"
+    },
+    {
+      "depth": 1,
+      "title": "15.1 什么是模块"
+    },
+    {
+      "depth": 1,
+      "title": "15.2 为什么使用模块"
+    },
+    {
+      "depth": 1,
+      "title": "15.3 积木桶"
+    },
+    {
+      "depth": 1,
+      "title": "15.4 如何创建模块"
+    },
+    {
+      "depth": 1,
+      "title": "15.5 如何使用模块"
+    },
+    {
+      "depth": 1,
+      "title": "15.6 命名空间"
+    },
+    {
+      "depth": 1,
+      "title": "15.7 标准模块"
+    },
+    {
+      "depth": 0,
+      "title": "第16章 图形"
+    },
+    {
+      "depth": 1,
+      "title": "16.1 寻求帮助——Pygame"
+    },
+    {
+      "depth": 1,
+      "title": "16.2 Pygame窗口"
+    },
+    {
+      "depth": 1,
+      "title": "16.3 在窗口中画图"
+    },
+    {
+      "depth": 1,
+      "title": "16.4 单个像素"
+    },
+    {
+      "depth": 1,
+      "title": "16.5 图像"
+    },
+    {
+      "depth": 1,
+      "title": "16.6 动起来"
+    },
+    {
+      "depth": 1,
+      "title": "16.7 动画"
+    },
+    {
+      "depth": 1,
+      "title": "16.8 更流畅的动画"
+    },
+    {
+      "depth": 1,
+      "title": "16.9 让球反弹"
+    },
+    {
+      "depth": 1,
+      "title": "16.10 让球翻转"
+    },
+    {
+      "depth": 0,
+      "title": "第17章 动画精灵和碰撞检测"
+    },
+    {
+      "depth": 1,
+      "title": "17.1 动画精灵"
+    },
+    {
+      "depth": 1,
+      "title": "17.2 嘣！碰撞检测"
+    },
+    {
+      "depth": 1,
+      "title": "17.3 统计时间"
+    },
+    {
+      "depth": 0,
+      "title": "第18章 一种新的输入——事件"
+    },
+    {
+      "depth": 1,
+      "title": "18.1 事件"
+    },
+    {
+      "depth": 1,
+      "title": "18.2 键盘事件"
+    },
+    {
+      "depth": 1,
+      "title": "18.3 鼠标事件"
+    },
+    {
+      "depth": 1,
+      "title": "18.4 定时器事件"
+    },
+    {
+      "depth": 1,
+      "title": "18.5 另一个游戏PyPong"
+    },
+    {
+      "depth": 0,
+      "title": "第19章 声音"
+    },
+    {
+      "depth": 1,
+      "title": "19.1 从Pygame寻求更多帮助——mixer"
+    },
+    {
+      "depth": 1,
+      "title": "19.2 制造声音与播放声音"
+    },
+    {
+      "depth": 1,
+      "title": "19.3 播放声音"
+    },
+    {
+      "depth": 1,
+      "title": "19.4 控制音量"
+    },
+    {
+      "depth": 1,
+      "title": "19.5 重复音乐"
+    },
+    {
+      "depth": 1,
+      "title": "19.6 为PyPong增加声音"
+    },
+    {
+      "depth": 1,
+      "title": "19.7 更多声音"
+    },
+    {
+      "depth": 1,
+      "title": "19.8 为PyPong增加音乐"
+    },
+    {
+      "depth": 0,
+      "title": "第20章 更多GUI"
+    },
+    {
+      "depth": 1,
+      "title": "20.1 使用PythonCard"
+    },
+    {
+      "depth": 1,
+      "title": "20.2 组件"
+    },
+    {
+      "depth": 1,
+      "title": "20.3 让GUI做点事情"
+    },
+    {
+      "depth": 1,
+      "title": "20.4 事件处理器的返回"
+    },
+    {
+      "depth": 1,
+      "title": "20.7 TempGUI"
+    },
+    {
+      "depth": 1,
+      "title": "20.5 移动按钮"
+    },
+    {
+      "depth": 1,
+      "title": "20.6 更多有用的GUI"
+    },
+    {
+      "depth": 1,
+      "title": "20.8 菜单上是什么"
+    },
+    {
+      "depth": 0,
+      "title": "第21章 打印格式化与字符串"
+    },
+    {
+      "depth": 1,
+      "title": "21.1 换行"
+    },
+    {
+      "depth": 1,
+      "title": "21.2 水平间隔——制表符"
+    },
+    {
+      "depth": 1,
+      "title": "21.3 在字符串中插入变量"
+    },
+    {
+      "depth": 1,
+      "title": "21.4 数字格式化"
+    },
+    {
+      "depth": 1,
+      "title": "21.5 更多字符串处理"
+    },
+    {
+      "depth": 0,
+      "title": "第22章 文件输入与输出"
+    },
+    {
+      "depth": 1,
+      "title": "22.1 什么是文件"
+    },
+    {
+      "depth": 1,
+      "title": "22.2 文件名"
+    },
+    {
+      "depth": 1,
+      "title": "22.3 文件位置"
+    },
+    {
+      "depth": 1,
+      "title": "22.4 打开文件"
+    },
+    {
+      "depth": 1,
+      "title": "22.5 读文件"
+    },
+    {
+      "depth": 1,
+      "title": "22.6 文本文件和二进制文件"
+    },
+    {
+      "depth": 1,
+      "title": "22.7 写文件"
+    },
+    {
+      "depth": 1,
+      "title": "22.8 在文件中保存内容：pickle"
+    },
+    {
+      "depth": 1,
+      "title": "22.9 又到了游戏时间——Hangman"
+    },
+    {
+      "depth": 0,
+      "title": "第23章 碰运气——随机性"
+    },
+    {
+      "depth": 1,
+      "title": "23.1 什么是随机性"
+    },
+    {
+      "depth": 1,
+      "title": "23.2 掷骰子"
+    },
+    {
+      "depth": 1,
+      "title": "23.3 创建一副牌"
+    },
+    {
+      "depth": 1,
+      "title": "23.4 Crazy Eights"
+    },
+    {
+      "depth": 0,
+      "title": "第24章 计算机仿真"
+    },
+    {
+      "depth": 1,
+      "title": "24.1 真实世界建模"
+    },
+    {
+      "depth": 1,
+      "title": "24.2 Lunar Lander"
+    },
+    {
+      "depth": 1,
+      "title": "24.3 跟踪时间"
+    },
+    {
+      "depth": 1,
+      "title": "24.4 时间对象"
+    },
+    {
+      "depth": 1,
+      "title": "24.5 把时间保存到文件"
+    },
+    {
+      "depth": 1,
+      "title": "24.6 电子宠物"
+    },
+    {
+      "depth": 0,
+      "title": "第25章 接下来呢"
+    },
+    {
+      "depth": 1,
+      "title": "25.1 一般编程"
+    },
+    {
+      "depth": 1,
+      "title": "25.2 Python"
+    },
+    {
+      "depth": 1,
+      "title": "25.3 游戏编程与Pygame"
+    },
+    {
+      "depth": 1,
+      "title": "25.4 其他Python模块"
+    },
+    {
+      "depth": 1,
+      "title": "25.5 回顾"
+    }
+  ],
+  "sample_pages": [
+    {
+      "page": 1,
+      "text": ""
+    },
+    {
+      "page": 2,
+      "text": ""
+    },
+    {
+      "page": 3,
+      "text": ""
+    },
+    {
+      "page": 4,
+      "text": ""
+    },
+    {
+      "page": 5,
+      "text": ""
+    },
+    {
+      "page": 6,
+      "text": ""
+    },
+    {
+      "page": 7,
+      "text": ""
+    },
+    {
+      "page": 8,
+      "text": ""
+    },
+    {
+      "page": 9,
+      "text": ""
+    },
+    {
+      "page": 10,
+      "text": ""
+    },
+    {
+      "page": 11,
+      "text": ""
+    },
+    {
+      "page": 12,
+      "text": ""
+    },
+    {
+      "page": 13,
+      "text": ""
+    },
+    {
+      "page": 14,
+      "text": ""
+    },
+    {
+      "page": 15,
+      "text": ""
+    },
+    {
+      "page": 16,
+      "text": ""
+    },
+    {
+      "page": 17,
+      "text": ""
+    },
+    {
+      "page": 18,
+      "text": ""
+    },
+    {
+      "page": 19,
+      "text": ""
+    },
+    {
+      "page": 20,
+      "text": ""
+    }
+  ]
+}

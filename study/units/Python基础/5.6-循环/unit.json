@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-5-6",
+  "major_unit": "Python基础",
+  "minor_unit": "循环",
+  "fixed_outline_ref": "outline-5-6",
+  "parent_outline_ref": "outline-5",
+  "path_titles": [
+    "Python基础",
+    "循环"
+  ],
+  "prerequisites": [
+    "outline-5-5"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

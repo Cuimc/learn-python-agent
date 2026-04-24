@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-9-2",
+  "major_unit": "模块",
+  "minor_unit": "安装第三方模块",
+  "fixed_outline_ref": "outline-9-2",
+  "parent_outline_ref": "outline-9",
+  "path_titles": [
+    "模块",
+    "安装第三方模块"
+  ],
+  "prerequisites": [
+    "outline-9-1"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

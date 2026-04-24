@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-12-4",
+  "major_unit": "错误、调试和测试",
+  "minor_unit": "文档测试",
+  "fixed_outline_ref": "outline-12-4",
+  "parent_outline_ref": "outline-12",
+  "path_titles": [
+    "错误、调试和测试",
+    "文档测试"
+  ],
+  "prerequisites": [
+    "outline-12-3"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

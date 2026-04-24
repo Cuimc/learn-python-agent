@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-23-3",
+  "major_unit": "异步IO",
+  "minor_unit": "使用aiohttp",
+  "fixed_outline_ref": "outline-23-3",
+  "parent_outline_ref": "outline-23",
+  "path_titles": [
+    "异步IO",
+    "使用aiohttp"
+  ],
+  "prerequisites": [
+    "outline-23-2"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

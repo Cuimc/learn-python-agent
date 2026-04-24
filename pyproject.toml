@@ -1,0 +1,13 @@
+[project]
+name = "python-learning-agent"
+version = "0.1.0"
+description = "Learning workflow for Python and AI Agent"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

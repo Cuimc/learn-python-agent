@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-16-9",
+  "major_unit": "常用内建模块",
+  "minor_unit": "contextlib",
+  "fixed_outline_ref": "outline-16-9",
+  "parent_outline_ref": "outline-16",
+  "path_titles": [
+    "常用内建模块",
+    "contextlib"
+  ],
+  "prerequisites": [
+    "outline-16-8"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

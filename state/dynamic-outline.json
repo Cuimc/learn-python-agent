@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "purpose": "作为动态学习大纲的唯一真实数据源，用于根据学习结果重排后续任务",
+    "last_updated": "2026-04-23",
+    "maintainer": "ai-agent"
+  },
+  "outline_id": "python-ai-agent-dynamic-outline",
+  "active_track": "frontend-to-python-agent",
+  "policy": {
+    "task_generation_rule": "下一次学习任务必须从当前主线节点、前置依赖状态和 weak_points 联合推导",
+    "adjustment_levels": {
+      "light": "下次任务中增加一道复习题或一个参数回顾点",
+      "medium": "在正式 lesson 前增加一个先补 5 分钟的补强块",
+      "strong": "暂停推进后续主线，先插入一个独立补强节点"
+    },
+    "session_result_thresholds": {
+      "good": "概念清楚，能解释并完成基础练习",
+      "mixed": "能模仿写出示例，但参数、边界或表达不稳定",
+      "poor": "概念、调用或练习明显卡住，已影响后续推进"
+    }
+  },
+  "current_focus": {
+    "stage_id": "stage-1",
+    "node_id": "node-basic-syntax",
+    "status": "active"
+  },
+  "stages": [
+    {
+      "id": "stage-1",
+      "title": "Python 核心语法与数据结构",
+      "goal": "建立从 JS/TS 迁移到 Python 的基础表达能力",
+      "status": "active",
+      "nodes": [
+        {
+          "id": "node-basic-syntax",
+          "title": "变量、条件、循环、列表、字典",
+          "status": "learning",
+          "mastery": 0.0
+        },
+        {
+          "id": "node-functions-basic",
+          "title": "函数、参数、返回值",
+          "status": "queued",
+          "mastery": 0.0,
+          "reinforcement_needed": false,
+          "weak_signals": []
+        }
+      ]
+    },
+    {
+      "id": "stage-2",
+      "title": "脚本与数据处理",
+      "goal": "把语法能力连成可运行的小脚本",
+      "status": "queued",
+      "nodes": [
+        {
+          "id": "node-file-json-exception",
+          "title": "文件读写、JSON、异常处理、pathlib",
+          "status": "queued",
+          "mastery": 0.0,
+          "depends_on": [
+            "node-basic-syntax",
+            "node-functions-basic"
+          ],
+          "next_if_stable": "node-script-organization",
+          "reinforcement_plan": {
+            "trigger_when": [
+              "函数参数相关练习连续 2 次表现 mixed 或 poor",
+              "文件脚本中无法解释异常处理分支"
+            ],
+            "action_level": "medium",
+            "insert_before_next_node": [
+              "参数与返回值补强",
+              "异常分支阅读练习"
+            ]
+          }
+        },
+        {
+          "id": "node-script-organization",
+          "title": "函数拆分、模块拆分、最小工程化",
+          "status": "queued",
+          "mastery": 0.0,
+          "depends_on": [
+            "node-file-json-exception"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage-3",
+      "title": "API 调用与 AI 工具基础",
+      "goal": "接上 HTTP、JSON、CLI、LLM 基础调用",
+      "status": "queued",
+      "nodes": [
+        {
+          "id": "node-http-json-workflow",
+          "title": "HTTP 请求、JSON 输入输出、命令行参数",
+          "status": "queued",
+          "mastery": 0.0,
+          "depends_on": [
+            "node-script-organization"
+          ]
+        }
+      ]
+    }
+  ],
+  "reinforcement_queue": [],
+  "session_history": []
+}

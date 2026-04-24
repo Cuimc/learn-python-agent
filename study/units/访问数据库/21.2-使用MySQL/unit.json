@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-21-2",
+  "major_unit": "访问数据库",
+  "minor_unit": "使用MySQL",
+  "fixed_outline_ref": "outline-21-2",
+  "parent_outline_ref": "outline-21",
+  "path_titles": [
+    "访问数据库",
+    "使用MySQL"
+  ],
+  "prerequisites": [
+    "outline-21-1"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

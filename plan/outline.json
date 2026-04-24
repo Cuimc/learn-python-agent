@@ -1,0 +1,3464 @@
+{
+    "schema_version": 2,
+    "outline_type": "fixed_reference",
+    "title": "廖雪峰 Python 教程大纲",
+    "source": "https://liaoxuefeng.com/books/python/introduction/index.html",
+    "stability_policy": {
+        "role": "fixed_learning_outline",
+        "do_not_modify_for_runtime_adjustment": true,
+        "dynamic_adjustment_scope": "local_only",
+        "allowed_task_modes": [
+            "mainline",
+            "reinforcement",
+            "fallback"
+        ]
+    },
+    "outline": [
+        {
+            "id": 5,
+            "title": "Python基础",
+            "children": [
+                {
+                    "id": "5.1",
+                    "title": "数据类型和变量",
+                    "children": [],
+                    "stable_id": "outline-5-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.1"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "数据类型和变量"
+                    ],
+                    "previous_stable_id": "outline-5",
+                    "next_stable_id": "outline-5-2",
+                    "prerequisites": [
+                        "outline-5"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-1"
+                        ],
+                        "fallback_to": [
+                            "outline-5"
+                        ],
+                        "advance_to": [
+                            "outline-5-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "5.2",
+                    "title": "字符串和编码",
+                    "children": [],
+                    "stable_id": "outline-5-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.2"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "字符串和编码"
+                    ],
+                    "previous_stable_id": "outline-5-1",
+                    "next_stable_id": "outline-5-3",
+                    "prerequisites": [
+                        "outline-5-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-2"
+                        ],
+                        "fallback_to": [
+                            "outline-5-1"
+                        ],
+                        "advance_to": [
+                            "outline-5-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "5.3",
+                    "title": "使用list和tuple",
+                    "children": [],
+                    "stable_id": "outline-5-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.3"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "使用list和tuple"
+                    ],
+                    "previous_stable_id": "outline-5-2",
+                    "next_stable_id": "outline-5-4",
+                    "prerequisites": [
+                        "outline-5-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-3"
+                        ],
+                        "fallback_to": [
+                            "outline-5-2"
+                        ],
+                        "advance_to": [
+                            "outline-5-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "5.4",
+                    "title": "条件判断",
+                    "children": [],
+                    "stable_id": "outline-5-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.4"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "条件判断"
+                    ],
+                    "previous_stable_id": "outline-5-3",
+                    "next_stable_id": "outline-5-5",
+                    "prerequisites": [
+                        "outline-5-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-4"
+                        ],
+                        "fallback_to": [
+                            "outline-5-3"
+                        ],
+                        "advance_to": [
+                            "outline-5-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "5.5",
+                    "title": "模式匹配",
+                    "children": [],
+                    "stable_id": "outline-5-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.5"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "模式匹配"
+                    ],
+                    "previous_stable_id": "outline-5-4",
+                    "next_stable_id": "outline-5-6",
+                    "prerequisites": [
+                        "outline-5-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-5"
+                        ],
+                        "fallback_to": [
+                            "outline-5-4"
+                        ],
+                        "advance_to": [
+                            "outline-5-6"
+                        ]
+                    }
+                },
+                {
+                    "id": "5.6",
+                    "title": "循环",
+                    "children": [],
+                    "stable_id": "outline-5-6",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.6"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "循环"
+                    ],
+                    "previous_stable_id": "outline-5-5",
+                    "next_stable_id": "outline-5-7",
+                    "prerequisites": [
+                        "outline-5-5"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-6"
+                        ],
+                        "fallback_to": [
+                            "outline-5-5"
+                        ],
+                        "advance_to": [
+                            "outline-5-7"
+                        ]
+                    }
+                },
+                {
+                    "id": "5.7",
+                    "title": "使用dict和set",
+                    "children": [],
+                    "stable_id": "outline-5-7",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-5",
+                    "path_ids": [
+                        "5",
+                        "5.7"
+                    ],
+                    "path_titles": [
+                        "Python基础",
+                        "使用dict和set"
+                    ],
+                    "previous_stable_id": "outline-5-6",
+                    "next_stable_id": "outline-6",
+                    "prerequisites": [
+                        "outline-5-6"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-5-7"
+                        ],
+                        "fallback_to": [
+                            "outline-5-6"
+                        ],
+                        "advance_to": [
+                            "outline-6"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-5",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "5"
+            ],
+            "path_titles": [
+                "Python基础"
+            ],
+            "previous_stable_id": "outline-4-2",
+            "next_stable_id": "outline-5-1",
+            "prerequisites": [
+                "outline-4-2"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-5"
+                ],
+                "fallback_to": [
+                    "outline-4-2"
+                ],
+                "advance_to": [
+                    "outline-5-1"
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "title": "函数",
+            "children": [
+                {
+                    "id": "6.1",
+                    "title": "调用函数",
+                    "children": [],
+                    "stable_id": "outline-6-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-6",
+                    "path_ids": [
+                        "6",
+                        "6.1"
+                    ],
+                    "path_titles": [
+                        "函数",
+                        "调用函数"
+                    ],
+                    "previous_stable_id": "outline-6",
+                    "next_stable_id": "outline-6-2",
+                    "prerequisites": [
+                        "outline-6"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-6-1"
+                        ],
+                        "fallback_to": [
+                            "outline-6"
+                        ],
+                        "advance_to": [
+                            "outline-6-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "6.2",
+                    "title": "定义函数",
+                    "children": [],
+                    "stable_id": "outline-6-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-6",
+                    "path_ids": [
+                        "6",
+                        "6.2"
+                    ],
+                    "path_titles": [
+                        "函数",
+                        "定义函数"
+                    ],
+                    "previous_stable_id": "outline-6-1",
+                    "next_stable_id": "outline-6-3",
+                    "prerequisites": [
+                        "outline-6-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-6-2"
+                        ],
+                        "fallback_to": [
+                            "outline-6-1"
+                        ],
+                        "advance_to": [
+                            "outline-6-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "6.3",
+                    "title": "函数的参数",
+                    "children": [],
+                    "stable_id": "outline-6-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-6",
+                    "path_ids": [
+                        "6",
+                        "6.3"
+                    ],
+                    "path_titles": [
+                        "函数",
+                        "函数的参数"
+                    ],
+                    "previous_stable_id": "outline-6-2",
+                    "next_stable_id": "outline-6-4",
+                    "prerequisites": [
+                        "outline-6-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-6-3"
+                        ],
+                        "fallback_to": [
+                            "outline-6-2"
+                        ],
+                        "advance_to": [
+                            "outline-6-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "6.4",
+                    "title": "递归函数",
+                    "children": [],
+                    "stable_id": "outline-6-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-6",
+                    "path_ids": [
+                        "6",
+                        "6.4"
+                    ],
+                    "path_titles": [
+                        "函数",
+                        "递归函数"
+                    ],
+                    "previous_stable_id": "outline-6-3",
+                    "next_stable_id": "outline-7",
+                    "prerequisites": [
+                        "outline-6-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-6-4"
+                        ],
+                        "fallback_to": [
+                            "outline-6-3"
+                        ],
+                        "advance_to": [
+                            "outline-7"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-6",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "6"
+            ],
+            "path_titles": [
+                "函数"
+            ],
+            "previous_stable_id": "outline-5-7",
+            "next_stable_id": "outline-6-1",
+            "prerequisites": [
+                "outline-5-7"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-6"
+                ],
+                "fallback_to": [
+                    "outline-5-7"
+                ],
+                "advance_to": [
+                    "outline-6-1"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "title": "高级特性",
+            "children": [
+                {
+                    "id": "7.1",
+                    "title": "切片",
+                    "children": [],
+                    "stable_id": "outline-7-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-7",
+                    "path_ids": [
+                        "7",
+                        "7.1"
+                    ],
+                    "path_titles": [
+                        "高级特性",
+                        "切片"
+                    ],
+                    "previous_stable_id": "outline-7",
+                    "next_stable_id": "outline-7-2",
+                    "prerequisites": [
+                        "outline-7"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-7-1"
+                        ],
+                        "fallback_to": [
+                            "outline-7"
+                        ],
+                        "advance_to": [
+                            "outline-7-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "7.2",
+                    "title": "迭代",
+                    "children": [],
+                    "stable_id": "outline-7-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-7",
+                    "path_ids": [
+                        "7",
+                        "7.2"
+                    ],
+                    "path_titles": [
+                        "高级特性",
+                        "迭代"
+                    ],
+                    "previous_stable_id": "outline-7-1",
+                    "next_stable_id": "outline-7-3",
+                    "prerequisites": [
+                        "outline-7-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-7-2"
+                        ],
+                        "fallback_to": [
+                            "outline-7-1"
+                        ],
+                        "advance_to": [
+                            "outline-7-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "7.3",
+                    "title": "列表生成式",
+                    "children": [],
+                    "stable_id": "outline-7-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-7",
+                    "path_ids": [
+                        "7",
+                        "7.3"
+                    ],
+                    "path_titles": [
+                        "高级特性",
+                        "列表生成式"
+                    ],
+                    "previous_stable_id": "outline-7-2",
+                    "next_stable_id": "outline-7-4",
+                    "prerequisites": [
+                        "outline-7-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-7-3"
+                        ],
+                        "fallback_to": [
+                            "outline-7-2"
+                        ],
+                        "advance_to": [
+                            "outline-7-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "7.4",
+                    "title": "生成器",
+                    "children": [],
+                    "stable_id": "outline-7-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-7",
+                    "path_ids": [
+                        "7",
+                        "7.4"
+                    ],
+                    "path_titles": [
+                        "高级特性",
+                        "生成器"
+                    ],
+                    "previous_stable_id": "outline-7-3",
+                    "next_stable_id": "outline-7-5",
+                    "prerequisites": [
+                        "outline-7-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-7-4"
+                        ],
+                        "fallback_to": [
+                            "outline-7-3"
+                        ],
+                        "advance_to": [
+                            "outline-7-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "7.5",
+                    "title": "迭代器",
+                    "children": [],
+                    "stable_id": "outline-7-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-7",
+                    "path_ids": [
+                        "7",
+                        "7.5"
+                    ],
+                    "path_titles": [
+                        "高级特性",
+                        "迭代器"
+                    ],
+                    "previous_stable_id": "outline-7-4",
+                    "next_stable_id": "outline-8",
+                    "prerequisites": [
+                        "outline-7-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-7-5"
+                        ],
+                        "fallback_to": [
+                            "outline-7-4"
+                        ],
+                        "advance_to": [
+                            "outline-8"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-7",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "7"
+            ],
+            "path_titles": [
+                "高级特性"
+            ],
+            "previous_stable_id": "outline-6-4",
+            "next_stable_id": "outline-7-1",
+            "prerequisites": [
+                "outline-6-4"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-7"
+                ],
+                "fallback_to": [
+                    "outline-6-4"
+                ],
+                "advance_to": [
+                    "outline-7-1"
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "title": "函数式编程",
+            "children": [
+                {
+                    "id": "8.1",
+                    "title": "高阶函数",
+                    "children": [
+                        {
+                            "id": "8.1.1",
+                            "title": "map/reduce",
+                            "children": [],
+                            "stable_id": "outline-8-1-1",
+                            "level": 2,
+                            "node_type": "leaf",
+                            "parent_stable_id": "outline-8-1",
+                            "path_ids": [
+                                "8",
+                                "8.1",
+                                "8.1.1"
+                            ],
+                            "path_titles": [
+                                "函数式编程",
+                                "高阶函数",
+                                "map/reduce"
+                            ],
+                            "previous_stable_id": "outline-8-1",
+                            "next_stable_id": "outline-8-1-2",
+                            "prerequisites": [
+                                "outline-8-1"
+                            ],
+                            "allowed_dynamic_neighbors": {
+                                "stay_on": [
+                                    "outline-8-1-1"
+                                ],
+                                "fallback_to": [
+                                    "outline-8-1"
+                                ],
+                                "advance_to": [
+                                    "outline-8-1-2"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8.1.2",
+                            "title": "filter",
+                            "children": [],
+                            "stable_id": "outline-8-1-2",
+                            "level": 2,
+                            "node_type": "leaf",
+                            "parent_stable_id": "outline-8-1",
+                            "path_ids": [
+                                "8",
+                                "8.1",
+                                "8.1.2"
+                            ],
+                            "path_titles": [
+                                "函数式编程",
+                                "高阶函数",
+                                "filter"
+                            ],
+                            "previous_stable_id": "outline-8-1-1",
+                            "next_stable_id": "outline-8-1-3",
+                            "prerequisites": [
+                                "outline-8-1-1"
+                            ],
+                            "allowed_dynamic_neighbors": {
+                                "stay_on": [
+                                    "outline-8-1-2"
+                                ],
+                                "fallback_to": [
+                                    "outline-8-1-1"
+                                ],
+                                "advance_to": [
+                                    "outline-8-1-3"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8.1.3",
+                            "title": "sorted",
+                            "children": [],
+                            "stable_id": "outline-8-1-3",
+                            "level": 2,
+                            "node_type": "leaf",
+                            "parent_stable_id": "outline-8-1",
+                            "path_ids": [
+                                "8",
+                                "8.1",
+                                "8.1.3"
+                            ],
+                            "path_titles": [
+                                "函数式编程",
+                                "高阶函数",
+                                "sorted"
+                            ],
+                            "previous_stable_id": "outline-8-1-2",
+                            "next_stable_id": "outline-8-2",
+                            "prerequisites": [
+                                "outline-8-1-2"
+                            ],
+                            "allowed_dynamic_neighbors": {
+                                "stay_on": [
+                                    "outline-8-1-3"
+                                ],
+                                "fallback_to": [
+                                    "outline-8-1-2"
+                                ],
+                                "advance_to": [
+                                    "outline-8-2"
+                                ]
+                            }
+                        }
+                    ],
+                    "stable_id": "outline-8-1",
+                    "level": 1,
+                    "node_type": "section",
+                    "parent_stable_id": "outline-8",
+                    "path_ids": [
+                        "8",
+                        "8.1"
+                    ],
+                    "path_titles": [
+                        "函数式编程",
+                        "高阶函数"
+                    ],
+                    "previous_stable_id": "outline-8",
+                    "next_stable_id": "outline-8-1-1",
+                    "prerequisites": [
+                        "outline-8"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-8-1"
+                        ],
+                        "fallback_to": [
+                            "outline-8"
+                        ],
+                        "advance_to": [
+                            "outline-8-1-1"
+                        ]
+                    }
+                },
+                {
+                    "id": "8.2",
+                    "title": "返回函数",
+                    "children": [],
+                    "stable_id": "outline-8-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-8",
+                    "path_ids": [
+                        "8",
+                        "8.2"
+                    ],
+                    "path_titles": [
+                        "函数式编程",
+                        "返回函数"
+                    ],
+                    "previous_stable_id": "outline-8-1-3",
+                    "next_stable_id": "outline-8-3",
+                    "prerequisites": [
+                        "outline-8-1-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-8-2"
+                        ],
+                        "fallback_to": [
+                            "outline-8-1-3"
+                        ],
+                        "advance_to": [
+                            "outline-8-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "8.3",
+                    "title": "匿名函数",
+                    "children": [],
+                    "stable_id": "outline-8-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-8",
+                    "path_ids": [
+                        "8",
+                        "8.3"
+                    ],
+                    "path_titles": [
+                        "函数式编程",
+                        "匿名函数"
+                    ],
+                    "previous_stable_id": "outline-8-2",
+                    "next_stable_id": "outline-8-4",
+                    "prerequisites": [
+                        "outline-8-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-8-3"
+                        ],
+                        "fallback_to": [
+                            "outline-8-2"
+                        ],
+                        "advance_to": [
+                            "outline-8-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "8.4",
+                    "title": "装饰器",
+                    "children": [],
+                    "stable_id": "outline-8-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-8",
+                    "path_ids": [
+                        "8",
+                        "8.4"
+                    ],
+                    "path_titles": [
+                        "函数式编程",
+                        "装饰器"
+                    ],
+                    "previous_stable_id": "outline-8-3",
+                    "next_stable_id": "outline-8-5",
+                    "prerequisites": [
+                        "outline-8-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-8-4"
+                        ],
+                        "fallback_to": [
+                            "outline-8-3"
+                        ],
+                        "advance_to": [
+                            "outline-8-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "8.5",
+                    "title": "偏函数",
+                    "children": [],
+                    "stable_id": "outline-8-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-8",
+                    "path_ids": [
+                        "8",
+                        "8.5"
+                    ],
+                    "path_titles": [
+                        "函数式编程",
+                        "偏函数"
+                    ],
+                    "previous_stable_id": "outline-8-4",
+                    "next_stable_id": "outline-9",
+                    "prerequisites": [
+                        "outline-8-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-8-5"
+                        ],
+                        "fallback_to": [
+                            "outline-8-4"
+                        ],
+                        "advance_to": [
+                            "outline-9"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-8",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "8"
+            ],
+            "path_titles": [
+                "函数式编程"
+            ],
+            "previous_stable_id": "outline-7-5",
+            "next_stable_id": "outline-8-1",
+            "prerequisites": [
+                "outline-7-5"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-8"
+                ],
+                "fallback_to": [
+                    "outline-7-5"
+                ],
+                "advance_to": [
+                    "outline-8-1"
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "title": "模块",
+            "children": [
+                {
+                    "id": "9.1",
+                    "title": "使用模块",
+                    "children": [],
+                    "stable_id": "outline-9-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-9",
+                    "path_ids": [
+                        "9",
+                        "9.1"
+                    ],
+                    "path_titles": [
+                        "模块",
+                        "使用模块"
+                    ],
+                    "previous_stable_id": "outline-9",
+                    "next_stable_id": "outline-9-2",
+                    "prerequisites": [
+                        "outline-9"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-9-1"
+                        ],
+                        "fallback_to": [
+                            "outline-9"
+                        ],
+                        "advance_to": [
+                            "outline-9-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "9.2",
+                    "title": "安装第三方模块",
+                    "children": [],
+                    "stable_id": "outline-9-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-9",
+                    "path_ids": [
+                        "9",
+                        "9.2"
+                    ],
+                    "path_titles": [
+                        "模块",
+                        "安装第三方模块"
+                    ],
+                    "previous_stable_id": "outline-9-1",
+                    "next_stable_id": "outline-10",
+                    "prerequisites": [
+                        "outline-9-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-9-2"
+                        ],
+                        "fallback_to": [
+                            "outline-9-1"
+                        ],
+                        "advance_to": [
+                            "outline-10"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-9",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "9"
+            ],
+            "path_titles": [
+                "模块"
+            ],
+            "previous_stable_id": "outline-8-5",
+            "next_stable_id": "outline-9-1",
+            "prerequisites": [
+                "outline-8-5"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-9"
+                ],
+                "fallback_to": [
+                    "outline-8-5"
+                ],
+                "advance_to": [
+                    "outline-9-1"
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "title": "面向对象编程",
+            "children": [
+                {
+                    "id": "10.1",
+                    "title": "类和实例",
+                    "children": [],
+                    "stable_id": "outline-10-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-10",
+                    "path_ids": [
+                        "10",
+                        "10.1"
+                    ],
+                    "path_titles": [
+                        "面向对象编程",
+                        "类和实例"
+                    ],
+                    "previous_stable_id": "outline-10",
+                    "next_stable_id": "outline-10-2",
+                    "prerequisites": [
+                        "outline-10"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-10-1"
+                        ],
+                        "fallback_to": [
+                            "outline-10"
+                        ],
+                        "advance_to": [
+                            "outline-10-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "10.2",
+                    "title": "访问限制",
+                    "children": [],
+                    "stable_id": "outline-10-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-10",
+                    "path_ids": [
+                        "10",
+                        "10.2"
+                    ],
+                    "path_titles": [
+                        "面向对象编程",
+                        "访问限制"
+                    ],
+                    "previous_stable_id": "outline-10-1",
+                    "next_stable_id": "outline-10-3",
+                    "prerequisites": [
+                        "outline-10-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-10-2"
+                        ],
+                        "fallback_to": [
+                            "outline-10-1"
+                        ],
+                        "advance_to": [
+                            "outline-10-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "10.3",
+                    "title": "继承和多态",
+                    "children": [],
+                    "stable_id": "outline-10-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-10",
+                    "path_ids": [
+                        "10",
+                        "10.3"
+                    ],
+                    "path_titles": [
+                        "面向对象编程",
+                        "继承和多态"
+                    ],
+                    "previous_stable_id": "outline-10-2",
+                    "next_stable_id": "outline-10-4",
+                    "prerequisites": [
+                        "outline-10-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-10-3"
+                        ],
+                        "fallback_to": [
+                            "outline-10-2"
+                        ],
+                        "advance_to": [
+                            "outline-10-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "10.4",
+                    "title": "获取对象信息",
+                    "children": [],
+                    "stable_id": "outline-10-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-10",
+                    "path_ids": [
+                        "10",
+                        "10.4"
+                    ],
+                    "path_titles": [
+                        "面向对象编程",
+                        "获取对象信息"
+                    ],
+                    "previous_stable_id": "outline-10-3",
+                    "next_stable_id": "outline-10-5",
+                    "prerequisites": [
+                        "outline-10-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-10-4"
+                        ],
+                        "fallback_to": [
+                            "outline-10-3"
+                        ],
+                        "advance_to": [
+                            "outline-10-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "10.5",
+                    "title": "实例属性和类属性",
+                    "children": [],
+                    "stable_id": "outline-10-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-10",
+                    "path_ids": [
+                        "10",
+                        "10.5"
+                    ],
+                    "path_titles": [
+                        "面向对象编程",
+                        "实例属性和类属性"
+                    ],
+                    "previous_stable_id": "outline-10-4",
+                    "next_stable_id": "outline-11",
+                    "prerequisites": [
+                        "outline-10-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-10-5"
+                        ],
+                        "fallback_to": [
+                            "outline-10-4"
+                        ],
+                        "advance_to": [
+                            "outline-11"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-10",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "10"
+            ],
+            "path_titles": [
+                "面向对象编程"
+            ],
+            "previous_stable_id": "outline-9-2",
+            "next_stable_id": "outline-10-1",
+            "prerequisites": [
+                "outline-9-2"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-10"
+                ],
+                "fallback_to": [
+                    "outline-9-2"
+                ],
+                "advance_to": [
+                    "outline-10-1"
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "title": "面向对象高级编程",
+            "children": [
+                {
+                    "id": "11.1",
+                    "title": "使用__slots__",
+                    "children": [],
+                    "stable_id": "outline-11-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-11",
+                    "path_ids": [
+                        "11",
+                        "11.1"
+                    ],
+                    "path_titles": [
+                        "面向对象高级编程",
+                        "使用__slots__"
+                    ],
+                    "previous_stable_id": "outline-11",
+                    "next_stable_id": "outline-11-2",
+                    "prerequisites": [
+                        "outline-11"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-11-1"
+                        ],
+                        "fallback_to": [
+                            "outline-11"
+                        ],
+                        "advance_to": [
+                            "outline-11-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "11.2",
+                    "title": "使用@property",
+                    "children": [],
+                    "stable_id": "outline-11-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-11",
+                    "path_ids": [
+                        "11",
+                        "11.2"
+                    ],
+                    "path_titles": [
+                        "面向对象高级编程",
+                        "使用@property"
+                    ],
+                    "previous_stable_id": "outline-11-1",
+                    "next_stable_id": "outline-11-3",
+                    "prerequisites": [
+                        "outline-11-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-11-2"
+                        ],
+                        "fallback_to": [
+                            "outline-11-1"
+                        ],
+                        "advance_to": [
+                            "outline-11-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "11.3",
+                    "title": "多重继承",
+                    "children": [],
+                    "stable_id": "outline-11-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-11",
+                    "path_ids": [
+                        "11",
+                        "11.3"
+                    ],
+                    "path_titles": [
+                        "面向对象高级编程",
+                        "多重继承"
+                    ],
+                    "previous_stable_id": "outline-11-2",
+                    "next_stable_id": "outline-11-4",
+                    "prerequisites": [
+                        "outline-11-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-11-3"
+                        ],
+                        "fallback_to": [
+                            "outline-11-2"
+                        ],
+                        "advance_to": [
+                            "outline-11-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "11.4",
+                    "title": "定制类",
+                    "children": [],
+                    "stable_id": "outline-11-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-11",
+                    "path_ids": [
+                        "11",
+                        "11.4"
+                    ],
+                    "path_titles": [
+                        "面向对象高级编程",
+                        "定制类"
+                    ],
+                    "previous_stable_id": "outline-11-3",
+                    "next_stable_id": "outline-11-5",
+                    "prerequisites": [
+                        "outline-11-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-11-4"
+                        ],
+                        "fallback_to": [
+                            "outline-11-3"
+                        ],
+                        "advance_to": [
+                            "outline-11-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "11.5",
+                    "title": "使用枚举类",
+                    "children": [],
+                    "stable_id": "outline-11-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-11",
+                    "path_ids": [
+                        "11",
+                        "11.5"
+                    ],
+                    "path_titles": [
+                        "面向对象高级编程",
+                        "使用枚举类"
+                    ],
+                    "previous_stable_id": "outline-11-4",
+                    "next_stable_id": "outline-11-6",
+                    "prerequisites": [
+                        "outline-11-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-11-5"
+                        ],
+                        "fallback_to": [
+                            "outline-11-4"
+                        ],
+                        "advance_to": [
+                            "outline-11-6"
+                        ]
+                    }
+                },
+                {
+                    "id": "11.6",
+                    "title": "使用元类",
+                    "children": [],
+                    "stable_id": "outline-11-6",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-11",
+                    "path_ids": [
+                        "11",
+                        "11.6"
+                    ],
+                    "path_titles": [
+                        "面向对象高级编程",
+                        "使用元类"
+                    ],
+                    "previous_stable_id": "outline-11-5",
+                    "next_stable_id": "outline-12",
+                    "prerequisites": [
+                        "outline-11-5"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-11-6"
+                        ],
+                        "fallback_to": [
+                            "outline-11-5"
+                        ],
+                        "advance_to": [
+                            "outline-12"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-11",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "11"
+            ],
+            "path_titles": [
+                "面向对象高级编程"
+            ],
+            "previous_stable_id": "outline-10-5",
+            "next_stable_id": "outline-11-1",
+            "prerequisites": [
+                "outline-10-5"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-11"
+                ],
+                "fallback_to": [
+                    "outline-10-5"
+                ],
+                "advance_to": [
+                    "outline-11-1"
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "title": "错误、调试和测试",
+            "children": [
+                {
+                    "id": "12.1",
+                    "title": "错误处理",
+                    "children": [],
+                    "stable_id": "outline-12-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-12",
+                    "path_ids": [
+                        "12",
+                        "12.1"
+                    ],
+                    "path_titles": [
+                        "错误、调试和测试",
+                        "错误处理"
+                    ],
+                    "previous_stable_id": "outline-12",
+                    "next_stable_id": "outline-12-2",
+                    "prerequisites": [
+                        "outline-12"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-12-1"
+                        ],
+                        "fallback_to": [
+                            "outline-12"
+                        ],
+                        "advance_to": [
+                            "outline-12-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "12.2",
+                    "title": "调试",
+                    "children": [],
+                    "stable_id": "outline-12-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-12",
+                    "path_ids": [
+                        "12",
+                        "12.2"
+                    ],
+                    "path_titles": [
+                        "错误、调试和测试",
+                        "调试"
+                    ],
+                    "previous_stable_id": "outline-12-1",
+                    "next_stable_id": "outline-12-3",
+                    "prerequisites": [
+                        "outline-12-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-12-2"
+                        ],
+                        "fallback_to": [
+                            "outline-12-1"
+                        ],
+                        "advance_to": [
+                            "outline-12-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "12.3",
+                    "title": "单元测试",
+                    "children": [],
+                    "stable_id": "outline-12-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-12",
+                    "path_ids": [
+                        "12",
+                        "12.3"
+                    ],
+                    "path_titles": [
+                        "错误、调试和测试",
+                        "单元测试"
+                    ],
+                    "previous_stable_id": "outline-12-2",
+                    "next_stable_id": "outline-12-4",
+                    "prerequisites": [
+                        "outline-12-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-12-3"
+                        ],
+                        "fallback_to": [
+                            "outline-12-2"
+                        ],
+                        "advance_to": [
+                            "outline-12-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "12.4",
+                    "title": "文档测试",
+                    "children": [],
+                    "stable_id": "outline-12-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-12",
+                    "path_ids": [
+                        "12",
+                        "12.4"
+                    ],
+                    "path_titles": [
+                        "错误、调试和测试",
+                        "文档测试"
+                    ],
+                    "previous_stable_id": "outline-12-3",
+                    "next_stable_id": "outline-13",
+                    "prerequisites": [
+                        "outline-12-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-12-4"
+                        ],
+                        "fallback_to": [
+                            "outline-12-3"
+                        ],
+                        "advance_to": [
+                            "outline-13"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-12",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "12"
+            ],
+            "path_titles": [
+                "错误、调试和测试"
+            ],
+            "previous_stable_id": "outline-11-6",
+            "next_stable_id": "outline-12-1",
+            "prerequisites": [
+                "outline-11-6"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-12"
+                ],
+                "fallback_to": [
+                    "outline-11-6"
+                ],
+                "advance_to": [
+                    "outline-12-1"
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "title": "IO编程",
+            "children": [
+                {
+                    "id": "13.1",
+                    "title": "文件读写",
+                    "children": [],
+                    "stable_id": "outline-13-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-13",
+                    "path_ids": [
+                        "13",
+                        "13.1"
+                    ],
+                    "path_titles": [
+                        "IO编程",
+                        "文件读写"
+                    ],
+                    "previous_stable_id": "outline-13",
+                    "next_stable_id": "outline-13-2",
+                    "prerequisites": [
+                        "outline-13"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-13-1"
+                        ],
+                        "fallback_to": [
+                            "outline-13"
+                        ],
+                        "advance_to": [
+                            "outline-13-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "13.2",
+                    "title": "StringIO和BytesIO",
+                    "children": [],
+                    "stable_id": "outline-13-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-13",
+                    "path_ids": [
+                        "13",
+                        "13.2"
+                    ],
+                    "path_titles": [
+                        "IO编程",
+                        "StringIO和BytesIO"
+                    ],
+                    "previous_stable_id": "outline-13-1",
+                    "next_stable_id": "outline-13-3",
+                    "prerequisites": [
+                        "outline-13-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-13-2"
+                        ],
+                        "fallback_to": [
+                            "outline-13-1"
+                        ],
+                        "advance_to": [
+                            "outline-13-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "13.3",
+                    "title": "操作文件和目录",
+                    "children": [],
+                    "stable_id": "outline-13-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-13",
+                    "path_ids": [
+                        "13",
+                        "13.3"
+                    ],
+                    "path_titles": [
+                        "IO编程",
+                        "操作文件和目录"
+                    ],
+                    "previous_stable_id": "outline-13-2",
+                    "next_stable_id": "outline-13-4",
+                    "prerequisites": [
+                        "outline-13-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-13-3"
+                        ],
+                        "fallback_to": [
+                            "outline-13-2"
+                        ],
+                        "advance_to": [
+                            "outline-13-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "13.4",
+                    "title": "序列化",
+                    "children": [],
+                    "stable_id": "outline-13-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-13",
+                    "path_ids": [
+                        "13",
+                        "13.4"
+                    ],
+                    "path_titles": [
+                        "IO编程",
+                        "序列化"
+                    ],
+                    "previous_stable_id": "outline-13-3",
+                    "next_stable_id": "outline-14",
+                    "prerequisites": [
+                        "outline-13-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-13-4"
+                        ],
+                        "fallback_to": [
+                            "outline-13-3"
+                        ],
+                        "advance_to": [
+                            "outline-14"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-13",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "13"
+            ],
+            "path_titles": [
+                "IO编程"
+            ],
+            "previous_stable_id": "outline-12-4",
+            "next_stable_id": "outline-13-1",
+            "prerequisites": [
+                "outline-12-4"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-13"
+                ],
+                "fallback_to": [
+                    "outline-12-4"
+                ],
+                "advance_to": [
+                    "outline-13-1"
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "title": "进程和线程",
+            "children": [
+                {
+                    "id": "14.1",
+                    "title": "多进程",
+                    "children": [],
+                    "stable_id": "outline-14-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-14",
+                    "path_ids": [
+                        "14",
+                        "14.1"
+                    ],
+                    "path_titles": [
+                        "进程和线程",
+                        "多进程"
+                    ],
+                    "previous_stable_id": "outline-14",
+                    "next_stable_id": "outline-14-2",
+                    "prerequisites": [
+                        "outline-14"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-14-1"
+                        ],
+                        "fallback_to": [
+                            "outline-14"
+                        ],
+                        "advance_to": [
+                            "outline-14-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "14.2",
+                    "title": "多线程",
+                    "children": [],
+                    "stable_id": "outline-14-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-14",
+                    "path_ids": [
+                        "14",
+                        "14.2"
+                    ],
+                    "path_titles": [
+                        "进程和线程",
+                        "多线程"
+                    ],
+                    "previous_stable_id": "outline-14-1",
+                    "next_stable_id": "outline-14-3",
+                    "prerequisites": [
+                        "outline-14-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-14-2"
+                        ],
+                        "fallback_to": [
+                            "outline-14-1"
+                        ],
+                        "advance_to": [
+                            "outline-14-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "14.3",
+                    "title": "ThreadLocal",
+                    "children": [],
+                    "stable_id": "outline-14-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-14",
+                    "path_ids": [
+                        "14",
+                        "14.3"
+                    ],
+                    "path_titles": [
+                        "进程和线程",
+                        "ThreadLocal"
+                    ],
+                    "previous_stable_id": "outline-14-2",
+                    "next_stable_id": "outline-14-4",
+                    "prerequisites": [
+                        "outline-14-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-14-3"
+                        ],
+                        "fallback_to": [
+                            "outline-14-2"
+                        ],
+                        "advance_to": [
+                            "outline-14-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "14.4",
+                    "title": "进程 vs. 线程",
+                    "children": [],
+                    "stable_id": "outline-14-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-14",
+                    "path_ids": [
+                        "14",
+                        "14.4"
+                    ],
+                    "path_titles": [
+                        "进程和线程",
+                        "进程 vs. 线程"
+                    ],
+                    "previous_stable_id": "outline-14-3",
+                    "next_stable_id": "outline-14-5",
+                    "prerequisites": [
+                        "outline-14-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-14-4"
+                        ],
+                        "fallback_to": [
+                            "outline-14-3"
+                        ],
+                        "advance_to": [
+                            "outline-14-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "14.5",
+                    "title": "分布式进程",
+                    "children": [],
+                    "stable_id": "outline-14-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-14",
+                    "path_ids": [
+                        "14",
+                        "14.5"
+                    ],
+                    "path_titles": [
+                        "进程和线程",
+                        "分布式进程"
+                    ],
+                    "previous_stable_id": "outline-14-4",
+                    "next_stable_id": "outline-15",
+                    "prerequisites": [
+                        "outline-14-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-14-5"
+                        ],
+                        "fallback_to": [
+                            "outline-14-4"
+                        ],
+                        "advance_to": [
+                            "outline-15"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-14",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "14"
+            ],
+            "path_titles": [
+                "进程和线程"
+            ],
+            "previous_stable_id": "outline-13-4",
+            "next_stable_id": "outline-14-1",
+            "prerequisites": [
+                "outline-13-4"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-14"
+                ],
+                "fallback_to": [
+                    "outline-13-4"
+                ],
+                "advance_to": [
+                    "outline-14-1"
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "title": "正则表达式",
+            "children": [],
+            "stable_id": "outline-15",
+            "level": 0,
+            "node_type": "leaf",
+            "parent_stable_id": null,
+            "path_ids": [
+                "15"
+            ],
+            "path_titles": [
+                "正则表达式"
+            ],
+            "previous_stable_id": "outline-14-5",
+            "next_stable_id": "outline-16",
+            "prerequisites": [
+                "outline-14-5"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-15"
+                ],
+                "fallback_to": [
+                    "outline-14-5"
+                ],
+                "advance_to": [
+                    "outline-16"
+                ]
+            }
+        },
+        {
+            "id": 16,
+            "title": "常用内建模块",
+            "children": [
+                {
+                    "id": "16.1",
+                    "title": "datetime",
+                    "children": [],
+                    "stable_id": "outline-16-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.1"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "datetime"
+                    ],
+                    "previous_stable_id": "outline-16",
+                    "next_stable_id": "outline-16-2",
+                    "prerequisites": [
+                        "outline-16"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-1"
+                        ],
+                        "fallback_to": [
+                            "outline-16"
+                        ],
+                        "advance_to": [
+                            "outline-16-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.2",
+                    "title": "collections",
+                    "children": [],
+                    "stable_id": "outline-16-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.2"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "collections"
+                    ],
+                    "previous_stable_id": "outline-16-1",
+                    "next_stable_id": "outline-16-3",
+                    "prerequisites": [
+                        "outline-16-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-2"
+                        ],
+                        "fallback_to": [
+                            "outline-16-1"
+                        ],
+                        "advance_to": [
+                            "outline-16-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.3",
+                    "title": "argparse",
+                    "children": [],
+                    "stable_id": "outline-16-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.3"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "argparse"
+                    ],
+                    "previous_stable_id": "outline-16-2",
+                    "next_stable_id": "outline-16-4",
+                    "prerequisites": [
+                        "outline-16-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-3"
+                        ],
+                        "fallback_to": [
+                            "outline-16-2"
+                        ],
+                        "advance_to": [
+                            "outline-16-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.4",
+                    "title": "base64",
+                    "children": [],
+                    "stable_id": "outline-16-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.4"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "base64"
+                    ],
+                    "previous_stable_id": "outline-16-3",
+                    "next_stable_id": "outline-16-5",
+                    "prerequisites": [
+                        "outline-16-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-4"
+                        ],
+                        "fallback_to": [
+                            "outline-16-3"
+                        ],
+                        "advance_to": [
+                            "outline-16-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.5",
+                    "title": "struct",
+                    "children": [],
+                    "stable_id": "outline-16-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.5"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "struct"
+                    ],
+                    "previous_stable_id": "outline-16-4",
+                    "next_stable_id": "outline-16-6",
+                    "prerequisites": [
+                        "outline-16-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-5"
+                        ],
+                        "fallback_to": [
+                            "outline-16-4"
+                        ],
+                        "advance_to": [
+                            "outline-16-6"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.6",
+                    "title": "hashlib",
+                    "children": [],
+                    "stable_id": "outline-16-6",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.6"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "hashlib"
+                    ],
+                    "previous_stable_id": "outline-16-5",
+                    "next_stable_id": "outline-16-7",
+                    "prerequisites": [
+                        "outline-16-5"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-6"
+                        ],
+                        "fallback_to": [
+                            "outline-16-5"
+                        ],
+                        "advance_to": [
+                            "outline-16-7"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.7",
+                    "title": "hmac",
+                    "children": [],
+                    "stable_id": "outline-16-7",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.7"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "hmac"
+                    ],
+                    "previous_stable_id": "outline-16-6",
+                    "next_stable_id": "outline-16-8",
+                    "prerequisites": [
+                        "outline-16-6"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-7"
+                        ],
+                        "fallback_to": [
+                            "outline-16-6"
+                        ],
+                        "advance_to": [
+                            "outline-16-8"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.8",
+                    "title": "itertools",
+                    "children": [],
+                    "stable_id": "outline-16-8",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.8"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "itertools"
+                    ],
+                    "previous_stable_id": "outline-16-7",
+                    "next_stable_id": "outline-16-9",
+                    "prerequisites": [
+                        "outline-16-7"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-8"
+                        ],
+                        "fallback_to": [
+                            "outline-16-7"
+                        ],
+                        "advance_to": [
+                            "outline-16-9"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.9",
+                    "title": "contextlib",
+                    "children": [],
+                    "stable_id": "outline-16-9",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.9"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "contextlib"
+                    ],
+                    "previous_stable_id": "outline-16-8",
+                    "next_stable_id": "outline-16-10",
+                    "prerequisites": [
+                        "outline-16-8"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-9"
+                        ],
+                        "fallback_to": [
+                            "outline-16-8"
+                        ],
+                        "advance_to": [
+                            "outline-16-10"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.10",
+                    "title": "urllib",
+                    "children": [],
+                    "stable_id": "outline-16-10",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.10"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "urllib"
+                    ],
+                    "previous_stable_id": "outline-16-9",
+                    "next_stable_id": "outline-16-11",
+                    "prerequisites": [
+                        "outline-16-9"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-10"
+                        ],
+                        "fallback_to": [
+                            "outline-16-9"
+                        ],
+                        "advance_to": [
+                            "outline-16-11"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.11",
+                    "title": "XML",
+                    "children": [],
+                    "stable_id": "outline-16-11",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.11"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "XML"
+                    ],
+                    "previous_stable_id": "outline-16-10",
+                    "next_stable_id": "outline-16-12",
+                    "prerequisites": [
+                        "outline-16-10"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-11"
+                        ],
+                        "fallback_to": [
+                            "outline-16-10"
+                        ],
+                        "advance_to": [
+                            "outline-16-12"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.12",
+                    "title": "HTMLParser",
+                    "children": [],
+                    "stable_id": "outline-16-12",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.12"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "HTMLParser"
+                    ],
+                    "previous_stable_id": "outline-16-11",
+                    "next_stable_id": "outline-16-13",
+                    "prerequisites": [
+                        "outline-16-11"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-12"
+                        ],
+                        "fallback_to": [
+                            "outline-16-11"
+                        ],
+                        "advance_to": [
+                            "outline-16-13"
+                        ]
+                    }
+                },
+                {
+                    "id": "16.13",
+                    "title": "venv",
+                    "children": [],
+                    "stable_id": "outline-16-13",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-16",
+                    "path_ids": [
+                        "16",
+                        "16.13"
+                    ],
+                    "path_titles": [
+                        "常用内建模块",
+                        "venv"
+                    ],
+                    "previous_stable_id": "outline-16-12",
+                    "next_stable_id": "outline-17",
+                    "prerequisites": [
+                        "outline-16-12"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-16-13"
+                        ],
+                        "fallback_to": [
+                            "outline-16-12"
+                        ],
+                        "advance_to": [
+                            "outline-17"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-16",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "16"
+            ],
+            "path_titles": [
+                "常用内建模块"
+            ],
+            "previous_stable_id": "outline-15",
+            "next_stable_id": "outline-16-1",
+            "prerequisites": [
+                "outline-15"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-16"
+                ],
+                "fallback_to": [
+                    "outline-15"
+                ],
+                "advance_to": [
+                    "outline-16-1"
+                ]
+            }
+        },
+        {
+            "id": 17,
+            "title": "常用第三方模块",
+            "children": [
+                {
+                    "id": "17.1",
+                    "title": "Pillow",
+                    "children": [],
+                    "stable_id": "outline-17-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-17",
+                    "path_ids": [
+                        "17",
+                        "17.1"
+                    ],
+                    "path_titles": [
+                        "常用第三方模块",
+                        "Pillow"
+                    ],
+                    "previous_stable_id": "outline-17",
+                    "next_stable_id": "outline-17-2",
+                    "prerequisites": [
+                        "outline-17"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-17-1"
+                        ],
+                        "fallback_to": [
+                            "outline-17"
+                        ],
+                        "advance_to": [
+                            "outline-17-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "17.2",
+                    "title": "requests",
+                    "children": [],
+                    "stable_id": "outline-17-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-17",
+                    "path_ids": [
+                        "17",
+                        "17.2"
+                    ],
+                    "path_titles": [
+                        "常用第三方模块",
+                        "requests"
+                    ],
+                    "previous_stable_id": "outline-17-1",
+                    "next_stable_id": "outline-17-3",
+                    "prerequisites": [
+                        "outline-17-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-17-2"
+                        ],
+                        "fallback_to": [
+                            "outline-17-1"
+                        ],
+                        "advance_to": [
+                            "outline-17-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "17.3",
+                    "title": "chardet",
+                    "children": [],
+                    "stable_id": "outline-17-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-17",
+                    "path_ids": [
+                        "17",
+                        "17.3"
+                    ],
+                    "path_titles": [
+                        "常用第三方模块",
+                        "chardet"
+                    ],
+                    "previous_stable_id": "outline-17-2",
+                    "next_stable_id": "outline-17-4",
+                    "prerequisites": [
+                        "outline-17-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-17-3"
+                        ],
+                        "fallback_to": [
+                            "outline-17-2"
+                        ],
+                        "advance_to": [
+                            "outline-17-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "17.4",
+                    "title": "psutil",
+                    "children": [],
+                    "stable_id": "outline-17-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-17",
+                    "path_ids": [
+                        "17",
+                        "17.4"
+                    ],
+                    "path_titles": [
+                        "常用第三方模块",
+                        "psutil"
+                    ],
+                    "previous_stable_id": "outline-17-3",
+                    "next_stable_id": "outline-18",
+                    "prerequisites": [
+                        "outline-17-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-17-4"
+                        ],
+                        "fallback_to": [
+                            "outline-17-3"
+                        ],
+                        "advance_to": [
+                            "outline-18"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-17",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "17"
+            ],
+            "path_titles": [
+                "常用第三方模块"
+            ],
+            "previous_stable_id": "outline-16-13",
+            "next_stable_id": "outline-17-1",
+            "prerequisites": [
+                "outline-16-13"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-17"
+                ],
+                "fallback_to": [
+                    "outline-16-13"
+                ],
+                "advance_to": [
+                    "outline-17-1"
+                ]
+            }
+        },
+        {
+            "id": 18,
+            "title": "图形界面",
+            "children": [
+                {
+                    "id": "18.1",
+                    "title": "海龟绘图",
+                    "children": [],
+                    "stable_id": "outline-18-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-18",
+                    "path_ids": [
+                        "18",
+                        "18.1"
+                    ],
+                    "path_titles": [
+                        "图形界面",
+                        "海龟绘图"
+                    ],
+                    "previous_stable_id": "outline-18",
+                    "next_stable_id": "outline-19",
+                    "prerequisites": [
+                        "outline-18"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-18-1"
+                        ],
+                        "fallback_to": [
+                            "outline-18"
+                        ],
+                        "advance_to": [
+                            "outline-19"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-18",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "18"
+            ],
+            "path_titles": [
+                "图形界面"
+            ],
+            "previous_stable_id": "outline-17-4",
+            "next_stable_id": "outline-18-1",
+            "prerequisites": [
+                "outline-17-4"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-18"
+                ],
+                "fallback_to": [
+                    "outline-17-4"
+                ],
+                "advance_to": [
+                    "outline-18-1"
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "title": "网络编程",
+            "children": [
+                {
+                    "id": "19.1",
+                    "title": "TCP/IP简介",
+                    "children": [],
+                    "stable_id": "outline-19-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-19",
+                    "path_ids": [
+                        "19",
+                        "19.1"
+                    ],
+                    "path_titles": [
+                        "网络编程",
+                        "TCP/IP简介"
+                    ],
+                    "previous_stable_id": "outline-19",
+                    "next_stable_id": "outline-19-2",
+                    "prerequisites": [
+                        "outline-19"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-19-1"
+                        ],
+                        "fallback_to": [
+                            "outline-19"
+                        ],
+                        "advance_to": [
+                            "outline-19-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "19.2",
+                    "title": "TCP编程",
+                    "children": [],
+                    "stable_id": "outline-19-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-19",
+                    "path_ids": [
+                        "19",
+                        "19.2"
+                    ],
+                    "path_titles": [
+                        "网络编程",
+                        "TCP编程"
+                    ],
+                    "previous_stable_id": "outline-19-1",
+                    "next_stable_id": "outline-19-3",
+                    "prerequisites": [
+                        "outline-19-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-19-2"
+                        ],
+                        "fallback_to": [
+                            "outline-19-1"
+                        ],
+                        "advance_to": [
+                            "outline-19-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "19.3",
+                    "title": "UDP编程",
+                    "children": [],
+                    "stable_id": "outline-19-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-19",
+                    "path_ids": [
+                        "19",
+                        "19.3"
+                    ],
+                    "path_titles": [
+                        "网络编程",
+                        "UDP编程"
+                    ],
+                    "previous_stable_id": "outline-19-2",
+                    "next_stable_id": "outline-20",
+                    "prerequisites": [
+                        "outline-19-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-19-3"
+                        ],
+                        "fallback_to": [
+                            "outline-19-2"
+                        ],
+                        "advance_to": [
+                            "outline-20"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-19",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "19"
+            ],
+            "path_titles": [
+                "网络编程"
+            ],
+            "previous_stable_id": "outline-18-1",
+            "next_stable_id": "outline-19-1",
+            "prerequisites": [
+                "outline-18-1"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-19"
+                ],
+                "fallback_to": [
+                    "outline-18-1"
+                ],
+                "advance_to": [
+                    "outline-19-1"
+                ]
+            }
+        },
+        {
+            "id": 20,
+            "title": "电子邮件",
+            "children": [
+                {
+                    "id": "20.1",
+                    "title": "SMTP发送邮件",
+                    "children": [],
+                    "stable_id": "outline-20-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-20",
+                    "path_ids": [
+                        "20",
+                        "20.1"
+                    ],
+                    "path_titles": [
+                        "电子邮件",
+                        "SMTP发送邮件"
+                    ],
+                    "previous_stable_id": "outline-20",
+                    "next_stable_id": "outline-20-2",
+                    "prerequisites": [
+                        "outline-20"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-20-1"
+                        ],
+                        "fallback_to": [
+                            "outline-20"
+                        ],
+                        "advance_to": [
+                            "outline-20-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "20.2",
+                    "title": "POP3收取邮件",
+                    "children": [],
+                    "stable_id": "outline-20-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-20",
+                    "path_ids": [
+                        "20",
+                        "20.2"
+                    ],
+                    "path_titles": [
+                        "电子邮件",
+                        "POP3收取邮件"
+                    ],
+                    "previous_stable_id": "outline-20-1",
+                    "next_stable_id": "outline-21",
+                    "prerequisites": [
+                        "outline-20-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-20-2"
+                        ],
+                        "fallback_to": [
+                            "outline-20-1"
+                        ],
+                        "advance_to": [
+                            "outline-21"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-20",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "20"
+            ],
+            "path_titles": [
+                "电子邮件"
+            ],
+            "previous_stable_id": "outline-19-3",
+            "next_stable_id": "outline-20-1",
+            "prerequisites": [
+                "outline-19-3"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-20"
+                ],
+                "fallback_to": [
+                    "outline-19-3"
+                ],
+                "advance_to": [
+                    "outline-20-1"
+                ]
+            }
+        },
+        {
+            "id": 21,
+            "title": "访问数据库",
+            "children": [
+                {
+                    "id": "21.1",
+                    "title": "使用SQLite",
+                    "children": [],
+                    "stable_id": "outline-21-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-21",
+                    "path_ids": [
+                        "21",
+                        "21.1"
+                    ],
+                    "path_titles": [
+                        "访问数据库",
+                        "使用SQLite"
+                    ],
+                    "previous_stable_id": "outline-21",
+                    "next_stable_id": "outline-21-2",
+                    "prerequisites": [
+                        "outline-21"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-21-1"
+                        ],
+                        "fallback_to": [
+                            "outline-21"
+                        ],
+                        "advance_to": [
+                            "outline-21-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "21.2",
+                    "title": "使用MySQL",
+                    "children": [],
+                    "stable_id": "outline-21-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-21",
+                    "path_ids": [
+                        "21",
+                        "21.2"
+                    ],
+                    "path_titles": [
+                        "访问数据库",
+                        "使用MySQL"
+                    ],
+                    "previous_stable_id": "outline-21-1",
+                    "next_stable_id": "outline-21-3",
+                    "prerequisites": [
+                        "outline-21-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-21-2"
+                        ],
+                        "fallback_to": [
+                            "outline-21-1"
+                        ],
+                        "advance_to": [
+                            "outline-21-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "21.3",
+                    "title": "使用SQLAlchemy",
+                    "children": [],
+                    "stable_id": "outline-21-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-21",
+                    "path_ids": [
+                        "21",
+                        "21.3"
+                    ],
+                    "path_titles": [
+                        "访问数据库",
+                        "使用SQLAlchemy"
+                    ],
+                    "previous_stable_id": "outline-21-2",
+                    "next_stable_id": "outline-22",
+                    "prerequisites": [
+                        "outline-21-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-21-3"
+                        ],
+                        "fallback_to": [
+                            "outline-21-2"
+                        ],
+                        "advance_to": [
+                            "outline-22"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-21",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "21"
+            ],
+            "path_titles": [
+                "访问数据库"
+            ],
+            "previous_stable_id": "outline-20-2",
+            "next_stable_id": "outline-21-1",
+            "prerequisites": [
+                "outline-20-2"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-21"
+                ],
+                "fallback_to": [
+                    "outline-20-2"
+                ],
+                "advance_to": [
+                    "outline-21-1"
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "title": "Web开发",
+            "children": [
+                {
+                    "id": "22.1",
+                    "title": "HTTP协议简介",
+                    "children": [],
+                    "stable_id": "outline-22-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-22",
+                    "path_ids": [
+                        "22",
+                        "22.1"
+                    ],
+                    "path_titles": [
+                        "Web开发",
+                        "HTTP协议简介"
+                    ],
+                    "previous_stable_id": "outline-22",
+                    "next_stable_id": "outline-22-2",
+                    "prerequisites": [
+                        "outline-22"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-22-1"
+                        ],
+                        "fallback_to": [
+                            "outline-22"
+                        ],
+                        "advance_to": [
+                            "outline-22-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "22.2",
+                    "title": "HTML简介",
+                    "children": [],
+                    "stable_id": "outline-22-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-22",
+                    "path_ids": [
+                        "22",
+                        "22.2"
+                    ],
+                    "path_titles": [
+                        "Web开发",
+                        "HTML简介"
+                    ],
+                    "previous_stable_id": "outline-22-1",
+                    "next_stable_id": "outline-22-3",
+                    "prerequisites": [
+                        "outline-22-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-22-2"
+                        ],
+                        "fallback_to": [
+                            "outline-22-1"
+                        ],
+                        "advance_to": [
+                            "outline-22-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "22.3",
+                    "title": "WSGI接口",
+                    "children": [],
+                    "stable_id": "outline-22-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-22",
+                    "path_ids": [
+                        "22",
+                        "22.3"
+                    ],
+                    "path_titles": [
+                        "Web开发",
+                        "WSGI接口"
+                    ],
+                    "previous_stable_id": "outline-22-2",
+                    "next_stable_id": "outline-22-4",
+                    "prerequisites": [
+                        "outline-22-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-22-3"
+                        ],
+                        "fallback_to": [
+                            "outline-22-2"
+                        ],
+                        "advance_to": [
+                            "outline-22-4"
+                        ]
+                    }
+                },
+                {
+                    "id": "22.4",
+                    "title": "使用Web框架",
+                    "children": [],
+                    "stable_id": "outline-22-4",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-22",
+                    "path_ids": [
+                        "22",
+                        "22.4"
+                    ],
+                    "path_titles": [
+                        "Web开发",
+                        "使用Web框架"
+                    ],
+                    "previous_stable_id": "outline-22-3",
+                    "next_stable_id": "outline-22-5",
+                    "prerequisites": [
+                        "outline-22-3"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-22-4"
+                        ],
+                        "fallback_to": [
+                            "outline-22-3"
+                        ],
+                        "advance_to": [
+                            "outline-22-5"
+                        ]
+                    }
+                },
+                {
+                    "id": "22.5",
+                    "title": "使用模板",
+                    "children": [],
+                    "stable_id": "outline-22-5",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-22",
+                    "path_ids": [
+                        "22",
+                        "22.5"
+                    ],
+                    "path_titles": [
+                        "Web开发",
+                        "使用模板"
+                    ],
+                    "previous_stable_id": "outline-22-4",
+                    "next_stable_id": "outline-23",
+                    "prerequisites": [
+                        "outline-22-4"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-22-5"
+                        ],
+                        "fallback_to": [
+                            "outline-22-4"
+                        ],
+                        "advance_to": [
+                            "outline-23"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-22",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "22"
+            ],
+            "path_titles": [
+                "Web开发"
+            ],
+            "previous_stable_id": "outline-21-3",
+            "next_stable_id": "outline-22-1",
+            "prerequisites": [
+                "outline-21-3"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-22"
+                ],
+                "fallback_to": [
+                    "outline-21-3"
+                ],
+                "advance_to": [
+                    "outline-22-1"
+                ]
+            }
+        },
+        {
+            "id": 23,
+            "title": "异步IO",
+            "children": [
+                {
+                    "id": "23.1",
+                    "title": "协程",
+                    "children": [],
+                    "stable_id": "outline-23-1",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-23",
+                    "path_ids": [
+                        "23",
+                        "23.1"
+                    ],
+                    "path_titles": [
+                        "异步IO",
+                        "协程"
+                    ],
+                    "previous_stable_id": "outline-23",
+                    "next_stable_id": "outline-23-2",
+                    "prerequisites": [
+                        "outline-23"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-23-1"
+                        ],
+                        "fallback_to": [
+                            "outline-23"
+                        ],
+                        "advance_to": [
+                            "outline-23-2"
+                        ]
+                    }
+                },
+                {
+                    "id": "23.2",
+                    "title": "使用asyncio",
+                    "children": [],
+                    "stable_id": "outline-23-2",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-23",
+                    "path_ids": [
+                        "23",
+                        "23.2"
+                    ],
+                    "path_titles": [
+                        "异步IO",
+                        "使用asyncio"
+                    ],
+                    "previous_stable_id": "outline-23-1",
+                    "next_stable_id": "outline-23-3",
+                    "prerequisites": [
+                        "outline-23-1"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-23-2"
+                        ],
+                        "fallback_to": [
+                            "outline-23-1"
+                        ],
+                        "advance_to": [
+                            "outline-23-3"
+                        ]
+                    }
+                },
+                {
+                    "id": "23.3",
+                    "title": "使用aiohttp",
+                    "children": [],
+                    "stable_id": "outline-23-3",
+                    "level": 1,
+                    "node_type": "leaf",
+                    "parent_stable_id": "outline-23",
+                    "path_ids": [
+                        "23",
+                        "23.3"
+                    ],
+                    "path_titles": [
+                        "异步IO",
+                        "使用aiohttp"
+                    ],
+                    "previous_stable_id": "outline-23-2",
+                    "next_stable_id": "outline-24",
+                    "prerequisites": [
+                        "outline-23-2"
+                    ],
+                    "allowed_dynamic_neighbors": {
+                        "stay_on": [
+                            "outline-23-3"
+                        ],
+                        "fallback_to": [
+                            "outline-23-2"
+                        ],
+                        "advance_to": [
+                            "outline-24"
+                        ]
+                    }
+                }
+            ],
+            "stable_id": "outline-23",
+            "level": 0,
+            "node_type": "section",
+            "parent_stable_id": null,
+            "path_ids": [
+                "23"
+            ],
+            "path_titles": [
+                "异步IO"
+            ],
+            "previous_stable_id": "outline-22-5",
+            "next_stable_id": "outline-23-1",
+            "prerequisites": [
+                "outline-22-5"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-23"
+                ],
+                "fallback_to": [
+                    "outline-22-5"
+                ],
+                "advance_to": [
+                    "outline-23-1"
+                ]
+            }
+        },
+        {
+            "id": 24,
+            "title": "FAQ",
+            "children": [],
+            "stable_id": "outline-24",
+            "level": 0,
+            "node_type": "leaf",
+            "parent_stable_id": null,
+            "path_ids": [
+                "24"
+            ],
+            "path_titles": [
+                "FAQ"
+            ],
+            "previous_stable_id": "outline-23-3",
+            "next_stable_id": "outline-25",
+            "prerequisites": [
+                "outline-23-3"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-24"
+                ],
+                "fallback_to": [
+                    "outline-23-3"
+                ],
+                "advance_to": [
+                    "outline-25"
+                ]
+            }
+        },
+        {
+            "id": 25,
+            "title": "期末总结",
+            "children": [],
+            "stable_id": "outline-25",
+            "level": 0,
+            "node_type": "leaf",
+            "parent_stable_id": null,
+            "path_ids": [
+                "25"
+            ],
+            "path_titles": [
+                "期末总结"
+            ],
+            "previous_stable_id": "outline-24",
+            "next_stable_id": null,
+            "prerequisites": [
+                "outline-24"
+            ],
+            "allowed_dynamic_neighbors": {
+                "stay_on": [
+                    "outline-25"
+                ],
+                "fallback_to": [
+                    "outline-24"
+                ],
+                "advance_to": []
+            }
+        }
+    ]
+}

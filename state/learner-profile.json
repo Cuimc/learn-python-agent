@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "purpose": "记录学习者的长期背景信息，通常低频更新",
+    "last_updated": "2026-04-22",
+    "maintainer": "ai-agent"
+  },
+  "learner_id": "default-learner",
+  "persona": "frontend-to-python-agent-builder",
+  "background": {
+    "programming_experience": "has-js-ts-experience",
+    "python_experience": "beginner",
+    "strengths": [
+      "熟悉前端组件化开发",
+      "理解异步和工程化概念",
+      "能用 JS/TS 阅读业务代码"
+    ]
+  },
+  "goals": {
+    "primary": "建立 Python 工程基础，过渡到 AI Agent 开发",
+    "secondary": [
+      "能阅读并修改常见 Python 项目",
+      "能编写脚本、CLI、小型服务",
+      "形成稳定的项目驱动学习节奏"
+    ]
+  },
+  "preferences": {
+    "language": "zh-CN",
+    "analogy_style": "prefer-js-ts-analogy",
+    "pace": "small-step",
+    "practice_bias": "project-oriented",
+    "teaching_style": {
+      "primary_book": "source/《Python基础教程第3版》.pdf",
+      "tutorial_style_reference": "https://liaoxuefeng.com/books/python/basic/data-types/index.html",
+      "mode": "single-book-plus-tutorial-style",
+      "enhancements": [
+        "js-ts-bridging",
+        "engineering-cases",
+        "stronger-exercises"
+      ]
+    }
+  },
+  "constraints": {
+    "available_hours_per_week": 6,
+    "preferred_session_length_minutes": 45
+  }
+}

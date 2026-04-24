@@ -1,0 +1,16 @@
+{
+  "stable_id": "outline-x-x",
+  "major_unit": "大单元名",
+  "minor_unit": "小单元名",
+  "fixed_outline_ref": "outline-x-x",
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "prerequisites": [],
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

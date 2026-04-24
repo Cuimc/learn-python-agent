@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-10-3",
+  "major_unit": "面向对象编程",
+  "minor_unit": "继承和多态",
+  "fixed_outline_ref": "outline-10-3",
+  "parent_outline_ref": "outline-10",
+  "path_titles": [
+    "面向对象编程",
+    "继承和多态"
+  ],
+  "prerequisites": [
+    "outline-10-2"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}

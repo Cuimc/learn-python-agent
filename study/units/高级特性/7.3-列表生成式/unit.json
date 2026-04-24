@@ -1,0 +1,24 @@
+{
+  "stable_id": "outline-7-3",
+  "major_unit": "高级特性",
+  "minor_unit": "列表生成式",
+  "fixed_outline_ref": "outline-7-3",
+  "parent_outline_ref": "outline-7",
+  "path_titles": [
+    "高级特性",
+    "列表生成式"
+  ],
+  "prerequisites": [
+    "outline-7-2"
+  ],
+  "children_outline_ids": [],
+  "task_mode": "mainline",
+  "dynamic_reason": "根据固定大纲正常推进",
+  "output_files": [
+    "lesson.md",
+    "practice.py",
+    "answers.md",
+    "notes.md",
+    "mistakes.md"
+  ]
+}
