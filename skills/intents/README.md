@@ -1,18 +1,15 @@
 # Intent Skills
 
-本目录按 intent 拆分 skill 文件。
+本目录只保留 4 个核心 intent：
 
-## 命名建议
-
-- 文件名与 `router/intents.yaml` 中的 key 对齐
-- 一个文件只处理一个 intent
-
-## 当前建议文件
-
-- `next_week_plan.md`
+- `generate_day.md`
+- `review_day.md`
 - `explain_api.md`
-- `generate_exercises.md`
-- `harder_exercises.md`
 - `summarize_week.md`
 
-这些文件当前可以逐步补全，不要求一次写满。
+其中：
+
+- `generate_day` 是唯一的日任务生成入口
+- `review_day` 负责单日复盘和状态回写
+- `explain_api` 负责补充 API 讲解
+- `summarize_week` 负责周总结和下周最小安排

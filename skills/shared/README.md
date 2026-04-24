@@ -1,16 +1,13 @@
 # Shared Skills
 
-共享规则放在这里，供多个 c 复用。
+共享规则只保留 3 个核心文件：
 
-## 建议内容
+- `project-rules.md`
+- `teaching-style.md`
+- `quality-check.md`
 
-- 输出风格规范
-- JS / TS 类比规范
-- 资料引用优先级
-- 学习状态更新规则
+其中：
 
-## 维护建议
-
-- 保持短小，可组合
-- 不写具体某一天的内容
-- 优先写“如何生成”，而不是“生成什么”
+- `project-rules` 负责项目定位、day-first 路径和写入约束
+- `teaching-style` 负责 lesson / practice 的教学风格
+- `quality-check` 负责知识边界和生成后复核

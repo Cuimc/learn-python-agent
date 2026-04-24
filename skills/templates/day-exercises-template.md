@@ -1,6 +1,7 @@
 # Day Exercises Template
 
 > 用于生成某一天的练习与答案结构。
+> 默认产出路径：`study/<day-id>/practice.py` 与 `study/<day-id>/answers.md`。
 
 ## 练习目标
 

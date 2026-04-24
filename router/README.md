@@ -12,7 +12,7 @@
 
 - 新增 intent 时，先补充 `intents.yaml`
 - 保持命名稳定，避免随意改动已有 key
-- 输出路径尽量绑定到 `plan/`、`study/dayN/`、`study/units/`、`state/`
+- 输出路径尽量绑定到 `plan/days/`、`study/<day-id>/`、`state/`
 
 ## 当前文件
 
@@ -23,5 +23,5 @@
 - 任务生成优先读取 `state/dynamic-outline.json`
 - 周计划和单次任务都不能只按固定顺序推进
 - 如果学习结果写回了薄弱点或补强动作，后续路由要优先处理补强块
-- 单日学习包统一写到 `study/dayN/`
-- 学习单元目录统一使用 `study/units/<大单元>/<小单元>/`
+- 单日学习包统一写到 `study/<day-id>/`
+- `study/units/<大单元>/<小单元>/` 只作为可选知识索引，不是当天任务输出目录

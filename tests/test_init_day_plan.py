@@ -16,40 +16,46 @@ def load_module():
 
 def sample_context():
     return {
-        "focus": {
-            "theme": "数据类型、变量和最小 Python 表达",
+        "current_day": {
+            "day_id": "day-001",
+            "plan_path": "plan/days/day-001.md",
+            "study_dir": "study/day-001",
         },
-        "day_plan": {
-            "current_day_id": "day1",
-            "current_day_plan_path": "study/day1/plan.md",
-            "current_day_dir": "study/day1",
-            "units_for_today": [
-                {
-                    "major_unit": "Python基础",
-                    "minor_unit": "5.1-数据类型和变量",
-                    "fixed_outline_ref": "outline-5-1",
-                    "unit_path": "study/units/Python基础/5.1-数据类型和变量/",
-                },
-                {
-                    "major_unit": "函数",
-                    "minor_unit": "6.1-调用函数",
-                    "fixed_outline_ref": "outline-6-1",
-                    "unit_path": "study/units/函数/6.1-调用函数/",
-                },
-            ],
-        }
+        "current_day_study_dir": "study/day-001",
+        "current_focus": {
+            "title": "Python基础 / 数据类型和变量",
+            "theme": "数据类型、变量和最小 Python 表达",
+            "task_mode": "mainline",
+            "reason": "当前先建立 Python 基础数据表达能力，再推进到字符串和容器。",
+        },
+        "outline_refs": ["outline-5-1", "outline-5-2"],
+        "source_refs": [
+            "source/《Python基础教程第3版》.pdf",
+            "source/liaoxuefeng-python-introduction-from-basic/manifest.json",
+            "tmp/pdfs/《Python基础教程第3版》.json",
+        ],
+        "weak_points_used": ["bool 与 truthy/falsy 的差异"],
+        "next_actions": [
+            "阅读 plan/days/day-001.md",
+            "学习 study/day-001/lesson.md",
+            "运行 study/day-001/practice.py",
+            "填写 study/day-001/notes.md 和 mistakes.md",
+        ],
     }
 
 
 class InitDayPlanTest(unittest.TestCase):
-    def test_render_day_plan_replaces_day_and_unit_placeholders(self):
+    def test_render_day_plan_replaces_day_source_and_outline_placeholders(self):
         module = load_module()
         template = "\n".join(
             [
                 "# <day-id> 学习计划",
                 "主题：<theme>",
-                "今日单元：",
-                "<units-bullets>",
+                "今日目录：<day-study-dir>",
+                "大纲引用：",
+                "<outline-refs-bullets>",
+                "资料来源：",
+                "<source-refs-bullets>",
                 "输出：<day-plan-path>",
             ]
         )
@@ -59,45 +65,22 @@ class InitDayPlanTest(unittest.TestCase):
             context=sample_context(),
         )
 
-        self.assertIn("# day1", rendered)
+        self.assertIn("# day-001", rendered)
         self.assertIn("主题：数据类型、变量和最小 Python 表达", rendered)
-        self.assertIn("- Python基础 / 5.1-数据类型和变量", rendered)
-        self.assertIn("- 函数 / 6.1-调用函数", rendered)
-        self.assertIn("study/day1/plan.md", rendered)
+        self.assertIn("今日目录：study/day-001", rendered)
+        self.assertIn("- `outline-5-1`", rendered)
+        self.assertIn("- `outline-5-2`", rendered)
+        self.assertIn("- `source/《Python基础教程第3版》.pdf`", rendered)
+        self.assertIn("plan/days/day-001.md", rendered)
 
-    def test_init_study_day_creates_day_package_and_preserves_existing_content(self):
+    def test_init_day_plan_creates_day_first_outputs_without_copying_units(self):
         module = load_module()
 
         with tempfile.TemporaryDirectory() as tmp_dir:
             root = Path(tmp_dir)
-            template_dir = root / "templates" / "day"
-            template_dir.mkdir(parents=True)
-            (template_dir / "plan.md").write_text(
-                "# <day-id>\n主题：<theme>\n<units-bullets>\n",
-                encoding="utf-8",
-            )
-            (template_dir / "lesson.md").write_text(
-                "# day lesson template\n",
-                encoding="utf-8",
-            )
-            (template_dir / "practice.py").write_text(
-                "# day practice template\n",
-                encoding="utf-8",
-            )
-            (template_dir / "answers.md").write_text(
-                "# day answers template\n",
-                encoding="utf-8",
-            )
-            (template_dir / "notes.md").write_text(
-                "# day notes template\n",
-                encoding="utf-8",
-            )
-            (template_dir / "mistakes.md").write_text(
-                "# day mistakes template\n",
-                encoding="utf-8",
-            )
-            (template_dir / "day.json").write_text(
-                "{\"day_id\": \"<day-id>\", \"source_units\": []}\n",
+            plan_template_path = root / "day-plan-template.md"
+            plan_template_path.write_text(
+                "# <day-id>\n主题：<theme>\n目录：<day-study-dir>\n<outline-refs-bullets>\n<source-refs-bullets>\n",
                 encoding="utf-8",
             )
 
@@ -132,43 +115,56 @@ class InitDayPlanTest(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            output_root = root / "study"
-            output_path = module.init_study_day(
-                study_root=output_root,
-                template_dir=template_dir,
+            result = module.init_day_plan(
+                project_root=root,
                 context_path=context_path,
+                plan_template_path=plan_template_path,
             )
 
-            self.assertEqual(output_path.name, "day1")
-            self.assertTrue(output_path.exists())
-            self.assertTrue((output_path / "plan.md").exists())
-            self.assertTrue((output_path / "day.json").exists())
+            self.assertEqual(result["study_dir"].name, "day-001")
+            self.assertTrue(result["plan_path"].exists())
+            self.assertTrue((result["study_dir"] / "day.json").exists())
+            self.assertTrue((result["study_dir"] / "lesson.md").exists())
+            self.assertTrue((result["study_dir"] / "practice.py").exists())
+            self.assertTrue((result["study_dir"] / "answers.md").exists())
+            self.assertTrue((result["study_dir"] / "notes.md").exists())
+            self.assertTrue((result["study_dir"] / "mistakes.md").exists())
+            self.assertIn(
+                "study/day-001",
+                result["plan_path"].read_text(encoding="utf-8"),
+            )
+            self.assertNotEqual(
+                (result["study_dir"] / "lesson.md").read_text(encoding="utf-8"),
+                "# source lesson\n",
+            )
+
+            meta = json.loads((result["study_dir"] / "day.json").read_text(encoding="utf-8"))
+            self.assertEqual(meta["day_id"], "day-001")
+            self.assertEqual(meta["plan_path"], "plan/days/day-001.md")
+            self.assertEqual(meta["study_dir"], "study/day-001")
+            self.assertEqual(meta["outline_refs"], ["outline-5-1", "outline-5-2"])
+            self.assertEqual(meta["source_refs"][0], "source/《Python基础教程第3版》.pdf")
+            self.assertEqual(meta["weak_points_used"], ["bool 与 truthy/falsy 的差异"])
+            self.assertIn("study/day-001/practice.py", meta["generated_files"])
             self.assertEqual(
-                (output_path / "lesson.md").read_text(encoding="utf-8"),
+                (source_unit_dir / "lesson.md").read_text(encoding="utf-8"),
                 "# source lesson\n",
             )
             self.assertEqual(
-                (output_path / "practice.py").read_text(encoding="utf-8"),
+                (source_unit_dir / "practice.py").read_text(encoding="utf-8"),
                 "# source practice\n",
             )
-            self.assertIn(
-                "Python基础 / 5.1-数据类型和变量",
-                (output_path / "plan.md").read_text(encoding="utf-8"),
-            )
-            meta = json.loads((output_path / "day.json").read_text(encoding="utf-8"))
-            self.assertEqual(meta["day_id"], "day1")
-            self.assertEqual(meta["source_units"][0]["fixed_outline_ref"], "outline-5-1")
 
-            (output_path / "plan.md").write_text("manual plan\n", encoding="utf-8")
-            second_path = module.init_study_day(
-                study_root=output_root,
-                template_dir=template_dir,
+            result["plan_path"].write_text("manual plan\n", encoding="utf-8")
+            second_result = module.init_day_plan(
+                project_root=root,
                 context_path=context_path,
+                plan_template_path=plan_template_path,
             )
 
-            self.assertEqual(second_path, output_path)
+            self.assertEqual(second_result["plan_path"], result["plan_path"])
             self.assertEqual(
-                (output_path / "plan.md").read_text(encoding="utf-8"),
+                result["plan_path"].read_text(encoding="utf-8"),
                 "manual plan\n",
             )
 

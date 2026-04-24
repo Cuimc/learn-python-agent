@@ -12,13 +12,15 @@
 
 - `init_day_plan.py`
   - 读取 `state/current-context.json`
-  - 生成 `study/dayN/` 学习包
-  - 优先从对应 unit 复制 `lesson / practice / answers / notes / mistakes`
+  - 生成 `plan/days/<day-id>.md`
+  - 生成 `study/<day-id>/lesson.md`、`practice.py`、`answers.md`、`notes.md`、`mistakes.md`、`day.json`
+  - 不从 `study/units/` 复制任何当天内容
   - 只初始化缺失文件，不覆盖已有内容
 - `sync_units_from_outline.py`
   - 读取固定大纲
   - 生成 `study/units/<大单元>/<小单元>/`
-  - 仅补缺失文件，不覆盖已有学习产出
+  - 仅生成 `unit.json` 和 `refs.md`
+  - 不删除也不覆盖已有旧的 `lesson / practice / answers / notes / mistakes`
 - `fetch_liaoxuefeng_python_intro.py`
   - 抓取廖雪峰 Python 教程从 `Python基础` 到结尾的章节
   - 将原始结构化内容写入 `source/liaoxuefeng-python-introduction-from-basic/`

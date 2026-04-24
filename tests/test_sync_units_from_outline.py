@@ -79,8 +79,9 @@ class SyncUnitsFromOutlineTest(unittest.TestCase):
         )
         self.assertEqual(specs[-1]["parent_outline_ref"], "outline-8-1")
         self.assertEqual(specs[-1]["prerequisites"], ["outline-6-1"])
+        self.assertEqual(specs[-1]["index_files"], ["unit.json", "refs.md"])
 
-    def test_sync_units_creates_scaffold_and_preserves_existing_files(self):
+    def test_sync_units_creates_only_index_files_and_preserves_legacy_content(self):
         module = load_module()
 
         with tempfile.TemporaryDirectory() as tmp_dir:
@@ -92,43 +93,60 @@ class SyncUnitsFromOutlineTest(unittest.TestCase):
 
             template_dir = tmp_path / "templates" / "unit"
             template_dir.mkdir(parents=True)
-            (template_dir / "lesson.md").write_text("# lesson\n")
-            (template_dir / "practice.py").write_text("# practice\n")
-            (template_dir / "answers.md").write_text("# answers\n")
-            (template_dir / "notes.md").write_text("# notes\n")
-            (template_dir / "mistakes.md").write_text("# mistakes\n")
-            (template_dir / "unit.json").write_text("{\"stable_id\": \"outline-x-x\"}\n")
+            (template_dir / "refs.md").write_text(
+                "# <大单元> / <小单元>\n固定大纲：<outline-id>\n",
+                encoding="utf-8",
+            )
 
-            output_root = tmp_path / "study" / "units"
+            legacy_unit_dir = output_root = tmp_path / "study" / "units"
+            legacy_unit_dir = output_root / "Python基础" / "5.1-数据类型和变量"
+            legacy_unit_dir.mkdir(parents=True)
+            (legacy_unit_dir / "lesson.md").write_text("legacy lesson\n", encoding="utf-8")
+            (legacy_unit_dir / "practice.py").write_text("legacy practice\n", encoding="utf-8")
+
             module.sync_units_from_outline(
                 outline_path=outline_path,
                 template_dir=template_dir,
                 output_root=output_root,
             )
 
-            lesson_path = (
-                output_root / "Python基础" / "5.1-数据类型和变量" / "lesson.md"
-            )
             unit_meta_path = (
                 output_root / "函数式编程" / "8.1.1-map-reduce" / "unit.json"
             )
+            refs_path = output_root / "函数式编程" / "8.1.1-map-reduce" / "refs.md"
+            lesson_path = (
+                output_root / "函数式编程" / "8.1.1-map-reduce" / "lesson.md"
+            )
+            practice_path = (
+                output_root / "函数式编程" / "8.1.1-map-reduce" / "practice.py"
+            )
 
-            self.assertTrue(lesson_path.exists())
             self.assertTrue(unit_meta_path.exists())
+            self.assertTrue(refs_path.exists())
+            self.assertFalse(lesson_path.exists())
+            self.assertFalse(practice_path.exists())
 
-            unit_meta = json.loads(unit_meta_path.read_text())
+            unit_meta = json.loads(unit_meta_path.read_text(encoding="utf-8"))
             self.assertEqual(unit_meta["fixed_outline_ref"], "outline-8-1-1")
             self.assertEqual(unit_meta["major_unit"], "函数式编程")
             self.assertEqual(unit_meta["minor_unit"], "map/reduce")
+            self.assertEqual(unit_meta["index_files"], ["unit.json", "refs.md"])
+            self.assertIn("outline-8-1-1", refs_path.read_text(encoding="utf-8"))
 
-            lesson_path.write_text("manual notes\n")
             module.sync_units_from_outline(
                 outline_path=outline_path,
                 template_dir=template_dir,
                 output_root=output_root,
             )
 
-            self.assertEqual(lesson_path.read_text(), "manual notes\n")
+            self.assertEqual(
+                (legacy_unit_dir / "lesson.md").read_text(encoding="utf-8"),
+                "legacy lesson\n",
+            )
+            self.assertEqual(
+                (legacy_unit_dir / "practice.py").read_text(encoding="utf-8"),
+                "legacy practice\n",
+            )
 
 
 if __name__ == "__main__":

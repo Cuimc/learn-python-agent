@@ -4,125 +4,94 @@
 # - purpose: 该意图解决什么问题
 # - inputs: 进入该意图前建议准备的上下文
 # - outputs: 默认写入位置或产物类型
-# - skill_path: 优先匹配的 skill 文件或目录
-# - template_path: 优先使用的模板
+# - forbidden_outputs: 明确禁止写入的位置
+# - skill_path: 优先匹配的 skill 文件
 
 version: 1
 default_language: zh-CN
 
 intents:
-  next_week_plan:
-    purpose: 生成下一周学习计划，按动态大纲衔接当前进度与薄弱点
+  generate_day:
+    purpose: 根据固定大纲、动态大纲、当前上下文和资料来源生成今天的 day 学习任务
     inputs:
-      - state/dynamic-outline.json
-      - state/learner-profile.json
-      - state/learning-progress.json
-      - state/weak-points.json
-      - state/current-context.json
-      - plan/outline.json
-      - plan/
       - source/
-    outputs:
-      primary: plan/
-      secondary:
-        - plan/days/
-        - state/learning-progress.json
-    skill_path: skills/intents/next_week_plan.md
-    template_path: skills/templates/week-plan-template.md
-
-  explain_api:
-    purpose: 解释指定 Python API 的参数、返回值、真实用法与常见误区，并将掌握情况反馈给动态大纲
-    inputs:
-      - state/dynamic-outline.json
-      - 用户提到的 API 名称
-      - source/
-      - study/
-    outputs:
-      primary: study/units/<major-unit>/<minor-unit>/lesson.md
-      secondary:
-        - study/units/<major-unit>/<minor-unit>/notes.md
-        - state/weak-points.json
-    skill_path: skills/intents/explain_api.md
-    template_path: skills/templates/api-explanation-template.md
-
-  generate_exercises:
-    purpose: 根据动态大纲生成当前主题的基础练习，强调从前端经验迁移到 Python
-    inputs:
-      - state/dynamic-outline.json
-      - state/current-context.json
-      - state/weak-points.json
-      - study/units/<major-unit>/<minor-unit>/lesson.md
-    outputs:
-      primary: study/units/<major-unit>/<minor-unit>/practice.py
-      secondary:
-        - study/units/<major-unit>/<minor-unit>/answers.md
-    skill_path: skills/intents/generate_exercises.md
-    template_path: skills/templates/day-exercises-template.md
-
-  harder_exercises:
-    purpose: 在已有练习基础上提升难度，增加工程场景与调试要求，同时检验动态大纲中的不稳点
-    inputs:
-      - state/dynamic-outline.json
-      - study/units/<major-unit>/<minor-unit>/practice.py
-      - study/units/<major-unit>/<minor-unit>/answers.md
-      - state/weak-points.json
-    outputs:
-      primary: study/units/<major-unit>/<minor-unit>/practice.py
-      secondary:
-        - study/units/<major-unit>/<minor-unit>/mistakes.md
-    skill_path: skills/intents/harder_exercises.md
-    template_path: skills/templates/day-exercises-template.md
-
-  summarize_week:
-    purpose: 汇总一周学习成果、错误模式与下周准备事项，并回写动态大纲
-    inputs:
-      - state/dynamic-outline.json
-      - plan/days/
-      - study/units/
-      - state/learning-progress.json
-      - state/weak-points.json
-    outputs:
-      primary: plan/weekly-summary.md
-      secondary:
-        - state/current-context.json
-        - state/dynamic-outline.json
-        - state/learning-progress.json
-    skill_path: skills/intents/summarize_week.md
-    template_path: skills/templates/week-summary-template.md
-
-  generate_next_task:
-    purpose: 根据学习大纲和动态大纲、当前上下文和薄弱点生成下一次 day 学习任务，并补齐相关 unit 内容
-    inputs:
+      - tmp/pdfs/
       - plan/outline.json
-      - plan/days/
       - state/dynamic-outline.json
-      - state/current-context.json
       - state/weak-points.json
+      - state/current-context.json
       - state/learning-progress.json
     outputs:
       primary: plan/days/<day-id>.md
       secondary:
-        - study/units/<major-unit>/<minor-unit>/lesson.md
-        - study/units/<major-unit>/<minor-unit>/practice.py
-        - study/units/<major-unit>/<minor-unit>/answers.md
+        - study/<day-id>/lesson.md
+        - study/<day-id>/practice.py
+        - study/<day-id>/answers.md
+        - study/<day-id>/mistakes.md
+        - study/<day-id>/day.json
         - state/current-context.json
-    skill_path: skills/intents/generate_next_task.md
+    forbidden_outputs:
+      - study/units/**
+    skill_path: skills/intents/generate_day.md
     template_path: skills/templates/day-plan-template.md
 
-  review_session_result:
-    purpose: 根据一次学习结果更新动态大纲，决定是推进、轻复习还是插入补强块
+  review_day:
+    purpose: 根据一天学习结果更新动态大纲、薄弱点和下一次 focus
     inputs:
       - state/dynamic-outline.json
       - state/weak-points.json
       - state/current-context.json
       - plan/days/<day-id>.md
-      - study/units/<major-unit>/<minor-unit>/notes.md
-      - study/units/<major-unit>/<minor-unit>/mistakes.md
+      - study/<day-id>/notes.md
+      - study/<day-id>/mistakes.md
     outputs:
       primary: state/dynamic-outline.json
       secondary:
         - state/weak-points.json
         - state/current-context.json
         - plan/current-outline.md
-    skill_path: skills/intents/review_session_result.md
+    forbidden_outputs:
+      - study/units/**
+    skill_path: skills/intents/review_day.md
+    template_path: skills/templates/week-summary-template.md
+
+  explain_api:
+    purpose: 解释指定 Python API 的参数、返回值、真实用法与常见误区
+    inputs:
+      - source/
+      - tmp/pdfs/
+      - plan/outline.json
+      - state/current-context.json
+      - 用户提到的 API 名称
+    outputs:
+      primary: study/<day-id>/lesson.md
+      secondary:
+        - study/<day-id>/notes.md
+        - state/weak-points.json
+    forbidden_outputs:
+      - study/units/**
+    skill_path: skills/intents/explain_api.md
+    template_path: skills/templates/api-explanation-template.md
+
+  summarize_week:
+    purpose: 汇总一周学习成果，并生成下一周的最小推进建议
+    inputs:
+      - plan/days/
+      - study/
+      - source/
+      - tmp/pdfs/
+      - state/dynamic-outline.json
+      - state/learning-progress.json
+      - state/weak-points.json
+      - state/current-context.json
+    outputs:
+      primary: plan/weekly-summary.md
+      secondary:
+        - plan/days/
+        - state/current-context.json
+        - state/dynamic-outline.json
+        - state/learning-progress.json
+    forbidden_outputs:
+      - study/units/**
+    skill_path: skills/intents/summarize_week.md
     template_path: skills/templates/week-summary-template.md

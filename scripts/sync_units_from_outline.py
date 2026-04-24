@@ -2,17 +2,23 @@ from __future__ import annotations
 
 import json
 import re
-import shutil
 from pathlib import Path
 
 
-TEMPLATE_FILES = [
-    "lesson.md",
-    "practice.py",
-    "answers.md",
-    "notes.md",
-    "mistakes.md",
+INDEX_FILES = ["unit.json", "refs.md"]
+DEFAULT_SOURCE_REFS = [
+    "source/《Python基础教程第3版》.pdf",
+    "source/liaoxuefeng-python-introduction-from-basic/manifest.json",
+    "tmp/pdfs/《Python基础教程第3版》.json",
 ]
+DEFAULT_REFS_TEMPLATE = """# <大单元> / <小单元> 资料索引
+
+> 这个目录只保存可选知识索引，不是当天任务输出目录。
+
+- 固定大纲：`<outline-id>`
+- 推荐资料：
+<source-refs-bullets>
+"""
 
 
 def outline_id_to_unit_label(stable_id: str) -> str:
@@ -50,9 +56,8 @@ def build_unit_specs(outline_data: dict) -> list[dict]:
                 "children_outline_ids": [
                     child["stable_id"] for child in node.get("children", [])
                 ],
-                "task_mode": "mainline",
-                "dynamic_reason": "根据固定大纲正常推进",
-                "output_files": TEMPLATE_FILES,
+                "source_refs": DEFAULT_SOURCE_REFS,
+                "index_files": INDEX_FILES,
             }
         )
         for child in node.get("children", []):
@@ -76,10 +81,15 @@ def build_unit_meta(spec: dict) -> dict:
         "path_titles": spec["path_titles"],
         "prerequisites": spec["prerequisites"],
         "children_outline_ids": spec["children_outline_ids"],
-        "task_mode": spec["task_mode"],
-        "dynamic_reason": spec["dynamic_reason"],
-        "output_files": spec["output_files"],
+        "source_refs": spec["source_refs"],
+        "index_files": spec["index_files"],
     }
+
+
+def render_bullets(items: list[str]) -> str:
+    if not items:
+        return "- （待补充）"
+    return "\n".join(f"- `{item}`" for item in items)
 
 
 def render_template(content: str, spec: dict) -> str:
@@ -90,6 +100,7 @@ def render_template(content: str, spec: dict) -> str:
         "outline-x-x": spec["fixed_outline_ref"],
         "大单元名": spec["major_unit"],
         "小单元名": spec["minor_unit"],
+        "<source-refs-bullets>": render_bullets(spec["source_refs"]),
     }
     for source, target in replacements.items():
         content = content.replace(source, target)
@@ -110,18 +121,23 @@ def sync_units_from_outline(
         unit_dir.mkdir(parents=True, exist_ok=True)
         created_paths.append(unit_dir)
 
-        for template_name in TEMPLATE_FILES:
-            target_path = unit_dir / template_name
-            if target_path.exists():
-                continue
-            template_path = template_dir / template_name
-            content = template_path.read_text(encoding="utf-8")
-            target_path.write_text(render_template(content, spec), encoding="utf-8")
-
         unit_meta_path = unit_dir / "unit.json"
         if not unit_meta_path.exists():
             unit_meta_path.write_text(
                 json.dumps(build_unit_meta(spec), ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+        refs_path = unit_dir / "refs.md"
+        if not refs_path.exists():
+            template_path = template_dir / "refs.md"
+            template_text = (
+                template_path.read_text(encoding="utf-8")
+                if template_path.exists()
+                else DEFAULT_REFS_TEMPLATE
+            )
+            refs_path.write_text(
+                render_template(template_text, spec),
                 encoding="utf-8",
             )
 

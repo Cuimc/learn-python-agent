@@ -5,13 +5,13 @@
     "maintainer": "ai-agent"
   },
   "dynamic_outline_ref": "state/dynamic-outline.json",
-  "day_learning_mode": "day-driven-unit-backed",
+  "day_learning_mode": "day-first",
   "current_day_id": "day-001",
   "current_day_plan_path": "plan/days/day-001.md",
   "current_major_unit": "Python基础",
   "current_minor_unit": "5.1-数据类型和变量",
   "current_fixed_outline_id": "outline-5-1",
-  "current_unit_path": "study/units/Python基础/5.1-数据类型和变量/",
+  "current_day_study_dir": "study/day-001",
   "active_track": "frontend-to-python-agent",
   "current_stage_id": "stage-1",
   "current_node_id": "node-basic-syntax",
@@ -20,12 +20,9 @@
     "变量绑定与重新赋值",
     "表达式和最小格式化输出"
   ],
-  "current_day_units": [
+  "current_day_outline_refs": [
     {
-      "major_unit": "Python基础",
-      "minor_unit": "5.1-数据类型和变量",
-      "fixed_outline_ref": "outline-5-1",
-      "unit_path": "study/units/Python基础/5.1-数据类型和变量/"
+      "fixed_outline_ref": "outline-5-1"
     }
   ],
   "completed_days": [],
@@ -41,7 +38,7 @@
     "list / dict 基础"
   ],
   "task_generation_notes": [
-    "单日计划写入 plan/days/，知识内容写入 study/units/",
+    "单日计划写入 plan/days/，当天任务写入 study/day-001/",
     "day-001 已生成，当前聚焦 Python基础 / 5.1-数据类型和变量",
     "初始阶段优先按固定大纲推进，不插入跨单元偏移"
   ]

@@ -1,0 +1,31 @@
+{
+  "day_id": "day-001",
+  "plan_path": "plan/days/day-001.md",
+  "study_dir": "study/day-001",
+  "outline_refs": [
+    "outline-5-1"
+  ],
+  "source_refs": [
+    "source/《Python基础教程第3版》.pdf",
+    "source/liaoxuefeng-python-introduction-from-basic/manifest.json",
+    "source/liaoxuefeng-python-introduction-from-basic/pages/001-books-python-basic-index-html.json",
+    "tmp/pdfs/《Python基础教程第3版》.json"
+  ],
+  "weak_points_used": [],
+  "focus_points": [
+    "int / float / str / bool / None",
+    "变量绑定与重新赋值",
+    "type()",
+    "print() 与 f-string",
+    "None 与 False 的差异"
+  ],
+  "generated_files": [
+    "plan/days/day-001.md",
+    "study/day-001/lesson.md",
+    "study/day-001/practice.py",
+    "study/day-001/answers.md",
+    "study/day-001/notes.md",
+    "study/day-001/mistakes.md",
+    "study/day-001/day.json"
+  ]
+}

@@ -1,6 +1,7 @@
 # Week Plan Template
 
 > 用于生成下一周学习计划。输出时请结合当前 `state/`、`state/dynamic-outline.json` 与 `source/` 内容，不要机械套模板。
+> 周计划中的每日产出应统一指向 `plan/days/<day-id>.md` 和 `study/<day-id>/`。
 
 ## 动态调度前检查
 
@@ -24,7 +25,7 @@
 - 是否包含补强块：
 - 当天覆盖的知识点：
 - 最小行动：
-- 产出文件：
+- 产出文件：`plan/days/<day-id>.md`、`study/<day-id>/lesson.md`、`study/<day-id>/practice.py`
 
 ### Day 2
 
