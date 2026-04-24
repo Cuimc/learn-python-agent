@@ -1,0 +1,236 @@
+{
+  "order": 85,
+  "url": "/books/python/network/tcp/index.html",
+  "title": "TCP编程",
+  "section_slug": "network",
+  "section_title": "网络编程",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>Socket是网络编程的一个抽象概念。通常我们用一个Socket表示“打开了一个网络链接”，而打开一个Socket需要知道目标计算机的IP地址和端口号，再指定协议类型即可。</p>\n<h3>客户端</h3>\n<p>大多数连接都是可靠的TCP连接。创建TCP连接时，主动发起连接的叫客户端，被动响应连接的叫服务器。</p>\n<p>举个例子，当我们在浏览器中访问新浪时，我们自己的计算机就是客户端，浏览器会主动向新浪的服务器发起连接。如果一切顺利，新浪的服务器接受了我们的连接，一个TCP连接就建立起来的，后面的通信就是发送网页内容了。</p>\n<p>所以，我们要创建一个基于TCP连接的Socket，可以这样做：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 导入socket库:</span>\n<span class=\"hljs-keyword\">import</span> socket\n\n<span class=\"hljs-comment\"># 创建一个socket:</span>\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n<span class=\"hljs-comment\"># 建立连接:</span>\ns.connect((<span class=\"hljs-string\">&#x27;www.sina.com.cn&#x27;</span>, <span class=\"hljs-number\">80</span>))\n</code></pre>\n<p>创建<code>Socket</code>时，<code>AF_INET</code>指定使用IPv4协议，如果要用更先进的IPv6，就指定为<code>AF_INET6</code>。<code>SOCK_STREAM</code>指定使用面向流的TCP协议，这样，一个<code>Socket</code>对象就创建成功，但是还没有建立连接。</p>\n<p>客户端要主动发起TCP连接，必须知道服务器的IP地址和端口号。新浪网站的IP地址可以用域名<code>www.sina.com.cn</code>自动转换到IP地址，但是怎么知道新浪服务器的端口号呢？</p>\n<p>答案是作为服务器，提供什么样的服务，端口号就必须固定下来。由于我们想要访问网页，因此新浪提供网页服务的服务器必须把端口号固定在<code>80</code>端口，因为<code>80</code>端口是Web服务的标准端口。其他服务都有对应的标准端口号，例如SMTP服务是<code>25</code>端口，FTP服务是<code>21</code>端口，等等。端口号小于1024的是Internet标准服务的端口，端口号大于1024的，可以任意使用。</p>\n<p>因此，我们连接新浪服务器的代码如下：</p>\n<pre class=\"hljs\"><code class=\"language-python\">s.connect((<span class=\"hljs-string\">&#x27;www.sina.com.cn&#x27;</span>, <span class=\"hljs-number\">80</span>))\n</code></pre>\n<p>注意参数是一个<code>tuple</code>，包含地址和端口号。</p>\n<p>建立TCP连接后，我们就可以向新浪服务器发送请求，要求返回首页的内容：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 发送数据:</span>\ns.send(<span class=\"hljs-string\">b&#x27;GET / HTTP/1.1\\r\\nHost: www.sina.com.cn\\r\\nConnection: close\\r\\n\\r\\n&#x27;</span>)\n</code></pre>\n<p>TCP连接创建的是双向通道，双方都可以同时给对方发数据。但是谁先发谁后发，怎么协调，要根据具体的协议来决定。例如，HTTP协议规定客户端必须先发请求给服务器，服务器收到后才发数据给客户端。</p>\n<p>发送的文本格式必须符合HTTP标准，如果格式没问题，接下来就可以接收新浪服务器返回的数据了：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 接收数据:</span>\nbuffer = []\n<span class=\"hljs-keyword\">while</span> <span class=\"hljs-literal\">True</span>:\n    <span class=\"hljs-comment\"># 每次最多接收1k字节:</span>\n    d = s.recv(<span class=\"hljs-number\">1024</span>)\n    <span class=\"hljs-keyword\">if</span> d:\n        buffer.append(d)\n    <span class=\"hljs-keyword\">else</span>:\n        <span class=\"hljs-keyword\">break</span>\ndata = <span class=\"hljs-string\">b&#x27;&#x27;</span>.join(buffer)\n</code></pre>\n<p>接收数据时，调用<code>recv(max)</code>方法，一次最多接收指定的字节数，因此，在一个while循环中反复接收，直到<code>recv()</code>返回空数据，表示接收完毕，退出循环。</p>\n<p>当我们接收完数据后，调用<code>close()</code>方法关闭Socket，这样，一次完整的网络通信就结束了：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 关闭连接:</span>\ns.close()\n</code></pre>\n<p>接收到的数据包括HTTP头和网页本身，我们只需要把HTTP头和网页分离一下，把HTTP头打印出来，网页内容保存到文件：</p>\n<pre class=\"hljs\"><code class=\"language-python\">header, html = data.split(<span class=\"hljs-string\">b&#x27;\\r\\n\\r\\n&#x27;</span>, <span class=\"hljs-number\">1</span>)\n<span class=\"hljs-built_in\">print</span>(header.decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n<span class=\"hljs-comment\"># 把接收的数据写入文件:</span>\n<span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(<span class=\"hljs-string\">&#x27;sina.html&#x27;</span>, <span class=\"hljs-string\">&#x27;wb&#x27;</span>) <span class=\"hljs-keyword\">as</span> f:\n    f.write(html)\n</code></pre>\n<p>现在，只需要在浏览器中打开这个<code>sina.html</code>文件，就可以看到新浪的首页了。</p>\n<h3>服务器</h3>\n<p>和客户端编程相比，服务器编程就要复杂一些。</p>\n<p>服务器进程首先要绑定一个端口并监听来自其他客户端的连接。如果某个客户端连接过来了，服务器就与该客户端建立Socket连接，随后的通信就靠这个Socket连接了。</p>\n<p>所以，服务器会打开固定端口（比如80）监听，每来一个客户端连接，就创建该Socket连接。由于服务器会有大量来自客户端的连接，所以，服务器要能够区分一个Socket连接是和哪个客户端绑定的。一个Socket依赖4项：服务器地址、服务器端口、客户端地址、客户端端口来唯一确定一个Socket。</p>\n<p>但是服务器还需要同时响应多个客户端的请求，所以，每个连接都需要一个新的进程或者新的线程来处理，否则，服务器一次就只能服务一个客户端了。</p>\n<p>我们来编写一个简单的服务器程序，它接收客户端连接，把客户端发过来的字符串加上<code>Hello</code>再发回去。</p>\n<p>首先，创建一个基于IPv4和TCP协议的Socket：</p>\n<pre class=\"hljs\"><code class=\"language-python\">s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n</code></pre>\n<p>然后，我们要绑定监听的地址和端口。服务器可能有多块网卡，可以绑定到某一块网卡的IP地址上，也可以用<code>0.0.0.0</code>绑定到所有的网络地址，还可以用<code>127.0.0.1</code>绑定到本机地址。<code>127.0.0.1</code>是一个特殊的IP地址，表示本机地址，如果绑定到这个地址，客户端必须同时在本机运行才能连接，也就是说，外部的计算机无法连接进来。</p>\n<p>端口号需要预先指定。因为我们写的这个服务不是标准服务，所以用<code>9999</code>这个端口号。请注意，小于<code>1024</code>的端口号必须要有管理员权限才能绑定：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 监听端口:</span>\ns.bind((<span class=\"hljs-string\">&#x27;127.0.0.1&#x27;</span>, <span class=\"hljs-number\">9999</span>))\n</code></pre>\n<p>紧接着，调用<code>listen()</code>方法开始监听端口，传入的参数指定等待连接的最大数量：</p>\n<pre class=\"hljs\"><code class=\"language-python\">s.listen(<span class=\"hljs-number\">5</span>)\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Waiting for connection...&#x27;</span>)\n</code></pre>\n<p>接下来，服务器程序通过一个永久循环来接受来自客户端的连接，<code>accept()</code>会等待并返回一个客户端的连接:</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">while</span> <span class=\"hljs-literal\">True</span>:\n    <span class=\"hljs-comment\"># 接受一个新连接:</span>\n    sock, addr = s.accept()\n    <span class=\"hljs-comment\"># 创建新线程来处理TCP连接:</span>\n    t = threading.Thread(target=tcplink, args=(sock, addr))\n    t.start()\n</code></pre>\n<p>每个连接都必须创建新线程（或进程）来处理，否则，单线程在处理连接的过程中，无法接受其他客户端的连接：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">tcplink</span>(<span class=\"hljs-params\">sock, addr</span>):\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Accept new connection from %s:%s...&#x27;</span> % addr)\n    sock.send(<span class=\"hljs-string\">b&#x27;Welcome!&#x27;</span>)\n    <span class=\"hljs-keyword\">while</span> <span class=\"hljs-literal\">True</span>:\n        data = sock.recv(<span class=\"hljs-number\">1024</span>)\n        time.sleep(<span class=\"hljs-number\">1</span>)\n        <span class=\"hljs-keyword\">if</span> <span class=\"hljs-keyword\">not</span> data <span class=\"hljs-keyword\">or</span> data.decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>) == <span class=\"hljs-string\">&#x27;exit&#x27;</span>:\n            <span class=\"hljs-keyword\">break</span>\n        sock.send((<span class=\"hljs-string\">&#x27;Hello, %s!&#x27;</span> % data.decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>)).encode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n    sock.close()\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Connection from %s:%s closed.&#x27;</span> % addr)\n</code></pre>\n<p>连接建立后，服务器首先发一条欢迎消息，然后等待客户端数据，并加上<code>Hello</code>再发送给客户端。如果客户端发送了<code>exit</code>字符串，就直接关闭连接。</p>\n<p>要测试这个服务器程序，我们还需要编写一个客户端程序：</p>\n<pre class=\"hljs\"><code class=\"language-python\">s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n<span class=\"hljs-comment\"># 建立连接:</span>\ns.connect((<span class=\"hljs-string\">&#x27;127.0.0.1&#x27;</span>, <span class=\"hljs-number\">9999</span>))\n<span class=\"hljs-comment\"># 接收欢迎消息:</span>\n<span class=\"hljs-built_in\">print</span>(s.recv(<span class=\"hljs-number\">1024</span>).decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n<span class=\"hljs-keyword\">for</span> data <span class=\"hljs-keyword\">in</span> [<span class=\"hljs-string\">b&#x27;Michael&#x27;</span>, <span class=\"hljs-string\">b&#x27;Tracy&#x27;</span>, <span class=\"hljs-string\">b&#x27;Sarah&#x27;</span>]:\n    <span class=\"hljs-comment\"># 发送数据:</span>\n    s.send(data)\n    <span class=\"hljs-built_in\">print</span>(s.recv(<span class=\"hljs-number\">1024</span>).decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\ns.send(<span class=\"hljs-string\">b&#x27;exit&#x27;</span>)\ns.close()\n</code></pre>\n<p>我们需要打开两个命令行窗口，一个运行服务器程序，另一个运行客户端程序，就可以看到效果了：</p>\n<pre class=\"ascii\"><code>┌────────────────────────────────────────────────────────┐\n│Windows PowerShell                                - □ x │\n├────────────────────────────────────────────────────────┤\n│PS C:\\Users\\liaoxuefeng&gt; python echo_server.py          │\n│Waiting for connection...                               │\n│Accept new connection from 127.0.0.1:64398...           │\n│Connection from 127.0.0.1:64398 closed.                 │\n│                                                        │\n│       ┌────────────────────────────────────────────────┴───────┐\n│       │Windows PowerShell                                - □ x │\n│       ├────────────────────────────────────────────────────────┤\n└───────┤PS C:\\Users\\liaoxuefeng&gt; python echo_client.py          │\n        │Welcome!                                                │\n        │Hello, Michael!                                         │\n        │Hello, Tracy!                                           │\n        │Hello, Sarah!                                           │\n        │PS C:\\Users\\liaoxuefeng&gt;                                │\n        │                                                        │\n        │                                                        │\n        └────────────────────────────────────────────────────────┘\n</code></pre>\n<p>需要注意的是，客户端程序运行完毕就退出了，而服务器程序会永远运行下去，必须按Ctrl+C退出程序。</p>\n<h3>小结</h3>\n<p>用TCP协议进行Socket编程在Python中十分简单，对于客户端，要主动连接服务器的IP和指定端口，对于服务器，要首先监听指定端口，然后，对每一个新的连接，创建一个线程或进程来处理。通常，服务器程序会无限运行下去。</p>\n<p>同一个端口，被一个Socket绑定了以后，就不能被别的Socket绑定了。</p>\n<h3>参考源码</h3>\n<p><a href=\"do_tcp.py\">do_tcp.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Socket是网络编程的一个抽象概念。通常我们用一个Socket表示“打开了一个网络链接”，而打开一个Socket需要知道目标计算机的IP地址和端口号，再指定协议类型即可。"
+    },
+    {
+      "type": "h3",
+      "text": "客户端"
+    },
+    {
+      "type": "p",
+      "text": "大多数连接都是可靠的TCP连接。创建TCP连接时，主动发起连接的叫客户端，被动响应连接的叫服务器。"
+    },
+    {
+      "type": "p",
+      "text": "举个例子，当我们在浏览器中访问新浪时，我们自己的计算机就是客户端，浏览器会主动向新浪的服务器发起连接。如果一切顺利，新浪的服务器接受了我们的连接，一个TCP连接就建立起来的，后面的通信就是发送网页内容了。"
+    },
+    {
+      "type": "p",
+      "text": "所以，我们要创建一个基于TCP连接的Socket，可以这样做："
+    },
+    {
+      "type": "pre",
+      "text": "# 导入socket库:\nimport socket\n\n# 创建一个socket:\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n# 建立连接:\ns.connect(('www.sina.com.cn', 80))"
+    },
+    {
+      "type": "p",
+      "text": "创建Socket时，AF_INET指定使用IPv4协议，如果要用更先进的IPv6，就指定为AF_INET6。SOCK_STREAM指定使用面向流的TCP协议，这样，一个Socket对象就创建成功，但是还没有建立连接。"
+    },
+    {
+      "type": "p",
+      "text": "客户端要主动发起TCP连接，必须知道服务器的IP地址和端口号。新浪网站的IP地址可以用域名www.sina.com.cn自动转换到IP地址，但是怎么知道新浪服务器的端口号呢？"
+    },
+    {
+      "type": "p",
+      "text": "答案是作为服务器，提供什么样的服务，端口号就必须固定下来。由于我们想要访问网页，因此新浪提供网页服务的服务器必须把端口号固定在80端口，因为80端口是Web服务的标准端口。其他服务都有对应的标准端口号，例如SMTP服务是25端口，FTP服务是21端口，等等。端口号小于1024的是Internet标准服务的端口，端口号大于1024的，可以任意使用。"
+    },
+    {
+      "type": "p",
+      "text": "因此，我们连接新浪服务器的代码如下："
+    },
+    {
+      "type": "pre",
+      "text": "s.connect(('www.sina.com.cn', 80))"
+    },
+    {
+      "type": "p",
+      "text": "注意参数是一个tuple，包含地址和端口号。"
+    },
+    {
+      "type": "p",
+      "text": "建立TCP连接后，我们就可以向新浪服务器发送请求，要求返回首页的内容："
+    },
+    {
+      "type": "pre",
+      "text": "# 发送数据:\ns.send(b'GET / HTTP/1.1\\r\\nHost: www.sina.com.cn\\r\\nConnection: close\\r\\n\\r\\n')"
+    },
+    {
+      "type": "p",
+      "text": "TCP连接创建的是双向通道，双方都可以同时给对方发数据。但是谁先发谁后发，怎么协调，要根据具体的协议来决定。例如，HTTP协议规定客户端必须先发请求给服务器，服务器收到后才发数据给客户端。"
+    },
+    {
+      "type": "p",
+      "text": "发送的文本格式必须符合HTTP标准，如果格式没问题，接下来就可以接收新浪服务器返回的数据了："
+    },
+    {
+      "type": "pre",
+      "text": "# 接收数据:\nbuffer = []\nwhile True:\n    # 每次最多接收1k字节:\n    d = s.recv(1024)\n    if d:\n        buffer.append(d)\n    else:\n        break\ndata = b''.join(buffer)"
+    },
+    {
+      "type": "p",
+      "text": "接收数据时，调用recv(max)方法，一次最多接收指定的字节数，因此，在一个while循环中反复接收，直到recv()返回空数据，表示接收完毕，退出循环。"
+    },
+    {
+      "type": "p",
+      "text": "当我们接收完数据后，调用close()方法关闭Socket，这样，一次完整的网络通信就结束了："
+    },
+    {
+      "type": "pre",
+      "text": "# 关闭连接:\ns.close()"
+    },
+    {
+      "type": "p",
+      "text": "接收到的数据包括HTTP头和网页本身，我们只需要把HTTP头和网页分离一下，把HTTP头打印出来，网页内容保存到文件："
+    },
+    {
+      "type": "pre",
+      "text": "header, html = data.split(b'\\r\\n\\r\\n', 1)\nprint(header.decode('utf-8'))\n# 把接收的数据写入文件:\nwith open('sina.html', 'wb') as f:\n    f.write(html)"
+    },
+    {
+      "type": "p",
+      "text": "现在，只需要在浏览器中打开这个sina.html文件，就可以看到新浪的首页了。"
+    },
+    {
+      "type": "h3",
+      "text": "服务器"
+    },
+    {
+      "type": "p",
+      "text": "和客户端编程相比，服务器编程就要复杂一些。"
+    },
+    {
+      "type": "p",
+      "text": "服务器进程首先要绑定一个端口并监听来自其他客户端的连接。如果某个客户端连接过来了，服务器就与该客户端建立Socket连接，随后的通信就靠这个Socket连接了。"
+    },
+    {
+      "type": "p",
+      "text": "所以，服务器会打开固定端口（比如80）监听，每来一个客户端连接，就创建该Socket连接。由于服务器会有大量来自客户端的连接，所以，服务器要能够区分一个Socket连接是和哪个客户端绑定的。一个Socket依赖4项：服务器地址、服务器端口、客户端地址、客户端端口来唯一确定一个Socket。"
+    },
+    {
+      "type": "p",
+      "text": "但是服务器还需要同时响应多个客户端的请求，所以，每个连接都需要一个新的进程或者新的线程来处理，否则，服务器一次就只能服务一个客户端了。"
+    },
+    {
+      "type": "p",
+      "text": "我们来编写一个简单的服务器程序，它接收客户端连接，把客户端发过来的字符串加上Hello再发回去。"
+    },
+    {
+      "type": "p",
+      "text": "首先，创建一个基于IPv4和TCP协议的Socket："
+    },
+    {
+      "type": "pre",
+      "text": "s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)"
+    },
+    {
+      "type": "p",
+      "text": "然后，我们要绑定监听的地址和端口。服务器可能有多块网卡，可以绑定到某一块网卡的IP地址上，也可以用0.0.0.0绑定到所有的网络地址，还可以用127.0.0.1绑定到本机地址。127.0.0.1是一个特殊的IP地址，表示本机地址，如果绑定到这个地址，客户端必须同时在本机运行才能连接，也就是说，外部的计算机无法连接进来。"
+    },
+    {
+      "type": "p",
+      "text": "端口号需要预先指定。因为我们写的这个服务不是标准服务，所以用9999这个端口号。请注意，小于1024的端口号必须要有管理员权限才能绑定："
+    },
+    {
+      "type": "pre",
+      "text": "# 监听端口:\ns.bind(('127.0.0.1', 9999))"
+    },
+    {
+      "type": "p",
+      "text": "紧接着，调用listen()方法开始监听端口，传入的参数指定等待连接的最大数量："
+    },
+    {
+      "type": "pre",
+      "text": "s.listen(5)\nprint('Waiting for connection...')"
+    },
+    {
+      "type": "p",
+      "text": "接下来，服务器程序通过一个永久循环来接受来自客户端的连接，accept()会等待并返回一个客户端的连接:"
+    },
+    {
+      "type": "pre",
+      "text": "while True:\n    # 接受一个新连接:\n    sock, addr = s.accept()\n    # 创建新线程来处理TCP连接:\n    t = threading.Thread(target=tcplink, args=(sock, addr))\n    t.start()"
+    },
+    {
+      "type": "p",
+      "text": "每个连接都必须创建新线程（或进程）来处理，否则，单线程在处理连接的过程中，无法接受其他客户端的连接："
+    },
+    {
+      "type": "pre",
+      "text": "def tcplink(sock, addr):\n    print('Accept new connection from %s:%s...' % addr)\n    sock.send(b'Welcome!')\n    while True:\n        data = sock.recv(1024)\n        time.sleep(1)\n        if not data or data.decode('utf-8') == 'exit':\n            break\n        sock.send(('Hello, %s!' % data.decode('utf-8')).encode('utf-8'))\n    sock.close()\n    print('Connection from %s:%s closed.' % addr)"
+    },
+    {
+      "type": "p",
+      "text": "连接建立后，服务器首先发一条欢迎消息，然后等待客户端数据，并加上Hello再发送给客户端。如果客户端发送了exit字符串，就直接关闭连接。"
+    },
+    {
+      "type": "p",
+      "text": "要测试这个服务器程序，我们还需要编写一个客户端程序："
+    },
+    {
+      "type": "pre",
+      "text": "s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n# 建立连接:\ns.connect(('127.0.0.1', 9999))\n# 接收欢迎消息:\nprint(s.recv(1024).decode('utf-8'))\nfor data in [b'Michael', b'Tracy', b'Sarah']:\n    # 发送数据:\n    s.send(data)\n    print(s.recv(1024).decode('utf-8'))\ns.send(b'exit')\ns.close()"
+    },
+    {
+      "type": "p",
+      "text": "我们需要打开两个命令行窗口，一个运行服务器程序，另一个运行客户端程序，就可以看到效果了："
+    },
+    {
+      "type": "pre",
+      "text": "┌────────────────────────────────────────────────────────┐\n│Windows PowerShell                                - □ x │\n├────────────────────────────────────────────────────────┤\n│PS C:\\Users\\liaoxuefeng> python echo_server.py          │\n│Waiting for connection...                               │\n│Accept new connection from 127.0.0.1:64398...           │\n│Connection from 127.0.0.1:64398 closed.                 │\n│                                                        │\n│       ┌────────────────────────────────────────────────┴───────┐\n│       │Windows PowerShell                                - □ x │\n│       ├────────────────────────────────────────────────────────┤\n└───────┤PS C:\\Users\\liaoxuefeng> python echo_client.py          │\n        │Welcome!                                                │\n        │Hello, Michael!                                         │\n        │Hello, Tracy!                                           │\n        │Hello, Sarah!                                           │\n        │PS C:\\Users\\liaoxuefeng>                                │\n        │                                                        │\n        │                                                        │\n        └────────────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "p",
+      "text": "需要注意的是，客户端程序运行完毕就退出了，而服务器程序会永远运行下去，必须按Ctrl+C退出程序。"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "用TCP协议进行Socket编程在Python中十分简单，对于客户端，要主动连接服务器的IP和指定端口，对于服务器，要首先监听指定端口，然后，对每一个新的连接，创建一个线程或进程来处理。通常，服务器程序会无限运行下去。"
+    },
+    {
+      "type": "p",
+      "text": "同一个端口，被一个Socket绑定了以后，就不能被别的Socket绑定了。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "do_tcp.py"
+    }
+  ],
+  "headings": [
+    "客户端",
+    "服务器",
+    "小结",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "# 导入socket库:\nimport socket\n\n# 创建一个socket:\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n# 建立连接:\ns.connect(('www.sina.com.cn', 80))",
+    "s.connect(('www.sina.com.cn', 80))",
+    "# 发送数据:\ns.send(b'GET / HTTP/1.1\\r\\nHost: www.sina.com.cn\\r\\nConnection: close\\r\\n\\r\\n')",
+    "# 接收数据:\nbuffer = []\nwhile True:\n    # 每次最多接收1k字节:\n    d = s.recv(1024)\n    if d:\n        buffer.append(d)\n    else:\n        break\ndata = b''.join(buffer)",
+    "# 关闭连接:\ns.close()",
+    "header, html = data.split(b'\\r\\n\\r\\n', 1)\nprint(header.decode('utf-8'))\n# 把接收的数据写入文件:\nwith open('sina.html', 'wb') as f:\n    f.write(html)",
+    "s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)",
+    "# 监听端口:\ns.bind(('127.0.0.1', 9999))",
+    "s.listen(5)\nprint('Waiting for connection...')",
+    "while True:\n    # 接受一个新连接:\n    sock, addr = s.accept()\n    # 创建新线程来处理TCP连接:\n    t = threading.Thread(target=tcplink, args=(sock, addr))\n    t.start()",
+    "def tcplink(sock, addr):\n    print('Accept new connection from %s:%s...' % addr)\n    sock.send(b'Welcome!')\n    while True:\n        data = sock.recv(1024)\n        time.sleep(1)\n        if not data or data.decode('utf-8') == 'exit':\n            break\n        sock.send(('Hello, %s!' % data.decode('utf-8')).encode('utf-8'))\n    sock.close()\n    print('Connection from %s:%s closed.' % addr)",
+    "s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n# 建立连接:\ns.connect(('127.0.0.1', 9999))\n# 接收欢迎消息:\nprint(s.recv(1024).decode('utf-8'))\nfor data in [b'Michael', b'Tracy', b'Sarah']:\n    # 发送数据:\n    s.send(data)\n    print(s.recv(1024).decode('utf-8'))\ns.send(b'exit')\ns.close()",
+    "┌────────────────────────────────────────────────────────┐\n│Windows PowerShell                                - □ x │\n├────────────────────────────────────────────────────────┤\n│PS C:\\Users\\liaoxuefeng> python echo_server.py          │\n│Waiting for connection...                               │\n│Accept new connection from 127.0.0.1:64398...           │\n│Connection from 127.0.0.1:64398 closed.                 │\n│                                                        │\n│       ┌────────────────────────────────────────────────┴───────┐\n│       │Windows PowerShell                                - □ x │\n│       ├────────────────────────────────────────────────────────┤\n└───────┤PS C:\\Users\\liaoxuefeng> python echo_client.py          │\n        │Welcome!                                                │\n        │Hello, Michael!                                         │\n        │Hello, Tracy!                                           │\n        │Hello, Sarah!                                           │\n        │PS C:\\Users\\liaoxuefeng>                                │\n        │                                                        │\n        │                                                        │\n        └────────────────────────────────────────────────────────┘"
+  ],
+  "text_block_count": 34
+}

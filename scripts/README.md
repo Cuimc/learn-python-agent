@@ -19,6 +19,10 @@
   - 读取固定大纲
   - 生成 `study/units/<大单元>/<小单元>/`
   - 仅补缺失文件，不覆盖已有学习产出
+- `fetch_liaoxuefeng_python_intro.py`
+  - 抓取廖雪峰 Python 教程从 `Python基础` 到结尾的章节
+  - 将原始结构化内容写入 `source/liaoxuefeng-python-introduction-from-basic/`
+  - 将蒸馏结果写入 `tmp/web/`
 
 ## 约束
 

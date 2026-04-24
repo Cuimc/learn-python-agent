@@ -1,0 +1,333 @@
+{
+  "order": 44,
+  "url": "/books/python/oop-adv/meta-class/index.html",
+  "title": "使用元类",
+  "section_slug": "oop-adv",
+  "section_title": "面向对象高级编程",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<h3>type()</h3>\n<p>动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。</p>\n<p>比方说我们要定义一个<code>Hello</code>的class，就写一个<code>hello.py</code>模块：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Hello</span>(<span class=\"hljs-title class_ inherited__\">object</span>):\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">hello</span>(<span class=\"hljs-params\">self, name=<span class=\"hljs-string\">&#x27;world&#x27;</span></span>):\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Hello, %s.&#x27;</span> % name)\n</code></pre>\n<p>当Python解释器载入<code>hello</code>模块时，就会依次执行该模块的所有语句，执行结果就是动态创建出一个<code>Hello</code>的class对象，测试如下：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; from hello import Hello\n&gt;&gt;&gt; h = Hello()\n&gt;&gt;&gt; h.hello()\nHello, world.\n&gt;&gt;&gt; print(type(Hello))\n&lt;class 'type'&gt;\n&gt;&gt;&gt; print(type(h))\n&lt;class 'hello.Hello'&gt;\n</code></pre>\n<p><code>type()</code>函数可以查看一个类型或变量的类型，<code>Hello</code>是一个class，它的类型就是<code>type</code>，而<code>h</code>是一个实例，它的类型就是class <code>Hello</code>。</p>\n<p>我们说class的定义是运行时动态创建的，而创建class的方法就是使用<code>type()</code>函数。</p>\n<p><code>type()</code>函数既可以返回一个对象的类型，又可以创建出新的类型，比如，我们可以通过<code>type()</code>函数创建出<code>Hello</code>类，而无需通过<code>class Hello(object)...</code>的定义：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; def fn(self, name='world'): # 先定义函数\n...     print('Hello, %s.' % name)\n...\n&gt;&gt;&gt; Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class\n&gt;&gt;&gt; h = Hello()\n&gt;&gt;&gt; h.hello()\nHello, world.\n&gt;&gt;&gt; print(type(Hello))\n&lt;class 'type'&gt;\n&gt;&gt;&gt; print(type(h))\n&lt;class '__main__.Hello'&gt;\n</code></pre>\n<p>要创建一个class对象，<code>type()</code>函数依次传入3个参数：</p>\n<ol>\n<li>class的名称；</li>\n<li>继承的父类集合，注意Python支持多重继承，如果只有一个父类，别忘了tuple的单元素写法；</li>\n<li>class的方法名称与函数绑定，这里我们把函数<code>fn</code>绑定到方法名<code>hello</code>上。</li>\n</ol>\n<p>通过<code>type()</code>函数创建的类和直接写class是完全一样的，因为Python解释器遇到class定义时，仅仅是扫描一下class定义的语法，然后调用<code>type()</code>函数创建出class。</p>\n<p>正常情况下，我们都用<code>class Xxx...</code>来定义类，但是，<code>type()</code>函数也允许我们动态创建出类来，也就是说，动态语言本身支持运行期动态创建类，这和静态语言有非常大的不同，要在静态语言运行期创建类，必须构造源代码字符串再调用编译器，或者借助一些工具生成字节码实现，本质上都是动态编译，会非常复杂。</p>\n<h3>metaclass</h3>\n<p>除了使用<code>type()</code>动态创建类以外，要控制类的创建行为，还可以使用metaclass。</p>\n<p>metaclass，直译为元类，简单的解释就是：</p>\n<p>当我们定义了类以后，就可以根据这个类创建出实例，所以：先定义类，然后创建实例。</p>\n<p>但是如果我们想创建出类呢？那就必须根据metaclass创建出类，所以：先定义metaclass，然后创建类。</p>\n<p>连接起来就是：先定义metaclass，就可以创建类，最后创建实例。</p>\n<p>所以，metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。</p>\n<p>metaclass是Python面向对象里最难理解，也是最难使用的魔术代码。正常情况下，你不会碰到需要使用metaclass的情况，所以，以下内容看不懂也没关系，因为基本上你不会用到。</p>\n<p>我们先看一个简单的例子，这个metaclass可以给我们自定义的MyList增加一个<code>add</code>方法：</p>\n<p>定义<code>ListMetaclass</code>，按照默认习惯，metaclass的类名总是以Metaclass结尾，以便清楚地表示这是一个metaclass：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># metaclass是类的模板，所以必须从`type`类型派生：</span>\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">ListMetaclass</span>(<span class=\"hljs-title class_ inherited__\">type</span>):\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__new__</span>(<span class=\"hljs-params\">cls, name, bases, attrs</span>):\n        attrs[<span class=\"hljs-string\">&#x27;add&#x27;</span>] = <span class=\"hljs-keyword\">lambda</span> <span class=\"hljs-variable language_\">self</span>, value: <span class=\"hljs-variable language_\">self</span>.append(value)\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">type</span>.__new__(cls, name, bases, attrs)\n</code></pre>\n<p>有了<code>ListMetaclass</code>，我们在定义类的时候还要指示使用<code>ListMetaclass</code>来定制类，传入关键字参数<code>metaclass</code>：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">MyList</span>(<span class=\"hljs-built_in\">list</span>, metaclass=ListMetaclass):\n    <span class=\"hljs-keyword\">pass</span>\n</code></pre>\n<p>当我们传入关键字参数<code>metaclass</code>时，魔术就生效了，它指示Python解释器在创建<code>MyList</code>时，要通过<code>ListMetaclass.__new__()</code>来创建，在此，我们可以修改类的定义，比如，加上新的方法，然后，返回修改后的定义。</p>\n<p><code>__new__()</code>方法接收到的参数依次是：</p>\n<ol>\n<li>当前准备创建的类的对象；</li>\n<li>类的名字；</li>\n<li>类继承的父类集合；</li>\n<li>类的方法集合。</li>\n</ol>\n<p>测试一下<code>MyList</code>是否可以调用<code>add()</code>方法：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; L = MyList()\n&gt;&gt;&gt; L.add(1)\n&gt;&gt; L\n[1]\n</code></pre>\n<p>而普通的<code>list</code>没有<code>add()</code>方法：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; L2 = list()\n&gt;&gt;&gt; L2.add(1)\nTraceback (most recent call last):\n  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;\nAttributeError: 'list' object has no attribute 'add'\n</code></pre>\n<p>动态修改有什么意义？直接在<code>MyList</code>定义中写上<code>add()</code>方法不是更简单吗？正常情况下，确实应该直接写，通过metaclass修改纯属变态。</p>\n<p>但是，总会遇到需要通过metaclass修改类定义的。ORM就是一个典型的例子。</p>\n<p>ORM全称“Object Relational Mapping”，即对象-关系映射，就是把关系数据库的一行映射为一个对象，也就是一个类对应一个表，这样，写代码更简单，不用直接操作SQL语句。</p>\n<p>要编写一个ORM框架，所有的类都只能动态定义，因为只有使用者才能根据表的结构定义出对应的类来。</p>\n<p>让我们来尝试编写一个ORM框架。</p>\n<p>编写底层模块的第一步，就是先把调用接口写出来。比如，使用者如果使用这个ORM框架，想定义一个<code>User</code>类来操作对应的数据库表<code>User</code>，我们期待他写出这样的代码：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">User</span>(<span class=\"hljs-title class_ inherited__\">Model</span>):\n    <span class=\"hljs-comment\"># 定义类的属性到列的映射：</span>\n    <span class=\"hljs-built_in\">id</span> = IntegerField(<span class=\"hljs-string\">&#x27;id&#x27;</span>)\n    name = StringField(<span class=\"hljs-string\">&#x27;username&#x27;</span>)\n    email = StringField(<span class=\"hljs-string\">&#x27;email&#x27;</span>)\n    password = StringField(<span class=\"hljs-string\">&#x27;password&#x27;</span>)\n\n<span class=\"hljs-comment\"># 创建一个实例：</span>\nu = User(<span class=\"hljs-built_in\">id</span>=<span class=\"hljs-number\">12345</span>, name=<span class=\"hljs-string\">&#x27;Michael&#x27;</span>, email=<span class=\"hljs-string\">&#x27;test@orm.org&#x27;</span>, password=<span class=\"hljs-string\">&#x27;my-pwd&#x27;</span>)\n<span class=\"hljs-comment\"># 保存到数据库：</span>\nu.save()\n</code></pre>\n<p>其中，父类<code>Model</code>和属性类型<code>StringField</code>、<code>IntegerField</code>是由ORM框架提供的，剩下的魔术方法比如<code>save()</code>全部由父类<code>Model</code>自动完成。虽然metaclass的编写会比较复杂，但ORM的使用者用起来却异常简单。</p>\n<p>现在，我们就按上面的接口来实现该ORM。</p>\n<p>首先来定义<code>Field</code>类，它负责保存数据库表的字段名和字段类型：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Field</span>(<span class=\"hljs-title class_ inherited__\">object</span>):\n\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__init__</span>(<span class=\"hljs-params\">self, name, column_type</span>):\n        <span class=\"hljs-variable language_\">self</span>.name = name\n        <span class=\"hljs-variable language_\">self</span>.column_type = column_type\n\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__str__</span>(<span class=\"hljs-params\">self</span>):\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&#x27;&lt;%s:%s&gt;&#x27;</span> % (<span class=\"hljs-variable language_\">self</span>.__class__.__name__, <span class=\"hljs-variable language_\">self</span>.name)\n</code></pre>\n<p>在<code>Field</code>的基础上，进一步定义各种类型的<code>Field</code>，比如<code>StringField</code>，<code>IntegerField</code>等等：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">StringField</span>(<span class=\"hljs-title class_ inherited__\">Field</span>):\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__init__</span>(<span class=\"hljs-params\">self, name</span>):\n        <span class=\"hljs-built_in\">super</span>(StringField, <span class=\"hljs-variable language_\">self</span>).__init__(name, <span class=\"hljs-string\">&#x27;varchar(100)&#x27;</span>)\n\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">IntegerField</span>(<span class=\"hljs-title class_ inherited__\">Field</span>):\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__init__</span>(<span class=\"hljs-params\">self, name</span>):\n        <span class=\"hljs-built_in\">super</span>(IntegerField, <span class=\"hljs-variable language_\">self</span>).__init__(name, <span class=\"hljs-string\">&#x27;bigint&#x27;</span>)\n</code></pre>\n<p>下一步，就是编写最复杂的<code>ModelMetaclass</code>了：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">ModelMetaclass</span>(<span class=\"hljs-title class_ inherited__\">type</span>):\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__new__</span>(<span class=\"hljs-params\">cls, name, bases, attrs</span>):\n        <span class=\"hljs-keyword\">if</span> name==<span class=\"hljs-string\">&#x27;Model&#x27;</span>:\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">type</span>.__new__(cls, name, bases, attrs)\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Found model: %s&#x27;</span> % name)\n        mappings = <span class=\"hljs-built_in\">dict</span>()\n        <span class=\"hljs-keyword\">for</span> k, v <span class=\"hljs-keyword\">in</span> attrs.items():\n            <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">isinstance</span>(v, Field):\n                <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Found mapping: %s ==&gt; %s&#x27;</span> % (k, v))\n                mappings[k] = v\n        <span class=\"hljs-keyword\">for</span> k <span class=\"hljs-keyword\">in</span> mappings.keys():\n            attrs.pop(k)\n        attrs[<span class=\"hljs-string\">&#x27;__mappings__&#x27;</span>] = mappings <span class=\"hljs-comment\"># 保存属性和列的映射关系</span>\n        attrs[<span class=\"hljs-string\">&#x27;__table__&#x27;</span>] = name <span class=\"hljs-comment\"># 假设表名和类名一致</span>\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">type</span>.__new__(cls, name, bases, attrs)\n</code></pre>\n<p>以及基类<code>Model</code>：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Model</span>(<span class=\"hljs-built_in\">dict</span>, metaclass=ModelMetaclass):\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__init__</span>(<span class=\"hljs-params\">self, **kw</span>):\n        <span class=\"hljs-built_in\">super</span>(Model, <span class=\"hljs-variable language_\">self</span>).__init__(**kw)\n\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__getattr__</span>(<span class=\"hljs-params\">self, key</span>):\n        <span class=\"hljs-keyword\">try</span>:\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable language_\">self</span>[key]\n        <span class=\"hljs-keyword\">except</span> KeyError:\n            <span class=\"hljs-keyword\">raise</span> AttributeError(<span class=\"hljs-string\">r&quot;&#x27;Model&#x27; object has no attribute &#x27;%s&#x27;&quot;</span> % key)\n\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">__setattr__</span>(<span class=\"hljs-params\">self, key, value</span>):\n        <span class=\"hljs-variable language_\">self</span>[key] = value\n\n    <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">save</span>(<span class=\"hljs-params\">self</span>):\n        fields = []\n        params = []\n        args = []\n        <span class=\"hljs-keyword\">for</span> k, v <span class=\"hljs-keyword\">in</span> <span class=\"hljs-variable language_\">self</span>.__mappings__.items():\n            fields.append(v.name)\n            params.append(<span class=\"hljs-string\">&#x27;?&#x27;</span>)\n            args.append(<span class=\"hljs-built_in\">getattr</span>(<span class=\"hljs-variable language_\">self</span>, k, <span class=\"hljs-literal\">None</span>))\n        sql = <span class=\"hljs-string\">&#x27;insert into %s (%s) values (%s)&#x27;</span> % (<span class=\"hljs-variable language_\">self</span>.__table__, <span class=\"hljs-string\">&#x27;,&#x27;</span>.join(fields), <span class=\"hljs-string\">&#x27;,&#x27;</span>.join(params))\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;SQL: %s&#x27;</span> % sql)\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;ARGS: %s&#x27;</span> % <span class=\"hljs-built_in\">str</span>(args))\n</code></pre>\n<p>当用户定义一个<code>class User(Model)</code>时，Python解释器首先在当前类<code>User</code>的定义中查找<code>metaclass</code>，如果没有找到，就继续在父类<code>Model</code>中查找<code>metaclass</code>，找到了，就使用<code>Model</code>中定义的<code>metaclass</code>的<code>ModelMetaclass</code>来创建<code>User</code>类，也就是说，metaclass可以隐式地继承到子类，但子类自己却感觉不到。</p>\n<p>在<code>ModelMetaclass</code>中，一共做了几件事情：</p>\n<ol>\n<li>排除掉对<code>Model</code>类的修改；</li>\n<li>在当前类（比如<code>User</code>）中查找定义的类的所有属性，如果找到一个<code>Field</code>属性，就把它保存到一个<code>__mappings__</code>的dict中，同时从类属性中删除该<code>Field</code>属性，否则，容易造成运行时错误（实例的属性会遮盖类的同名属性）；</li>\n<li>把表名保存到<code>__table__</code>中，这里简化为表名默认为类名。</li>\n</ol>\n<p>在<code>Model</code>类中，就可以定义各种操作数据库的方法，比如<code>save()</code>，<code>delete()</code>，<code>find()</code>，<code>update</code>等等。</p>\n<p>我们实现了<code>save()</code>方法，把一个实例保存到数据库中。因为有表名，属性到字段的映射和属性值的集合，就可以构造出<code>INSERT</code>语句。</p>\n<p>编写代码试试：</p>\n<pre class=\"hljs\"><code class=\"language-python\">u = User(<span class=\"hljs-built_in\">id</span>=<span class=\"hljs-number\">12345</span>, name=<span class=\"hljs-string\">&#x27;Michael&#x27;</span>, email=<span class=\"hljs-string\">&#x27;test@orm.org&#x27;</span>, password=<span class=\"hljs-string\">&#x27;my-pwd&#x27;</span>)\nu.save()\n</code></pre>\n<p>输出如下：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">Found model: User\nFound mapping: email ==&gt; &lt;StringField:email&gt;\nFound mapping: password ==&gt; &lt;StringField:password&gt;\nFound mapping: id ==&gt; &lt;IntegerField:uid&gt;\nFound mapping: name ==&gt; &lt;StringField:username&gt;\nSQL: insert into User (password,email,username,id) values (?,?,?,?)\nARGS: ['my-pwd', 'test@orm.org', 'Michael', 12345]\n</code></pre>\n<p>可以看到，<code>save()</code>方法已经打印出了可执行的SQL语句，以及参数列表，只需要真正连接到数据库，执行该SQL语句，就可以完成真正的功能。</p>\n<p>不到100行代码，我们就通过metaclass实现了一个精简的ORM框架，是不是非常简单？</p>\n<p><img src=\"touda.png\" alt=\"真叫人头大\" loading=\"lazy\"></p>\n<h3>小结</h3>\n<p>metaclass是Python中非常具有魔术性的对象，它可以改变类创建时的行为。这种强大的功能使用起来务必小心。</p>\n<h3>参考源码</h3>\n<p><a href=\"create_class_on_the_fly.py\">create_class_on_the_fly.py</a></p>\n<p><a href=\"use_metaclass.py\">use_metaclass.py</a></p>\n<p><a href=\"orm.py\">orm.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "h3",
+      "text": "type()"
+    },
+    {
+      "type": "p",
+      "text": "动态语言和静态语言最大的不同，就是函数和类的定义，不是编译时定义的，而是运行时动态创建的。"
+    },
+    {
+      "type": "p",
+      "text": "比方说我们要定义一个Hello的class，就写一个hello.py模块："
+    },
+    {
+      "type": "pre",
+      "text": "class Hello(object):\n    def hello(self, name='world'):\n        print('Hello, %s.' % name)"
+    },
+    {
+      "type": "p",
+      "text": "当Python解释器载入hello模块时，就会依次执行该模块的所有语句，执行结果就是动态创建出一个Hello的class对象，测试如下："
+    },
+    {
+      "type": "pre",
+      "text": ">>> from hello import Hello\n>>> h = Hello()\n>>> h.hello()\nHello, world.\n>>> print(type(Hello))\n<class 'type'>\n>>> print(type(h))\n<class 'hello.Hello'>"
+    },
+    {
+      "type": "p",
+      "text": "type()函数可以查看一个类型或变量的类型，Hello是一个class，它的类型就是type，而h是一个实例，它的类型就是class Hello。"
+    },
+    {
+      "type": "p",
+      "text": "我们说class的定义是运行时动态创建的，而创建class的方法就是使用type()函数。"
+    },
+    {
+      "type": "p",
+      "text": "type()函数既可以返回一个对象的类型，又可以创建出新的类型，比如，我们可以通过type()函数创建出Hello类，而无需通过class Hello(object)...的定义："
+    },
+    {
+      "type": "pre",
+      "text": ">>> def fn(self, name='world'): # 先定义函数\n...     print('Hello, %s.' % name)\n...\n>>> Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class\n>>> h = Hello()\n>>> h.hello()\nHello, world.\n>>> print(type(Hello))\n<class 'type'>\n>>> print(type(h))\n<class '__main__.Hello'>"
+    },
+    {
+      "type": "p",
+      "text": "要创建一个class对象，type()函数依次传入3个参数："
+    },
+    {
+      "type": "li",
+      "text": "class的名称；"
+    },
+    {
+      "type": "li",
+      "text": "继承的父类集合，注意Python支持多重继承，如果只有一个父类，别忘了tuple的单元素写法；"
+    },
+    {
+      "type": "li",
+      "text": "class的方法名称与函数绑定，这里我们把函数fn绑定到方法名hello上。"
+    },
+    {
+      "type": "p",
+      "text": "通过type()函数创建的类和直接写class是完全一样的，因为Python解释器遇到class定义时，仅仅是扫描一下class定义的语法，然后调用type()函数创建出class。"
+    },
+    {
+      "type": "p",
+      "text": "正常情况下，我们都用class Xxx...来定义类，但是，type()函数也允许我们动态创建出类来，也就是说，动态语言本身支持运行期动态创建类，这和静态语言有非常大的不同，要在静态语言运行期创建类，必须构造源代码字符串再调用编译器，或者借助一些工具生成字节码实现，本质上都是动态编译，会非常复杂。"
+    },
+    {
+      "type": "h3",
+      "text": "metaclass"
+    },
+    {
+      "type": "p",
+      "text": "除了使用type()动态创建类以外，要控制类的创建行为，还可以使用metaclass。"
+    },
+    {
+      "type": "p",
+      "text": "metaclass，直译为元类，简单的解释就是："
+    },
+    {
+      "type": "p",
+      "text": "当我们定义了类以后，就可以根据这个类创建出实例，所以：先定义类，然后创建实例。"
+    },
+    {
+      "type": "p",
+      "text": "但是如果我们想创建出类呢？那就必须根据metaclass创建出类，所以：先定义metaclass，然后创建类。"
+    },
+    {
+      "type": "p",
+      "text": "连接起来就是：先定义metaclass，就可以创建类，最后创建实例。"
+    },
+    {
+      "type": "p",
+      "text": "所以，metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。"
+    },
+    {
+      "type": "p",
+      "text": "metaclass是Python面向对象里最难理解，也是最难使用的魔术代码。正常情况下，你不会碰到需要使用metaclass的情况，所以，以下内容看不懂也没关系，因为基本上你不会用到。"
+    },
+    {
+      "type": "p",
+      "text": "我们先看一个简单的例子，这个metaclass可以给我们自定义的MyList增加一个add方法："
+    },
+    {
+      "type": "p",
+      "text": "定义ListMetaclass，按照默认习惯，metaclass的类名总是以Metaclass结尾，以便清楚地表示这是一个metaclass："
+    },
+    {
+      "type": "pre",
+      "text": "# metaclass是类的模板，所以必须从`type`类型派生：\nclass ListMetaclass(type):\n    def __new__(cls, name, bases, attrs):\n        attrs['add'] = lambda self, value: self.append(value)\n        return type.__new__(cls, name, bases, attrs)"
+    },
+    {
+      "type": "p",
+      "text": "有了ListMetaclass，我们在定义类的时候还要指示使用ListMetaclass来定制类，传入关键字参数metaclass："
+    },
+    {
+      "type": "pre",
+      "text": "class MyList(list, metaclass=ListMetaclass):\n    pass"
+    },
+    {
+      "type": "p",
+      "text": "当我们传入关键字参数metaclass时，魔术就生效了，它指示Python解释器在创建MyList时，要通过ListMetaclass.__new__()来创建，在此，我们可以修改类的定义，比如，加上新的方法，然后，返回修改后的定义。"
+    },
+    {
+      "type": "p",
+      "text": "__new__()方法接收到的参数依次是："
+    },
+    {
+      "type": "li",
+      "text": "当前准备创建的类的对象；"
+    },
+    {
+      "type": "li",
+      "text": "类的名字；"
+    },
+    {
+      "type": "li",
+      "text": "类继承的父类集合；"
+    },
+    {
+      "type": "li",
+      "text": "类的方法集合。"
+    },
+    {
+      "type": "p",
+      "text": "测试一下MyList是否可以调用add()方法："
+    },
+    {
+      "type": "pre",
+      "text": ">>> L = MyList()\n>>> L.add(1)\n>> L\n[1]"
+    },
+    {
+      "type": "p",
+      "text": "而普通的list没有add()方法："
+    },
+    {
+      "type": "pre",
+      "text": ">>> L2 = list()\n>>> L2.add(1)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAttributeError: 'list' object has no attribute 'add'"
+    },
+    {
+      "type": "p",
+      "text": "动态修改有什么意义？直接在MyList定义中写上add()方法不是更简单吗？正常情况下，确实应该直接写，通过metaclass修改纯属变态。"
+    },
+    {
+      "type": "p",
+      "text": "但是，总会遇到需要通过metaclass修改类定义的。ORM就是一个典型的例子。"
+    },
+    {
+      "type": "p",
+      "text": "ORM全称“Object Relational Mapping”，即对象-关系映射，就是把关系数据库的一行映射为一个对象，也就是一个类对应一个表，这样，写代码更简单，不用直接操作SQL语句。"
+    },
+    {
+      "type": "p",
+      "text": "要编写一个ORM框架，所有的类都只能动态定义，因为只有使用者才能根据表的结构定义出对应的类来。"
+    },
+    {
+      "type": "p",
+      "text": "让我们来尝试编写一个ORM框架。"
+    },
+    {
+      "type": "p",
+      "text": "编写底层模块的第一步，就是先把调用接口写出来。比如，使用者如果使用这个ORM框架，想定义一个User类来操作对应的数据库表User，我们期待他写出这样的代码："
+    },
+    {
+      "type": "pre",
+      "text": "class User(Model):\n    # 定义类的属性到列的映射：\n    id = IntegerField('id')\n    name = StringField('username')\n    email = StringField('email')\n    password = StringField('password')\n\n# 创建一个实例：\nu = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')\n# 保存到数据库：\nu.save()"
+    },
+    {
+      "type": "p",
+      "text": "其中，父类Model和属性类型StringField、IntegerField是由ORM框架提供的，剩下的魔术方法比如save()全部由父类Model自动完成。虽然metaclass的编写会比较复杂，但ORM的使用者用起来却异常简单。"
+    },
+    {
+      "type": "p",
+      "text": "现在，我们就按上面的接口来实现该ORM。"
+    },
+    {
+      "type": "p",
+      "text": "首先来定义Field类，它负责保存数据库表的字段名和字段类型："
+    },
+    {
+      "type": "pre",
+      "text": "class Field(object):\n\n    def __init__(self, name, column_type):\n        self.name = name\n        self.column_type = column_type\n\n    def __str__(self):\n        return '<%s:%s>' % (self.__class__.__name__, self.name)"
+    },
+    {
+      "type": "p",
+      "text": "在Field的基础上，进一步定义各种类型的Field，比如StringField，IntegerField等等："
+    },
+    {
+      "type": "pre",
+      "text": "class StringField(Field):\n    def __init__(self, name):\n        super(StringField, self).__init__(name, 'varchar(100)')\n\nclass IntegerField(Field):\n    def __init__(self, name):\n        super(IntegerField, self).__init__(name, 'bigint')"
+    },
+    {
+      "type": "p",
+      "text": "下一步，就是编写最复杂的ModelMetaclass了："
+    },
+    {
+      "type": "pre",
+      "text": "class ModelMetaclass(type):\n    def __new__(cls, name, bases, attrs):\n        if name=='Model':\n            return type.__new__(cls, name, bases, attrs)\n        print('Found model: %s' % name)\n        mappings = dict()\n        for k, v in attrs.items():\n            if isinstance(v, Field):\n                print('Found mapping: %s ==> %s' % (k, v))\n                mappings[k] = v\n        for k in mappings.keys():\n            attrs.pop(k)\n        attrs['__mappings__'] = mappings # 保存属性和列的映射关系\n        attrs['__table__'] = name # 假设表名和类名一致\n        return type.__new__(cls, name, bases, attrs)"
+    },
+    {
+      "type": "p",
+      "text": "以及基类Model："
+    },
+    {
+      "type": "pre",
+      "text": "class Model(dict, metaclass=ModelMetaclass):\n    def __init__(self, **kw):\n        super(Model, self).__init__(**kw)\n\n    def __getattr__(self, key):\n        try:\n            return self[key]\n        except KeyError:\n            raise AttributeError(r\"'Model' object has no attribute '%s'\" % key)\n\n    def __setattr__(self, key, value):\n        self[key] = value\n\n    def save(self):\n        fields = []\n        params = []\n        args = []\n        for k, v in self.__mappings__.items():\n            fields.append(v.name)\n            params.append('?')\n            args.append(getattr(self, k, None))\n        sql = 'insert into %s (%s) values (%s)' % (self.__table__, ','.join(fields), ','.join(params))\n        print('SQL: %s' % sql)\n        print('ARGS: %s' % str(args))"
+    },
+    {
+      "type": "p",
+      "text": "当用户定义一个class User(Model)时，Python解释器首先在当前类User的定义中查找metaclass，如果没有找到，就继续在父类Model中查找metaclass，找到了，就使用Model中定义的metaclass的ModelMetaclass来创建User类，也就是说，metaclass可以隐式地继承到子类，但子类自己却感觉不到。"
+    },
+    {
+      "type": "p",
+      "text": "在ModelMetaclass中，一共做了几件事情："
+    },
+    {
+      "type": "li",
+      "text": "排除掉对Model类的修改；"
+    },
+    {
+      "type": "li",
+      "text": "在当前类（比如User）中查找定义的类的所有属性，如果找到一个Field属性，就把它保存到一个__mappings__的dict中，同时从类属性中删除该Field属性，否则，容易造成运行时错误（实例的属性会遮盖类的同名属性）；"
+    },
+    {
+      "type": "li",
+      "text": "把表名保存到__table__中，这里简化为表名默认为类名。"
+    },
+    {
+      "type": "p",
+      "text": "在Model类中，就可以定义各种操作数据库的方法，比如save()，delete()，find()，update等等。"
+    },
+    {
+      "type": "p",
+      "text": "我们实现了save()方法，把一个实例保存到数据库中。因为有表名，属性到字段的映射和属性值的集合，就可以构造出INSERT语句。"
+    },
+    {
+      "type": "p",
+      "text": "编写代码试试："
+    },
+    {
+      "type": "pre",
+      "text": "u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')\nu.save()"
+    },
+    {
+      "type": "p",
+      "text": "输出如下："
+    },
+    {
+      "type": "pre",
+      "text": "Found model: User\nFound mapping: email ==> <StringField:email>\nFound mapping: password ==> <StringField:password>\nFound mapping: id ==> <IntegerField:uid>\nFound mapping: name ==> <StringField:username>\nSQL: insert into User (password,email,username,id) values (?,?,?,?)\nARGS: ['my-pwd', 'test@orm.org', 'Michael', 12345]"
+    },
+    {
+      "type": "p",
+      "text": "可以看到，save()方法已经打印出了可执行的SQL语句，以及参数列表，只需要真正连接到数据库，执行该SQL语句，就可以完成真正的功能。"
+    },
+    {
+      "type": "p",
+      "text": "不到100行代码，我们就通过metaclass实现了一个精简的ORM框架，是不是非常简单？"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "metaclass是Python中非常具有魔术性的对象，它可以改变类创建时的行为。这种强大的功能使用起来务必小心。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "create_class_on_the_fly.py"
+    },
+    {
+      "type": "p",
+      "text": "use_metaclass.py"
+    },
+    {
+      "type": "p",
+      "text": "orm.py"
+    }
+  ],
+  "headings": [
+    "type()",
+    "metaclass",
+    "小结",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "class Hello(object):\n    def hello(self, name='world'):\n        print('Hello, %s.' % name)",
+    ">>> from hello import Hello\n>>> h = Hello()\n>>> h.hello()\nHello, world.\n>>> print(type(Hello))\n<class 'type'>\n>>> print(type(h))\n<class 'hello.Hello'>",
+    ">>> def fn(self, name='world'): # 先定义函数\n...     print('Hello, %s.' % name)\n...\n>>> Hello = type('Hello', (object,), dict(hello=fn)) # 创建Hello class\n>>> h = Hello()\n>>> h.hello()\nHello, world.\n>>> print(type(Hello))\n<class 'type'>\n>>> print(type(h))\n<class '__main__.Hello'>",
+    "# metaclass是类的模板，所以必须从`type`类型派生：\nclass ListMetaclass(type):\n    def __new__(cls, name, bases, attrs):\n        attrs['add'] = lambda self, value: self.append(value)\n        return type.__new__(cls, name, bases, attrs)",
+    "class MyList(list, metaclass=ListMetaclass):\n    pass",
+    ">>> L = MyList()\n>>> L.add(1)\n>> L\n[1]",
+    ">>> L2 = list()\n>>> L2.add(1)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAttributeError: 'list' object has no attribute 'add'",
+    "class User(Model):\n    # 定义类的属性到列的映射：\n    id = IntegerField('id')\n    name = StringField('username')\n    email = StringField('email')\n    password = StringField('password')\n\n# 创建一个实例：\nu = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')\n# 保存到数据库：\nu.save()",
+    "class Field(object):\n\n    def __init__(self, name, column_type):\n        self.name = name\n        self.column_type = column_type\n\n    def __str__(self):\n        return '<%s:%s>' % (self.__class__.__name__, self.name)",
+    "class StringField(Field):\n    def __init__(self, name):\n        super(StringField, self).__init__(name, 'varchar(100)')\n\nclass IntegerField(Field):\n    def __init__(self, name):\n        super(IntegerField, self).__init__(name, 'bigint')",
+    "class ModelMetaclass(type):\n    def __new__(cls, name, bases, attrs):\n        if name=='Model':\n            return type.__new__(cls, name, bases, attrs)\n        print('Found model: %s' % name)\n        mappings = dict()\n        for k, v in attrs.items():\n            if isinstance(v, Field):\n                print('Found mapping: %s ==> %s' % (k, v))\n                mappings[k] = v\n        for k in mappings.keys():\n            attrs.pop(k)\n        attrs['__mappings__'] = mappings # 保存属性和列的映射关系\n        attrs['__table__'] = name # 假设表名和类名一致\n        return type.__new__(cls, name, bases, attrs)",
+    "class Model(dict, metaclass=ModelMetaclass):\n    def __init__(self, **kw):\n        super(Model, self).__init__(**kw)\n\n    def __getattr__(self, key):\n        try:\n            return self[key]\n        except KeyError:\n            raise AttributeError(r\"'Model' object has no attribute '%s'\" % key)\n\n    def __setattr__(self, key, value):\n        self[key] = value\n\n    def save(self):\n        fields = []\n        params = []\n        args = []\n        for k, v in self.__mappings__.items():\n            fields.append(v.name)\n            params.append('?')\n            args.append(getattr(self, k, None))\n        sql = 'insert into %s (%s) values (%s)' % (self.__table__, ','.join(fields), ','.join(params))\n        print('SQL: %s' % sql)\n        print('ARGS: %s' % str(args))",
+    "u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')\nu.save()",
+    "Found model: User\nFound mapping: email ==> <StringField:email>\nFound mapping: password ==> <StringField:password>\nFound mapping: id ==> <IntegerField:uid>\nFound mapping: name ==> <StringField:username>\nSQL: insert into User (password,email,username,id) values (?,?,?,?)\nARGS: ['my-pwd', 'test@orm.org', 'Michael', 12345]"
+  ],
+  "text_block_count": 57
+}

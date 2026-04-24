@@ -1,0 +1,164 @@
+{
+  "order": 101,
+  "url": "/books/python/async-io/coroutine/index.html",
+  "title": "协程",
+  "section_slug": "async-io",
+  "section_title": "异步IO",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>在学习异步IO模型前，我们先来了解协程。</p>\n<p>协程，又称微线程，纤程。英文名Coroutine。</p>\n<p>协程的概念很早就提出来了，但直到最近几年才在某些语言（如Lua）中得到广泛应用。</p>\n<p>子程序，或者称为函数，在所有语言中都是层级调用，比如A调用B，B在执行过程中又调用了C，C执行完毕返回，B执行完毕返回，最后是A执行完毕。</p>\n<p>所以子程序调用是通过栈实现的，一个线程就是执行一个子程序。</p>\n<p>子程序调用总是一个入口，一次返回，调用顺序是明确的。而协程的调用和子程序不同。</p>\n<p>协程看上去也是子程序，但执行过程中，在子程序内部可中断，然后转而执行别的子程序，在适当的时候再返回来接着执行。</p>\n<p>注意，在一个子程序中中断，去执行其他子程序，不是函数调用，有点类似CPU的中断。比如子程序A、B：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">A</span>():\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;1&#x27;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;2&#x27;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;3&#x27;</span>)\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">B</span>():\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;x&#x27;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;y&#x27;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;z&#x27;</span>)\n</code></pre>\n<p>假设由协程执行，在执行A的过程中，可以随时中断，去执行B，B也可能在执行过程中中断再去执行A，结果可能是：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">1\n2\nx\ny\n3\nz\n</code></pre>\n<p>但是在A中是没有调用B的，所以协程的调用比函数调用理解起来要难一些。</p>\n<p>看起来A、B的执行有点像多线程，但协程的特点在于是一个线程执行，那和多线程比，协程有何优势？</p>\n<p>最大的优势就是协程极高的执行效率。因为子程序切换不是线程切换，而是由程序自身控制，因此，没有线程切换的开销，和多线程比，线程数量越多，协程的性能优势就越明显。</p>\n<p>第二大优势就是不需要多线程的锁机制，因为只有一个线程，也不存在同时写变量冲突，在协程中控制共享资源不加锁，只需要判断状态就好了，所以执行效率比多线程高很多。</p>\n<p>因为协程是一个线程执行，那怎么利用多核CPU呢？最简单的方法是多进程+协程，既充分利用多核，又充分发挥协程的高效率，可获得极高的性能。</p>\n<p>Python对协程的支持是通过generator实现的。</p>\n<p>在generator中，我们不但可以通过<code>for</code>循环来迭代，还可以不断调用<code>next()</code>函数获取由<code>yield</code>语句返回的下一个值。</p>\n<p>但是Python的<code>yield</code>不但可以返回一个值，它还可以接收调用者发出的参数。</p>\n<p>来看例子：</p>\n<p>传统的生产者-消费者模型是一个线程写消息，一个线程取消息，通过锁机制控制队列和等待，但一不小心就可能死锁。</p>\n<p>如果改用协程，生产者生产消息后，直接通过<code>yield</code>跳转到消费者开始执行，待消费者执行完毕后，切换回生产者继续生产，效率极高：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">consumer</span>():\n    r = <span class=\"hljs-string\">&#x27;&#x27;</span>\n    <span class=\"hljs-keyword\">while</span> <span class=\"hljs-literal\">True</span>:\n        n = <span class=\"hljs-keyword\">yield</span> r\n        <span class=\"hljs-keyword\">if</span> <span class=\"hljs-keyword\">not</span> n:\n            <span class=\"hljs-keyword\">return</span>\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;[CONSUMER] Consuming %s...&#x27;</span> % n)\n        r = <span class=\"hljs-string\">&#x27;200 OK&#x27;</span>\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">produce</span>(<span class=\"hljs-params\">c</span>):\n    c.send(<span class=\"hljs-literal\">None</span>)\n    n = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> n &lt; <span class=\"hljs-number\">5</span>:\n        n = n + <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;[PRODUCER] Producing %s...&#x27;</span> % n)\n        r = c.send(n)\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;[PRODUCER] Consumer return: %s&#x27;</span> % r)\n    c.close()\n\nc = consumer()\nproduce(c)\n</code></pre>\n<p>执行结果：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">[PRODUCER] Producing 1...\n[CONSUMER] Consuming 1...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 2...\n[CONSUMER] Consuming 2...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 3...\n[CONSUMER] Consuming 3...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 4...\n[CONSUMER] Consuming 4...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 5...\n[CONSUMER] Consuming 5...\n[PRODUCER] Consumer return: 200 OK\n</code></pre>\n<p>注意到<code>consumer</code>函数是一个<code>generator</code>，把一个<code>consumer</code>传入<code>produce</code>后：</p>\n<ol>\n<li>首先调用<code>c.send(None)</code>启动生成器；</li>\n<li>然后，一旦生产了东西，通过<code>c.send(n)</code>切换到<code>consumer</code>执行；</li>\n<li><code>consumer</code>通过<code>yield</code>拿到消息，处理，又通过<code>yield</code>把结果传回；</li>\n<li><code>produce</code>拿到<code>consumer</code>处理的结果，继续生产下一条消息；</li>\n<li><code>produce</code>决定不生产了，通过<code>c.close()</code>关闭<code>consumer</code>，整个过程结束。</li>\n</ol>\n<p>整个流程无锁，由一个线程执行，<code>produce</code>和<code>consumer</code>协作完成任务，所以称为“协程”，而非线程的抢占式多任务。</p>\n<p>最后套用Donald Knuth的一句话总结协程的特点：</p>\n<p>“子程序就是协程的一种特例。”</p>\n<h3>参考源码</h3>\n<p><a href=\"coroutine.py\">coroutine.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "在学习异步IO模型前，我们先来了解协程。"
+    },
+    {
+      "type": "p",
+      "text": "协程，又称微线程，纤程。英文名Coroutine。"
+    },
+    {
+      "type": "p",
+      "text": "协程的概念很早就提出来了，但直到最近几年才在某些语言（如Lua）中得到广泛应用。"
+    },
+    {
+      "type": "p",
+      "text": "子程序，或者称为函数，在所有语言中都是层级调用，比如A调用B，B在执行过程中又调用了C，C执行完毕返回，B执行完毕返回，最后是A执行完毕。"
+    },
+    {
+      "type": "p",
+      "text": "所以子程序调用是通过栈实现的，一个线程就是执行一个子程序。"
+    },
+    {
+      "type": "p",
+      "text": "子程序调用总是一个入口，一次返回，调用顺序是明确的。而协程的调用和子程序不同。"
+    },
+    {
+      "type": "p",
+      "text": "协程看上去也是子程序，但执行过程中，在子程序内部可中断，然后转而执行别的子程序，在适当的时候再返回来接着执行。"
+    },
+    {
+      "type": "p",
+      "text": "注意，在一个子程序中中断，去执行其他子程序，不是函数调用，有点类似CPU的中断。比如子程序A、B："
+    },
+    {
+      "type": "pre",
+      "text": "def A():\n    print('1')\n    print('2')\n    print('3')\n\ndef B():\n    print('x')\n    print('y')\n    print('z')"
+    },
+    {
+      "type": "p",
+      "text": "假设由协程执行，在执行A的过程中，可以随时中断，去执行B，B也可能在执行过程中中断再去执行A，结果可能是："
+    },
+    {
+      "type": "pre",
+      "text": "1\n2\nx\ny\n3\nz"
+    },
+    {
+      "type": "p",
+      "text": "但是在A中是没有调用B的，所以协程的调用比函数调用理解起来要难一些。"
+    },
+    {
+      "type": "p",
+      "text": "看起来A、B的执行有点像多线程，但协程的特点在于是一个线程执行，那和多线程比，协程有何优势？"
+    },
+    {
+      "type": "p",
+      "text": "最大的优势就是协程极高的执行效率。因为子程序切换不是线程切换，而是由程序自身控制，因此，没有线程切换的开销，和多线程比，线程数量越多，协程的性能优势就越明显。"
+    },
+    {
+      "type": "p",
+      "text": "第二大优势就是不需要多线程的锁机制，因为只有一个线程，也不存在同时写变量冲突，在协程中控制共享资源不加锁，只需要判断状态就好了，所以执行效率比多线程高很多。"
+    },
+    {
+      "type": "p",
+      "text": "因为协程是一个线程执行，那怎么利用多核CPU呢？最简单的方法是多进程+协程，既充分利用多核，又充分发挥协程的高效率，可获得极高的性能。"
+    },
+    {
+      "type": "p",
+      "text": "Python对协程的支持是通过generator实现的。"
+    },
+    {
+      "type": "p",
+      "text": "在generator中，我们不但可以通过for循环来迭代，还可以不断调用next()函数获取由yield语句返回的下一个值。"
+    },
+    {
+      "type": "p",
+      "text": "但是Python的yield不但可以返回一个值，它还可以接收调用者发出的参数。"
+    },
+    {
+      "type": "p",
+      "text": "来看例子："
+    },
+    {
+      "type": "p",
+      "text": "传统的生产者-消费者模型是一个线程写消息，一个线程取消息，通过锁机制控制队列和等待，但一不小心就可能死锁。"
+    },
+    {
+      "type": "p",
+      "text": "如果改用协程，生产者生产消息后，直接通过yield跳转到消费者开始执行，待消费者执行完毕后，切换回生产者继续生产，效率极高："
+    },
+    {
+      "type": "pre",
+      "text": "def consumer():\n    r = ''\n    while True:\n        n = yield r\n        if not n:\n            return\n        print('[CONSUMER] Consuming %s...' % n)\n        r = '200 OK'\n\ndef produce(c):\n    c.send(None)\n    n = 0\n    while n < 5:\n        n = n + 1\n        print('[PRODUCER] Producing %s...' % n)\n        r = c.send(n)\n        print('[PRODUCER] Consumer return: %s' % r)\n    c.close()\n\nc = consumer()\nproduce(c)"
+    },
+    {
+      "type": "p",
+      "text": "执行结果："
+    },
+    {
+      "type": "pre",
+      "text": "[PRODUCER] Producing 1...\n[CONSUMER] Consuming 1...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 2...\n[CONSUMER] Consuming 2...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 3...\n[CONSUMER] Consuming 3...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 4...\n[CONSUMER] Consuming 4...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 5...\n[CONSUMER] Consuming 5...\n[PRODUCER] Consumer return: 200 OK"
+    },
+    {
+      "type": "p",
+      "text": "注意到consumer函数是一个generator，把一个consumer传入produce后："
+    },
+    {
+      "type": "li",
+      "text": "首先调用c.send(None)启动生成器；"
+    },
+    {
+      "type": "li",
+      "text": "然后，一旦生产了东西，通过c.send(n)切换到consumer执行；"
+    },
+    {
+      "type": "li",
+      "text": "consumer通过yield拿到消息，处理，又通过yield把结果传回；"
+    },
+    {
+      "type": "li",
+      "text": "produce拿到consumer处理的结果，继续生产下一条消息；"
+    },
+    {
+      "type": "li",
+      "text": "produce决定不生产了，通过c.close()关闭consumer，整个过程结束。"
+    },
+    {
+      "type": "p",
+      "text": "整个流程无锁，由一个线程执行，produce和consumer协作完成任务，所以称为“协程”，而非线程的抢占式多任务。"
+    },
+    {
+      "type": "p",
+      "text": "最后套用Donald Knuth的一句话总结协程的特点："
+    },
+    {
+      "type": "p",
+      "text": "“子程序就是协程的一种特例。”"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "coroutine.py"
+    }
+  ],
+  "headings": [
+    "参考源码"
+  ],
+  "code_blocks": [
+    "def A():\n    print('1')\n    print('2')\n    print('3')\n\ndef B():\n    print('x')\n    print('y')\n    print('z')",
+    "1\n2\nx\ny\n3\nz",
+    "def consumer():\n    r = ''\n    while True:\n        n = yield r\n        if not n:\n            return\n        print('[CONSUMER] Consuming %s...' % n)\n        r = '200 OK'\n\ndef produce(c):\n    c.send(None)\n    n = 0\n    while n < 5:\n        n = n + 1\n        print('[PRODUCER] Producing %s...' % n)\n        r = c.send(n)\n        print('[PRODUCER] Consumer return: %s' % r)\n    c.close()\n\nc = consumer()\nproduce(c)",
+    "[PRODUCER] Producing 1...\n[CONSUMER] Consuming 1...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 2...\n[CONSUMER] Consuming 2...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 3...\n[CONSUMER] Consuming 3...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 4...\n[CONSUMER] Consuming 4...\n[PRODUCER] Consumer return: 200 OK\n[PRODUCER] Producing 5...\n[CONSUMER] Consuming 5...\n[PRODUCER] Consumer return: 200 OK"
+  ],
+  "text_block_count": 31
+}

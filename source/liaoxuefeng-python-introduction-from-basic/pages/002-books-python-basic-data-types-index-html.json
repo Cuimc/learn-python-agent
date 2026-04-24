@@ -1,0 +1,428 @@
+{
+  "order": 2,
+  "url": "/books/python/basic/data-types/index.html",
+  "title": "数据类型和变量",
+  "section_slug": "basic",
+  "section_title": "Python基础",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<h3>数据类型</h3>\n<p>计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。但是，计算机能处理的远不止数值，还可以处理文本、图形、音频、视频、网页等各种各样的数据，不同的数据，需要定义不同的数据类型。在Python中，能够直接处理的数据类型有以下几种：</p>\n<h4>整数</h4>\n<p>Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，例如：<code>1</code>，<code>100</code>，<code>-8080</code>，<code>0</code>，等等。</p>\n<p>计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用<code>0x</code>前缀和0-9，a-f表示，例如：<code>0xff00</code>，<code>0xa5b4c3d2</code>，等等。</p>\n<p>对于很大的数，例如<code>10000000000</code>，很难数清楚0的个数。Python允许在数字中间以<code>_</code>分隔，因此，写成<code>10_000_000_000</code>和<code>10000000000</code>是完全一样的。十六进制数也可以写成<code>0xa1b2_c3d4</code>。</p>\n<h4>浮点数</h4>\n<p>浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x10<sup>9</sup>和12.3x10<sup>8</sup>是完全相等的。浮点数可以用数学写法，如<code>1.23</code>，<code>3.14</code>，<code>-9.01</code>，等等。但是对于很大或很小的浮点数，就必须用科学计数法表示，把10用e替代，1.23x10<sup>9</sup>就是<code>1.23e9</code>，或者<code>12.3e8</code>，0.000012可以写成<code>1.2e-5</code>，等等。</p>\n<p>整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的（除法难道也是精确的？是的！），而浮点数运算则可能会有四舍五入的误差。</p>\n<h4>字符串</h4>\n<p>字符串是以单引号<code>'</code>或双引号<code>&quot;</code>括起来的任意文本，比如<code>'abc'</code>，<code>&quot;xyz&quot;</code>等等。请注意，<code>''</code>或<code>&quot;&quot;</code>本身只是一种表示方式，不是字符串的一部分，因此，字符串<code>'abc'</code>只有<code>a</code>，<code>b</code>，<code>c</code>这3个字符。如果<code>'</code>本身也是一个字符，那就可以用<code>&quot;&quot;</code>括起来，比如<code>&quot;I'm OK&quot;</code>包含的字符是<code>I</code>，<code>'</code>，<code>m</code>，空格，<code>O</code>，<code>K</code>这6个字符。</p>\n<p>如果字符串内部既包含<code>'</code>又包含<code>&quot;</code>怎么办？可以用转义字符<code>\\</code>来标识，比如：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-string\">&#x27;I\\&#x27;m \\&quot;OK\\&quot;!&#x27;</span>\n</code></pre>\n<p>表示的字符串内容是：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">I'm &quot;OK&quot;!\n</code></pre>\n<p>转义字符<code>\\</code>可以转义很多字符，比如<code>\\n</code>表示换行，<code>\\t</code>表示制表符，字符<code>\\</code>本身也要转义，所以<code>\\\\</code>表示的字符就是<code>\\</code>，可以在Python的交互式命令行用<code>print()</code>打印字符串看看：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; print('I\\'m ok.')\nI'm ok.\n&gt;&gt;&gt; print('I\\'m learning\\nPython.')\nI'm learning\nPython.\n&gt;&gt;&gt; print('\\\\\\n\\\\')\n\\\n\\\n</code></pre>\n<p>如果字符串里面有很多字符都需要转义，就需要加很多<code>\\</code>，为了简化，Python还允许用<code>r''</code>表示<code>''</code>内部的字符串默认不转义，可以自己试试：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; print('\\\\\\t\\\\')\n\\       \\\n&gt;&gt;&gt; print(r'\\\\\\t\\\\')\n\\\\\\t\\\\\n</code></pre>\n<p>如果字符串内部有很多换行，用<code>\\n</code>写在一行里不好阅读，为了简化，Python允许用<code>'''...'''</code>的格式表示多行内容，可以自己试试：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; print('''line1\n... line2\n... line3''')\nline1\nline2\nline3\n</code></pre>\n<p>上面是在交互式命令行内输入，注意在输入多行内容时，提示符由<code>&gt;&gt;&gt;</code>变为<code>...</code>，提示你可以接着上一行输入，注意<code>...</code>是提示符，不是代码的一部分：</p>\n<pre class=\"ascii\"><code>┌─────────────────────────────────────────────────────────┐\n│Windows PowerShell                                 - □ x │\n├─────────────────────────────────────────────────────────┤\n│&gt;&gt;&gt; print('''line1                                       │\n│... line2                                                │\n│... line3''')                                            │\n│line1                                                    │\n│line2                                                    │\n│line3                                                    │\n│                                                         │\n│&gt;&gt;&gt;                                                      │\n│                                                         │\n└─────────────────────────────────────────────────────────┘\n</code></pre>\n<p>当输入完结束符<code>```</code>和括号<code>)</code>后，执行该语句并打印结果。</p>\n<p>如果写成程序并存为<code>.py</code>文件，就是：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;&#x27;&#x27;line1\nline2\nline3&#x27;&#x27;&#x27;</span>)\n</code></pre>\n<p>多行字符串<code>'''...'''</code>还可以在前面加上<code>r</code>使用，请自行测试：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">r&#x27;&#x27;&#x27;hello,\\n\nworld&#x27;&#x27;&#x27;</span>)\n</code></pre>\n<h4>布尔值</h4>\n<p>布尔值和布尔代数的表示完全一致，一个布尔值只有<code>True</code>、<code>False</code>两种值，要么是<code>True</code>，要么是<code>False</code>，在Python中，可以直接用<code>True</code>、<code>False</code>表示布尔值（请注意大小写），也可以通过布尔运算计算出来：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; True\nTrue\n&gt;&gt;&gt; False\nFalse\n&gt;&gt;&gt; 3 &gt; 2\nTrue\n&gt;&gt;&gt; 3 &gt; 5\nFalse\n</code></pre>\n<p>布尔值可以用<code>and</code>、<code>or</code>和<code>not</code>运算。</p>\n<p><code>and</code>运算是与运算，只有所有都为<code>True</code>，<code>and</code>运算结果才是<code>True</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; True and True\nTrue\n&gt;&gt;&gt; True and False\nFalse\n&gt;&gt;&gt; False and False\nFalse\n&gt;&gt;&gt; 5 &gt; 3 and 3 &gt; 1\nTrue\n</code></pre>\n<p><code>or</code>运算是或运算，只要其中有一个为<code>True</code>，<code>or</code>运算结果就是<code>True</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; True or True\nTrue\n&gt;&gt;&gt; True or False\nTrue\n&gt;&gt;&gt; False or False\nFalse\n&gt;&gt;&gt; 5 &gt; 3 or 1 &gt; 3\nTrue\n</code></pre>\n<p><code>not</code>运算是非运算，它是一个单目运算符，把<code>True</code>变成<code>False</code>，<code>False</code>变成<code>True</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; not True\nFalse\n&gt;&gt;&gt; not False\nTrue\n&gt;&gt;&gt; not 1 &gt; 2\nTrue\n</code></pre>\n<p>布尔值经常用在条件判断中，比如：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">if</span> age &gt;= <span class=\"hljs-number\">18</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;adult&#x27;</span>)\n<span class=\"hljs-keyword\">else</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;teenager&#x27;</span>)\n</code></pre>\n<h4>空值</h4>\n<p>空值是Python里一个特殊的值，用<code>None</code>表示。<code>None</code>不能理解为<code>0</code>，因为<code>0</code>是有意义的，而<code>None</code>是一个特殊的空值。</p>\n<p>此外，Python还提供了列表、字典等多种数据类型，还允许创建自定义数据类型，我们后面会继续讲到。</p>\n<h3>变量</h3>\n<p>变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。</p>\n<p>变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和<code>_</code>的组合，且不能用数字开头，比如：</p>\n<pre class=\"hljs\"><code class=\"language-python\">a = <span class=\"hljs-number\">1</span>\n</code></pre>\n<p>变量<code>a</code>是一个整数。</p>\n<pre class=\"hljs\"><code class=\"language-python\">t_007 = <span class=\"hljs-string\">&#x27;T007&#x27;</span>\n</code></pre>\n<p>变量<code>t_007</code>是一个字符串。</p>\n<pre class=\"hljs\"><code class=\"language-python\">Answer = <span class=\"hljs-literal\">True</span>\n</code></pre>\n<p>变量<code>Answer</code>是一个布尔值<code>True</code>。</p>\n<p>在Python中，等号<code>=</code>是赋值语句，可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量，例如：</p>\n<pre class=\"hljs\"><code class=\"language-python\">a = <span class=\"hljs-number\">123</span> <span class=\"hljs-comment\"># a是整数</span>\n<span class=\"hljs-built_in\">print</span>(a)\na = <span class=\"hljs-string\">&#x27;ABC&#x27;</span> <span class=\"hljs-comment\"># a变为字符串</span>\n<span class=\"hljs-built_in\">print</span>(a)\n</code></pre>\n<p>这种变量本身类型不固定的语言称之为<em>动态语言</em>，与之对应的是<em>静态语言</em>。静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错。例如Java是静态语言，赋值语句如下（// 表示注释）：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-built_in\">int</span> a = <span class=\"hljs-number\">123</span>; // a是整数类型变量\na = <span class=\"hljs-string\">&quot;ABC&quot;</span>; // 错误：不能把字符串赋给整型变量\n</code></pre>\n<p>和静态语言相比，动态语言更灵活，就是这个原因。</p>\n<p>请不要把赋值语句的等号等同于数学的等号。比如下面的代码：</p>\n<pre class=\"hljs\"><code class=\"language-python\">x = <span class=\"hljs-number\">10</span>\nx = x + <span class=\"hljs-number\">2</span>\n</code></pre>\n<p>如果从数学上理解<code>x = x + 2</code>那无论如何是不成立的，在程序中，赋值语句先计算右侧的表达式<code>x + 2</code>，得到结果<code>12</code>，再赋给变量<code>x</code>。由于<code>x</code>之前的值是<code>10</code>，重新赋值后，<code>x</code>的值变成<code>12</code>。</p>\n<p>最后，理解变量在计算机内存中的表示也非常重要。当我们写：</p>\n<pre class=\"hljs\"><code class=\"language-python\">a = <span class=\"hljs-string\">&#x27;ABC&#x27;</span>\n</code></pre>\n<p>时，Python解释器干了两件事情：</p>\n<ol>\n<li>在内存中创建了一个<code>'ABC'</code>的字符串；</li>\n<li>在内存中创建了一个名为<code>a</code>的变量，并把它指向<code>'ABC'</code>。</li>\n</ol>\n<p>也可以把一个变量<code>a</code>赋值给另一个变量<code>b</code>，这个操作实际上是把变量<code>b</code>指向变量<code>a</code>所指向的数据，例如下面的代码：</p>\n<pre class=\"hljs\"><code class=\"language-python\">a = <span class=\"hljs-string\">&#x27;ABC&#x27;</span>\nb = a\na = <span class=\"hljs-string\">&#x27;XYZ&#x27;</span>\n<span class=\"hljs-built_in\">print</span>(b)\n</code></pre>\n<p>最后一行打印出变量<code>b</code>的内容到底是<code>'ABC'</code>呢还是<code>'XYZ'</code>？如果从数学意义上理解，就会错误地得出<code>b</code>和<code>a</code>相同，也应该是<code>'XYZ'</code>，但实际上<code>b</code>的值是<code>'ABC'</code>，让我们一行一行地执行代码，就可以看到到底发生了什么事：</p>\n<p>执行<code>a = 'ABC'</code>，解释器创建了字符串<code>'ABC'</code>和变量<code>a</code>，并把<code>a</code>指向<code>'ABC'</code>：</p>\n<p><img src=\"step-1.png\" alt=\"py-var-code-1\" loading=\"lazy\"></p>\n<p>执行<code>b = a</code>，解释器创建了变量<code>b</code>，并把<code>b</code>指向<code>a</code>指向的字符串<code>'ABC'</code>：</p>\n<p><img src=\"step-2.png\" alt=\"py-var-code-2\" loading=\"lazy\"></p>\n<p>执行<code>a = 'XYZ'</code>，解释器创建了字符串'XYZ'，并把<code>a</code>的指向改为<code>'XYZ'</code>，但<code>b</code>并没有更改：</p>\n<p><img src=\"step-3.png\" alt=\"py-var-code-3\" loading=\"lazy\"></p>\n<p>所以，最后打印变量<code>b</code>的结果自然是<code>'ABC'</code>了。</p>\n<h3>常量</h3>\n<p>所谓常量就是不能变的变量，比如常用的数学常数π就是一个常量。在Python中，通常用全部大写的变量名表示常量：</p>\n<pre class=\"hljs\"><code class=\"language-python\">PI = <span class=\"hljs-number\">3.14159265359</span>\n</code></pre>\n<p>但事实上<code>PI</code>仍然是一个变量，Python根本没有任何机制保证<code>PI</code>不会被改变，所以，用全部大写的变量名表示常量只是一个习惯上的用法，如果你一定要改变变量<code>PI</code>的值，也没人能拦住你。</p>\n<p>最后解释一下整数的除法为什么也是精确的。在Python中，有两种除法，一种除法是<code>/</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; 10 / 3\n3.3333333333333335\n</code></pre>\n<p><code>/</code>除法计算结果是浮点数，即使是两个整数恰好整除，结果也是浮点数：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; 9 / 3\n3.0\n</code></pre>\n<p>还有一种除法是<code>//</code>，称为地板除，两个整数的除法仍然是整数：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; 10 // 3\n3\n</code></pre>\n<p>你没有看错，整数的地板除<code>//</code>永远是整数，即使除不尽。要做结果为浮点数的除法，使用<code>/</code>就可以。</p>\n<p>因为<code>//</code>除法只取结果的整数部分，所以Python还提供一个余数运算，可以得到两个整数相除的余数：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; 10 % 3\n1\n</code></pre>\n<p>无论整数做<code>//</code>除法还是取余数，结果永远是整数，所以，整数运算的结果永远是精确的。</p>\n<h3>练习</h3>\n<p>请打印出以下变量的值：</p>\n<pre class=\"hljs\"><code class=\"language-python\">n = <span class=\"hljs-number\">123</span>\nf = <span class=\"hljs-number\">456.789</span>\ns1 = <span class=\"hljs-string\">&#x27;Hello, world&#x27;</span>\ns2 = <span class=\"hljs-string\">&#x27;Hello, \\&#x27;Adam\\&#x27;&#x27;</span>\ns3 = <span class=\"hljs-string\">r&#x27;Hello, &quot;Bart&quot;&#x27;</span>\ns4 = <span class=\"hljs-string\">r&#x27;&#x27;&#x27;Hello,\nBob!&#x27;&#x27;&#x27;</span>\n\n<span class=\"hljs-built_in\">print</span>(???)\n</code></pre>\n<h3>小结</h3>\n<p>Python支持多种数据类型，在计算机内部，可以把任何数据都看成一个“对象”，而变量就是在程序中用来指向这些数据对象的，对变量赋值就是把数据和变量给关联起来。</p>\n<p>对变量赋值<code>x = y</code>是把变量<code>x</code>指向真正的对象，该对象是变量<code>y</code>所指向的。随后对变量<code>y</code>的赋值<em>不影响</em>变量<code>x</code>的指向。</p>\n<p>注意：Python的整数没有大小限制，而某些语言的整数根据其存储长度是有大小限制的，例如Java对32位整数的范围限制在<code>-2147483648</code>-<code>2147483647</code>。</p>\n<p>Python的浮点数也没有大小限制，但是超出一定范围就直接表示为<code>inf</code>（无限大）。</p>\n\n    ",
+  "blocks": [
+    {
+      "type": "h3",
+      "text": "数据类型"
+    },
+    {
+      "type": "p",
+      "text": "计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。但是，计算机能处理的远不止数值，还可以处理文本、图形、音频、视频、网页等各种各样的数据，不同的数据，需要定义不同的数据类型。在Python中，能够直接处理的数据类型有以下几种："
+    },
+    {
+      "type": "h4",
+      "text": "整数"
+    },
+    {
+      "type": "p",
+      "text": "Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，例如：1，100，-8080，0，等等。"
+    },
+    {
+      "type": "p",
+      "text": "计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用0x前缀和0-9，a-f表示，例如：0xff00，0xa5b4c3d2，等等。"
+    },
+    {
+      "type": "p",
+      "text": "对于很大的数，例如10000000000，很难数清楚0的个数。Python允许在数字中间以_分隔，因此，写成10_000_000_000和10000000000是完全一样的。十六进制数也可以写成0xa1b2_c3d4。"
+    },
+    {
+      "type": "h4",
+      "text": "浮点数"
+    },
+    {
+      "type": "p",
+      "text": "浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x109和12.3x108是完全相等的。浮点数可以用数学写法，如1.23，3.14，-9.01，等等。但是对于很大或很小的浮点数，就必须用科学计数法表示，把10用e替代，1.23x109就是1.23e9，或者12.3e8，0.000012可以写成1.2e-5，等等。"
+    },
+    {
+      "type": "p",
+      "text": "整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的（除法难道也是精确的？是的！），而浮点数运算则可能会有四舍五入的误差。"
+    },
+    {
+      "type": "h4",
+      "text": "字符串"
+    },
+    {
+      "type": "p",
+      "text": "字符串是以单引号'或双引号\"括起来的任意文本，比如'abc'，\"xyz\"等等。请注意，''或\"\"本身只是一种表示方式，不是字符串的一部分，因此，字符串'abc'只有a，b，c这3个字符。如果'本身也是一个字符，那就可以用\"\"括起来，比如\"I'm OK\"包含的字符是I，'，m，空格，O，K这6个字符。"
+    },
+    {
+      "type": "p",
+      "text": "如果字符串内部既包含'又包含\"怎么办？可以用转义字符\\来标识，比如："
+    },
+    {
+      "type": "pre",
+      "text": "'I\\'m \\\"OK\\\"!'"
+    },
+    {
+      "type": "p",
+      "text": "表示的字符串内容是："
+    },
+    {
+      "type": "pre",
+      "text": "I'm \"OK\"!"
+    },
+    {
+      "type": "p",
+      "text": "转义字符\\可以转义很多字符，比如\\n表示换行，\\t表示制表符，字符\\本身也要转义，所以\\\\表示的字符就是\\，可以在Python的交互式命令行用print()打印字符串看看："
+    },
+    {
+      "type": "pre",
+      "text": ">>> print('I\\'m ok.')\nI'm ok.\n>>> print('I\\'m learning\\nPython.')\nI'm learning\nPython.\n>>> print('\\\\\\n\\\\')\n\\\n\\"
+    },
+    {
+      "type": "p",
+      "text": "如果字符串里面有很多字符都需要转义，就需要加很多\\，为了简化，Python还允许用r''表示''内部的字符串默认不转义，可以自己试试："
+    },
+    {
+      "type": "pre",
+      "text": ">>> print('\\\\\\t\\\\')\n\\       \\\n>>> print(r'\\\\\\t\\\\')\n\\\\\\t\\\\"
+    },
+    {
+      "type": "p",
+      "text": "如果字符串内部有很多换行，用\\n写在一行里不好阅读，为了简化，Python允许用'''...'''的格式表示多行内容，可以自己试试："
+    },
+    {
+      "type": "pre",
+      "text": ">>> print('''line1\n... line2\n... line3''')\nline1\nline2\nline3"
+    },
+    {
+      "type": "p",
+      "text": "上面是在交互式命令行内输入，注意在输入多行内容时，提示符由>>>变为...，提示你可以接着上一行输入，注意...是提示符，不是代码的一部分："
+    },
+    {
+      "type": "pre",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│Windows PowerShell                                 - □ x │\n├─────────────────────────────────────────────────────────┤\n│>>> print('''line1                                       │\n│... line2                                                │\n│... line3''')                                            │\n│line1                                                    │\n│line2                                                    │\n│line3                                                    │\n│                                                         │\n│>>>                                                      │\n│                                                         │\n└─────────────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "p",
+      "text": "当输入完结束符```和括号)后，执行该语句并打印结果。"
+    },
+    {
+      "type": "p",
+      "text": "如果写成程序并存为.py文件，就是："
+    },
+    {
+      "type": "pre",
+      "text": "print('''line1\nline2\nline3''')"
+    },
+    {
+      "type": "p",
+      "text": "多行字符串'''...'''还可以在前面加上r使用，请自行测试："
+    },
+    {
+      "type": "pre",
+      "text": "print(r'''hello,\\n\nworld''')"
+    },
+    {
+      "type": "h4",
+      "text": "布尔值"
+    },
+    {
+      "type": "p",
+      "text": "布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，在Python中，可以直接用True、False表示布尔值（请注意大小写），也可以通过布尔运算计算出来："
+    },
+    {
+      "type": "pre",
+      "text": ">>> True\nTrue\n>>> False\nFalse\n>>> 3 > 2\nTrue\n>>> 3 > 5\nFalse"
+    },
+    {
+      "type": "p",
+      "text": "布尔值可以用and、or和not运算。"
+    },
+    {
+      "type": "p",
+      "text": "and运算是与运算，只有所有都为True，and运算结果才是True："
+    },
+    {
+      "type": "pre",
+      "text": ">>> True and True\nTrue\n>>> True and False\nFalse\n>>> False and False\nFalse\n>>> 5 > 3 and 3 > 1\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "or运算是或运算，只要其中有一个为True，or运算结果就是True："
+    },
+    {
+      "type": "pre",
+      "text": ">>> True or True\nTrue\n>>> True or False\nTrue\n>>> False or False\nFalse\n>>> 5 > 3 or 1 > 3\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "not运算是非运算，它是一个单目运算符，把True变成False，False变成True："
+    },
+    {
+      "type": "pre",
+      "text": ">>> not True\nFalse\n>>> not False\nTrue\n>>> not 1 > 2\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "布尔值经常用在条件判断中，比如："
+    },
+    {
+      "type": "pre",
+      "text": "if age >= 18:\n    print('adult')\nelse:\n    print('teenager')"
+    },
+    {
+      "type": "h4",
+      "text": "空值"
+    },
+    {
+      "type": "p",
+      "text": "空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。"
+    },
+    {
+      "type": "p",
+      "text": "此外，Python还提供了列表、字典等多种数据类型，还允许创建自定义数据类型，我们后面会继续讲到。"
+    },
+    {
+      "type": "h3",
+      "text": "变量"
+    },
+    {
+      "type": "p",
+      "text": "变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。"
+    },
+    {
+      "type": "p",
+      "text": "变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和_的组合，且不能用数字开头，比如："
+    },
+    {
+      "type": "pre",
+      "text": "a = 1"
+    },
+    {
+      "type": "p",
+      "text": "变量a是一个整数。"
+    },
+    {
+      "type": "pre",
+      "text": "t_007 = 'T007'"
+    },
+    {
+      "type": "p",
+      "text": "变量t_007是一个字符串。"
+    },
+    {
+      "type": "pre",
+      "text": "Answer = True"
+    },
+    {
+      "type": "p",
+      "text": "变量Answer是一个布尔值True。"
+    },
+    {
+      "type": "p",
+      "text": "在Python中，等号=是赋值语句，可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量，例如："
+    },
+    {
+      "type": "pre",
+      "text": "a = 123 # a是整数\nprint(a)\na = 'ABC' # a变为字符串\nprint(a)"
+    },
+    {
+      "type": "p",
+      "text": "这种变量本身类型不固定的语言称之为动态语言，与之对应的是静态语言。静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错。例如Java是静态语言，赋值语句如下（// 表示注释）："
+    },
+    {
+      "type": "pre",
+      "text": "int a = 123; // a是整数类型变量\na = \"ABC\"; // 错误：不能把字符串赋给整型变量"
+    },
+    {
+      "type": "p",
+      "text": "和静态语言相比，动态语言更灵活，就是这个原因。"
+    },
+    {
+      "type": "p",
+      "text": "请不要把赋值语句的等号等同于数学的等号。比如下面的代码："
+    },
+    {
+      "type": "pre",
+      "text": "x = 10\nx = x + 2"
+    },
+    {
+      "type": "p",
+      "text": "如果从数学上理解x = x + 2那无论如何是不成立的，在程序中，赋值语句先计算右侧的表达式x + 2，得到结果12，再赋给变量x。由于x之前的值是10，重新赋值后，x的值变成12。"
+    },
+    {
+      "type": "p",
+      "text": "最后，理解变量在计算机内存中的表示也非常重要。当我们写："
+    },
+    {
+      "type": "pre",
+      "text": "a = 'ABC'"
+    },
+    {
+      "type": "p",
+      "text": "时，Python解释器干了两件事情："
+    },
+    {
+      "type": "li",
+      "text": "在内存中创建了一个'ABC'的字符串；"
+    },
+    {
+      "type": "li",
+      "text": "在内存中创建了一个名为a的变量，并把它指向'ABC'。"
+    },
+    {
+      "type": "p",
+      "text": "也可以把一个变量a赋值给另一个变量b，这个操作实际上是把变量b指向变量a所指向的数据，例如下面的代码："
+    },
+    {
+      "type": "pre",
+      "text": "a = 'ABC'\nb = a\na = 'XYZ'\nprint(b)"
+    },
+    {
+      "type": "p",
+      "text": "最后一行打印出变量b的内容到底是'ABC'呢还是'XYZ'？如果从数学意义上理解，就会错误地得出b和a相同，也应该是'XYZ'，但实际上b的值是'ABC'，让我们一行一行地执行代码，就可以看到到底发生了什么事："
+    },
+    {
+      "type": "p",
+      "text": "执行a = 'ABC'，解释器创建了字符串'ABC'和变量a，并把a指向'ABC'："
+    },
+    {
+      "type": "p",
+      "text": "执行b = a，解释器创建了变量b，并把b指向a指向的字符串'ABC'："
+    },
+    {
+      "type": "p",
+      "text": "执行a = 'XYZ'，解释器创建了字符串'XYZ'，并把a的指向改为'XYZ'，但b并没有更改："
+    },
+    {
+      "type": "p",
+      "text": "所以，最后打印变量b的结果自然是'ABC'了。"
+    },
+    {
+      "type": "h3",
+      "text": "常量"
+    },
+    {
+      "type": "p",
+      "text": "所谓常量就是不能变的变量，比如常用的数学常数π就是一个常量。在Python中，通常用全部大写的变量名表示常量："
+    },
+    {
+      "type": "pre",
+      "text": "PI = 3.14159265359"
+    },
+    {
+      "type": "p",
+      "text": "但事实上PI仍然是一个变量，Python根本没有任何机制保证PI不会被改变，所以，用全部大写的变量名表示常量只是一个习惯上的用法，如果你一定要改变变量PI的值，也没人能拦住你。"
+    },
+    {
+      "type": "p",
+      "text": "最后解释一下整数的除法为什么也是精确的。在Python中，有两种除法，一种除法是/："
+    },
+    {
+      "type": "pre",
+      "text": ">>> 10 / 3\n3.3333333333333335"
+    },
+    {
+      "type": "p",
+      "text": "/除法计算结果是浮点数，即使是两个整数恰好整除，结果也是浮点数："
+    },
+    {
+      "type": "pre",
+      "text": ">>> 9 / 3\n3.0"
+    },
+    {
+      "type": "p",
+      "text": "还有一种除法是//，称为地板除，两个整数的除法仍然是整数："
+    },
+    {
+      "type": "pre",
+      "text": ">>> 10 // 3\n3"
+    },
+    {
+      "type": "p",
+      "text": "你没有看错，整数的地板除//永远是整数，即使除不尽。要做结果为浮点数的除法，使用/就可以。"
+    },
+    {
+      "type": "p",
+      "text": "因为//除法只取结果的整数部分，所以Python还提供一个余数运算，可以得到两个整数相除的余数："
+    },
+    {
+      "type": "pre",
+      "text": ">>> 10 % 3\n1"
+    },
+    {
+      "type": "p",
+      "text": "无论整数做//除法还是取余数，结果永远是整数，所以，整数运算的结果永远是精确的。"
+    },
+    {
+      "type": "h3",
+      "text": "练习"
+    },
+    {
+      "type": "p",
+      "text": "请打印出以下变量的值："
+    },
+    {
+      "type": "pre",
+      "text": "n = 123\nf = 456.789\ns1 = 'Hello, world'\ns2 = 'Hello, \\'Adam\\''\ns3 = r'Hello, \"Bart\"'\ns4 = r'''Hello,\nBob!'''\n\nprint(???)"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "Python支持多种数据类型，在计算机内部，可以把任何数据都看成一个“对象”，而变量就是在程序中用来指向这些数据对象的，对变量赋值就是把数据和变量给关联起来。"
+    },
+    {
+      "type": "p",
+      "text": "对变量赋值x = y是把变量x指向真正的对象，该对象是变量y所指向的。随后对变量y的赋值不影响变量x的指向。"
+    },
+    {
+      "type": "p",
+      "text": "注意：Python的整数没有大小限制，而某些语言的整数根据其存储长度是有大小限制的，例如Java对32位整数的范围限制在-2147483648-2147483647。"
+    },
+    {
+      "type": "p",
+      "text": "Python的浮点数也没有大小限制，但是超出一定范围就直接表示为inf（无限大）。"
+    }
+  ],
+  "headings": [
+    "数据类型",
+    "整数",
+    "浮点数",
+    "字符串",
+    "布尔值",
+    "空值",
+    "变量",
+    "常量",
+    "练习",
+    "小结"
+  ],
+  "code_blocks": [
+    "'I\\'m \\\"OK\\\"!'",
+    "I'm \"OK\"!",
+    ">>> print('I\\'m ok.')\nI'm ok.\n>>> print('I\\'m learning\\nPython.')\nI'm learning\nPython.\n>>> print('\\\\\\n\\\\')\n\\\n\\",
+    ">>> print('\\\\\\t\\\\')\n\\       \\\n>>> print(r'\\\\\\t\\\\')\n\\\\\\t\\\\",
+    ">>> print('''line1\n... line2\n... line3''')\nline1\nline2\nline3",
+    "┌─────────────────────────────────────────────────────────┐\n│Windows PowerShell                                 - □ x │\n├─────────────────────────────────────────────────────────┤\n│>>> print('''line1                                       │\n│... line2                                                │\n│... line3''')                                            │\n│line1                                                    │\n│line2                                                    │\n│line3                                                    │\n│                                                         │\n│>>>                                                      │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+    "print('''line1\nline2\nline3''')",
+    "print(r'''hello,\\n\nworld''')",
+    ">>> True\nTrue\n>>> False\nFalse\n>>> 3 > 2\nTrue\n>>> 3 > 5\nFalse",
+    ">>> True and True\nTrue\n>>> True and False\nFalse\n>>> False and False\nFalse\n>>> 5 > 3 and 3 > 1\nTrue",
+    ">>> True or True\nTrue\n>>> True or False\nTrue\n>>> False or False\nFalse\n>>> 5 > 3 or 1 > 3\nTrue",
+    ">>> not True\nFalse\n>>> not False\nTrue\n>>> not 1 > 2\nTrue",
+    "if age >= 18:\n    print('adult')\nelse:\n    print('teenager')",
+    "a = 1",
+    "t_007 = 'T007'",
+    "Answer = True",
+    "a = 123 # a是整数\nprint(a)\na = 'ABC' # a变为字符串\nprint(a)",
+    "int a = 123; // a是整数类型变量\na = \"ABC\"; // 错误：不能把字符串赋给整型变量",
+    "x = 10\nx = x + 2",
+    "a = 'ABC'",
+    "a = 'ABC'\nb = a\na = 'XYZ'\nprint(b)",
+    "PI = 3.14159265359",
+    ">>> 10 / 3\n3.3333333333333335",
+    ">>> 9 / 3\n3.0",
+    ">>> 10 // 3\n3",
+    ">>> 10 % 3\n1",
+    "n = 123\nf = 456.789\ns1 = 'Hello, world'\ns2 = 'Hello, \\'Adam\\''\ns3 = r'Hello, \"Bart\"'\ns4 = r'''Hello,\nBob!'''\n\nprint(???)"
+  ],
+  "text_block_count": 57
+}

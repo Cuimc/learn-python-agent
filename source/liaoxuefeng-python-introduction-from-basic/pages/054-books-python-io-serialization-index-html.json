@@ -1,0 +1,262 @@
+{
+  "order": 54,
+  "url": "/books/python/io/serialization/index.html",
+  "title": "序列化",
+  "section_slug": "io",
+  "section_title": "IO编程",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>在程序运行的过程中，所有的变量都是在内存中，比如，定义一个dict：</p>\n<pre class=\"hljs\"><code class=\"language-python\">d = <span class=\"hljs-built_in\">dict</span>(name=<span class=\"hljs-string\">&#x27;Bob&#x27;</span>, age=<span class=\"hljs-number\">20</span>, score=<span class=\"hljs-number\">88</span>)\n</code></pre>\n<p>可以随时修改变量，比如把<code>name</code>改成<code>'Bill'</code>，但是一旦程序结束，变量所占用的内存就被操作系统全部回收。如果没有把修改后的<code>'Bill'</code>存储到磁盘上，下次重新运行程序，变量又被初始化为<code>'Bob'</code>。</p>\n<p>我们把变量从内存中变成可存储或传输的过程称之为序列化，在Python中叫pickling，在其他语言中也被称之为serialization，marshalling，flattening等等，都是一个意思。</p>\n<p>序列化之后，就可以把序列化后的内容写入磁盘，或者通过网络传输到别的机器上。</p>\n<p>反过来，把变量内容从序列化的对象重新读到内存里称之为反序列化，即unpickling。</p>\n<p>Python提供了<code>pickle</code>模块来实现序列化。</p>\n<p>首先，我们尝试把一个对象序列化并写入文件：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; import pickle\n&gt;&gt;&gt; d = dict(name='Bob', age=20, score=88)\n&gt;&gt;&gt; pickle.dumps(d)\nb'\\x80\\x03}q\\x00(X\\x03\\x00\\x00\\x00ageq\\x01K\\x14X\\x05\\x00\\x00\\x00scoreq\\x02KXX\\x04\\x00\\x00\\x00nameq\\x03X\\x03\\x00\\x00\\x00Bobq\\x04u.'\n</code></pre>\n<p><code>pickle.dumps()</code>方法把任意对象序列化成一个<code>bytes</code>，然后，就可以把这个<code>bytes</code>写入文件。或者用另一个方法<code>pickle.dump()</code>直接把对象序列化后写入一个file-like Object：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; f = open('dump.txt', 'wb')\n&gt;&gt;&gt; pickle.dump(d, f)\n&gt;&gt;&gt; f.close()\n</code></pre>\n<p>看看写入的<code>dump.txt</code>文件，一堆乱七八糟的内容，这些都是Python保存的对象内部信息。</p>\n<p>当我们要把对象从磁盘读到内存时，可以先把内容读到一个<code>bytes</code>，然后用<code>pickle.loads()</code>方法反序列化出对象，也可以直接用<code>pickle.load()</code>方法从一个<code>file-like Object</code>中直接反序列化出对象。我们打开另一个Python命令行来反序列化刚才保存的对象：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; f = open('dump.txt', 'rb')\n&gt;&gt;&gt; d = pickle.load(f)\n&gt;&gt;&gt; f.close()\n&gt;&gt;&gt; d\n{'age': 20, 'score': 88, 'name': 'Bob'}\n</code></pre>\n<p>变量的内容又回来了！</p>\n<p>当然，这个变量和原来的变量是完全不相干的对象，它们只是内容相同而已。</p>\n<p>Pickle的问题和所有其他编程语言特有的序列化问题一样，就是它只能用于Python，并且可能不同版本的Python彼此都不兼容，因此，只能用Pickle保存那些不重要的数据，不能成功地反序列化也没关系。</p>\n<h3>JSON</h3>\n<p>如果我们要在不同的编程语言之间传递对象，就必须把对象序列化为标准格式，比如XML，但更好的方法是序列化为JSON，因为JSON表示出来就是一个字符串，可以被所有语言读取，也可以方便地存储到磁盘或者通过网络传输。JSON不仅是标准格式，并且比XML更快，而且可以直接在Web页面中读取，非常方便。</p>\n<p>JSON表示的对象就是标准的JavaScript语言的对象，JSON和Python内置的数据类型对应如下：</p>\n<table>\n<thead>\n<tr>\n<th>JSON类型</th>\n<th>Python类型</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>{}</td>\n<td>dict</td>\n</tr>\n<tr>\n<td>[]</td>\n<td>list</td>\n</tr>\n<tr>\n<td>&quot;string&quot;</td>\n<td>str</td>\n</tr>\n<tr>\n<td>1234.56</td>\n<td>int或float</td>\n</tr>\n<tr>\n<td>true/false</td>\n<td>True/False</td>\n</tr>\n<tr>\n<td>null</td>\n<td>None</td>\n</tr>\n</tbody>\n</table>\n<p>Python内置的<code>json</code>模块提供了非常完善的Python对象到JSON格式的转换。我们先看看如何把Python对象变成一个JSON：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; import json\n&gt;&gt;&gt; d = dict(name='Bob', age=20, score=88)\n&gt;&gt;&gt; json.dumps(d)\n'{&quot;age&quot;: 20, &quot;score&quot;: 88, &quot;name&quot;: &quot;Bob&quot;}'\n</code></pre>\n<p><code>dumps()</code>方法返回一个<code>str</code>，内容就是标准的JSON。类似的，<code>dump()</code>方法可以直接把JSON写入一个<code>file-like Object</code>。</p>\n<p>要把JSON反序列化为Python对象，用<code>loads()</code>或者对应的<code>load()</code>方法，前者把JSON的字符串反序列化，后者从<code>file-like Object</code>中读取字符串并反序列化：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; json_str = '{&quot;age&quot;: 20, &quot;score&quot;: 88, &quot;name&quot;: &quot;Bob&quot;}'\n&gt;&gt;&gt; json.loads(json_str)\n{'age': 20, 'score': 88, 'name': 'Bob'}\n</code></pre>\n<p>由于JSON标准规定JSON编码是UTF-8，所以我们总是能正确地在Python的<code>str</code>与JSON的字符串之间转换。</p>\n<h3>JSON进阶</h3>\n<p>Python的<code>dict</code>对象可以直接序列化为JSON的<code>{}</code>，不过，很多时候，我们更喜欢用<code>class</code>表示对象，比如定义<code>Student</code>类，然后序列化：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">import json\n\nclass Student(object):\n    def __init__(self, name, age, score):\n        self.name = name\n        self.age = age\n        self.score = score\n\ns = Student('Bob', 20, 88)\nprint(json.dumps(s))\n</code></pre>\n<p>运行代码，毫不留情地得到一个<code>TypeError</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">Traceback (most recent call last):\n  ...\nTypeError: &lt;__main__.Student object at 0x10603cc50&gt; is not JSON serializable\n</code></pre>\n<p>错误的原因是<code>Student</code>对象不是一个可序列化为JSON的对象。</p>\n<p>如果连<code>class</code>的实例对象都无法序列化为JSON，这肯定不合理！</p>\n<p>别急，我们仔细看看<code>dumps()</code>方法的参数列表，可以发现，除了第一个必须的<code>obj</code>参数外，<code>dumps()</code>方法还提供了一大堆的可选参数：</p>\n<p><a href=\"https://docs.python.org/3/library/json.html#json.dumps\" target=\"_blank\">https://docs.python.org/3/library/json.html#json.dumps</a></p>\n<p>这些可选参数就是让我们来定制JSON序列化。前面的代码之所以无法把<code>Student</code>类实例序列化为JSON，是因为默认情况下，<code>dumps()</code>方法不知道如何将<code>Student</code>实例变为一个JSON的<code>{}</code>对象。</p>\n<p>可选参数<code>default</code>就是把任意一个对象变成一个可序列为JSON的对象，我们只需要为<code>Student</code>专门写一个转换函数，再把函数传进去即可：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">student2dict</span>(<span class=\"hljs-params\">std</span>):\n    <span class=\"hljs-keyword\">return</span> {\n        <span class=\"hljs-string\">&#x27;name&#x27;</span>: std.name,\n        <span class=\"hljs-string\">&#x27;age&#x27;</span>: std.age,\n        <span class=\"hljs-string\">&#x27;score&#x27;</span>: std.score\n    }\n</code></pre>\n<p>这样，<code>Student</code>实例首先被<code>student2dict()</code>函数转换成<code>dict</code>，然后再被顺利序列化为JSON：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; print(json.dumps(s, default=student2dict))\n{&quot;age&quot;: 20, &quot;name&quot;: &quot;Bob&quot;, &quot;score&quot;: 88}\n</code></pre>\n<p>不过，下次如果遇到一个<code>Teacher</code>类的实例，照样无法序列化为JSON。我们可以偷个懒，把任意<code>class</code>的实例变为<code>dict</code>：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-built_in\">print</span>(json.dumps(s, default=<span class=\"hljs-keyword\">lambda</span> obj: obj.__dict__))\n</code></pre>\n<p>因为通常<code>class</code>的实例都有一个<code>__dict__</code>属性，它就是一个<code>dict</code>，用来存储实例变量。也有少数例外，比如定义了<code>__slots__</code>的class。</p>\n<p>同样的道理，如果我们要把JSON反序列化为一个<code>Student</code>对象实例，<code>loads()</code>方法首先转换出一个<code>dict</code>对象，然后，我们传入的<code>object_hook</code>函数负责把<code>dict</code>转换为<code>Student</code>实例：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">dict2student</span>(<span class=\"hljs-params\">d</span>):\n    <span class=\"hljs-keyword\">return</span> Student(d[<span class=\"hljs-string\">&#x27;name&#x27;</span>], d[<span class=\"hljs-string\">&#x27;age&#x27;</span>], d[<span class=\"hljs-string\">&#x27;score&#x27;</span>])\n</code></pre>\n<p>运行结果如下：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; json_str = '{&quot;age&quot;: 20, &quot;score&quot;: 88, &quot;name&quot;: &quot;Bob&quot;}'\n&gt;&gt;&gt; print(json.loads(json_str, object_hook=dict2student))\n&lt;__main__.Student object at 0x10cd3c190&gt;\n</code></pre>\n<p>打印出的是反序列化的<code>Student</code>实例对象。</p>\n<h3>练习</h3>\n<p>对中文进行JSON序列化时，<code>json.dumps()</code>提供了一个<code>ensure_ascii</code>参数，观察该参数对结果的影响：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">import</span> json\n\nobj = <span class=\"hljs-built_in\">dict</span>(name=<span class=\"hljs-string\">&#x27;小明&#x27;</span>, age=<span class=\"hljs-number\">20</span>)\ns = json.dumps(obj, ensure_ascii=<span class=\"hljs-literal\">True</span>)\n<span class=\"hljs-built_in\">print</span>(s)\n</code></pre>\n<h3>小结</h3>\n<p>Python语言特定的序列化模块是<code>pickle</code>，但如果要把序列化搞得更通用、更符合Web标准，就可以使用<code>json</code>模块。</p>\n<p><code>json</code>模块的<code>dumps()</code>和<code>loads()</code>函数是定义得非常好的接口的典范。当我们使用时，只需要传入一个必须的参数。但是，当默认的序列化或反序列机制不满足我们的要求时，我们又可以传入更多的参数来定制序列化或反序列化的规则，既做到了接口简单易用，又做到了充分的扩展性和灵活性。</p>\n<h3>参考源码</h3>\n<p><a href=\"use_pickle.py\">use_pickle.py</a></p>\n<p><a href=\"use_json.py\">use_json.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "在程序运行的过程中，所有的变量都是在内存中，比如，定义一个dict："
+    },
+    {
+      "type": "pre",
+      "text": "d = dict(name='Bob', age=20, score=88)"
+    },
+    {
+      "type": "p",
+      "text": "可以随时修改变量，比如把name改成'Bill'，但是一旦程序结束，变量所占用的内存就被操作系统全部回收。如果没有把修改后的'Bill'存储到磁盘上，下次重新运行程序，变量又被初始化为'Bob'。"
+    },
+    {
+      "type": "p",
+      "text": "我们把变量从内存中变成可存储或传输的过程称之为序列化，在Python中叫pickling，在其他语言中也被称之为serialization，marshalling，flattening等等，都是一个意思。"
+    },
+    {
+      "type": "p",
+      "text": "序列化之后，就可以把序列化后的内容写入磁盘，或者通过网络传输到别的机器上。"
+    },
+    {
+      "type": "p",
+      "text": "反过来，把变量内容从序列化的对象重新读到内存里称之为反序列化，即unpickling。"
+    },
+    {
+      "type": "p",
+      "text": "Python提供了pickle模块来实现序列化。"
+    },
+    {
+      "type": "p",
+      "text": "首先，我们尝试把一个对象序列化并写入文件："
+    },
+    {
+      "type": "pre",
+      "text": ">>> import pickle\n>>> d = dict(name='Bob', age=20, score=88)\n>>> pickle.dumps(d)\nb'\\x80\\x03}q\\x00(X\\x03\\x00\\x00\\x00ageq\\x01K\\x14X\\x05\\x00\\x00\\x00scoreq\\x02KXX\\x04\\x00\\x00\\x00nameq\\x03X\\x03\\x00\\x00\\x00Bobq\\x04u.'"
+    },
+    {
+      "type": "p",
+      "text": "pickle.dumps()方法把任意对象序列化成一个bytes，然后，就可以把这个bytes写入文件。或者用另一个方法pickle.dump()直接把对象序列化后写入一个file-like Object："
+    },
+    {
+      "type": "pre",
+      "text": ">>> f = open('dump.txt', 'wb')\n>>> pickle.dump(d, f)\n>>> f.close()"
+    },
+    {
+      "type": "p",
+      "text": "看看写入的dump.txt文件，一堆乱七八糟的内容，这些都是Python保存的对象内部信息。"
+    },
+    {
+      "type": "p",
+      "text": "当我们要把对象从磁盘读到内存时，可以先把内容读到一个bytes，然后用pickle.loads()方法反序列化出对象，也可以直接用pickle.load()方法从一个file-like Object中直接反序列化出对象。我们打开另一个Python命令行来反序列化刚才保存的对象："
+    },
+    {
+      "type": "pre",
+      "text": ">>> f = open('dump.txt', 'rb')\n>>> d = pickle.load(f)\n>>> f.close()\n>>> d\n{'age': 20, 'score': 88, 'name': 'Bob'}"
+    },
+    {
+      "type": "p",
+      "text": "变量的内容又回来了！"
+    },
+    {
+      "type": "p",
+      "text": "当然，这个变量和原来的变量是完全不相干的对象，它们只是内容相同而已。"
+    },
+    {
+      "type": "p",
+      "text": "Pickle的问题和所有其他编程语言特有的序列化问题一样，就是它只能用于Python，并且可能不同版本的Python彼此都不兼容，因此，只能用Pickle保存那些不重要的数据，不能成功地反序列化也没关系。"
+    },
+    {
+      "type": "h3",
+      "text": "JSON"
+    },
+    {
+      "type": "p",
+      "text": "如果我们要在不同的编程语言之间传递对象，就必须把对象序列化为标准格式，比如XML，但更好的方法是序列化为JSON，因为JSON表示出来就是一个字符串，可以被所有语言读取，也可以方便地存储到磁盘或者通过网络传输。JSON不仅是标准格式，并且比XML更快，而且可以直接在Web页面中读取，非常方便。"
+    },
+    {
+      "type": "p",
+      "text": "JSON表示的对象就是标准的JavaScript语言的对象，JSON和Python内置的数据类型对应如下："
+    },
+    {
+      "type": "p",
+      "text": "Python内置的json模块提供了非常完善的Python对象到JSON格式的转换。我们先看看如何把Python对象变成一个JSON："
+    },
+    {
+      "type": "pre",
+      "text": ">>> import json\n>>> d = dict(name='Bob', age=20, score=88)\n>>> json.dumps(d)\n'{\"age\": 20, \"score\": 88, \"name\": \"Bob\"}'"
+    },
+    {
+      "type": "p",
+      "text": "dumps()方法返回一个str，内容就是标准的JSON。类似的，dump()方法可以直接把JSON写入一个file-like Object。"
+    },
+    {
+      "type": "p",
+      "text": "要把JSON反序列化为Python对象，用loads()或者对应的load()方法，前者把JSON的字符串反序列化，后者从file-like Object中读取字符串并反序列化："
+    },
+    {
+      "type": "pre",
+      "text": ">>> json_str = '{\"age\": 20, \"score\": 88, \"name\": \"Bob\"}'\n>>> json.loads(json_str)\n{'age': 20, 'score': 88, 'name': 'Bob'}"
+    },
+    {
+      "type": "p",
+      "text": "由于JSON标准规定JSON编码是UTF-8，所以我们总是能正确地在Python的str与JSON的字符串之间转换。"
+    },
+    {
+      "type": "h3",
+      "text": "JSON进阶"
+    },
+    {
+      "type": "p",
+      "text": "Python的dict对象可以直接序列化为JSON的{}，不过，很多时候，我们更喜欢用class表示对象，比如定义Student类，然后序列化："
+    },
+    {
+      "type": "pre",
+      "text": "import json\n\nclass Student(object):\n    def __init__(self, name, age, score):\n        self.name = name\n        self.age = age\n        self.score = score\n\ns = Student('Bob', 20, 88)\nprint(json.dumps(s))"
+    },
+    {
+      "type": "p",
+      "text": "运行代码，毫不留情地得到一个TypeError："
+    },
+    {
+      "type": "pre",
+      "text": "Traceback (most recent call last):\n  ...\nTypeError: <__main__.Student object at 0x10603cc50> is not JSON serializable"
+    },
+    {
+      "type": "p",
+      "text": "错误的原因是Student对象不是一个可序列化为JSON的对象。"
+    },
+    {
+      "type": "p",
+      "text": "如果连class的实例对象都无法序列化为JSON，这肯定不合理！"
+    },
+    {
+      "type": "p",
+      "text": "别急，我们仔细看看dumps()方法的参数列表，可以发现，除了第一个必须的obj参数外，dumps()方法还提供了一大堆的可选参数："
+    },
+    {
+      "type": "p",
+      "text": "https://docs.python.org/3/library/json.html#json.dumps"
+    },
+    {
+      "type": "p",
+      "text": "这些可选参数就是让我们来定制JSON序列化。前面的代码之所以无法把Student类实例序列化为JSON，是因为默认情况下，dumps()方法不知道如何将Student实例变为一个JSON的{}对象。"
+    },
+    {
+      "type": "p",
+      "text": "可选参数default就是把任意一个对象变成一个可序列为JSON的对象，我们只需要为Student专门写一个转换函数，再把函数传进去即可："
+    },
+    {
+      "type": "pre",
+      "text": "def student2dict(std):\n    return {\n        'name': std.name,\n        'age': std.age,\n        'score': std.score\n    }"
+    },
+    {
+      "type": "p",
+      "text": "这样，Student实例首先被student2dict()函数转换成dict，然后再被顺利序列化为JSON："
+    },
+    {
+      "type": "pre",
+      "text": ">>> print(json.dumps(s, default=student2dict))\n{\"age\": 20, \"name\": \"Bob\", \"score\": 88}"
+    },
+    {
+      "type": "p",
+      "text": "不过，下次如果遇到一个Teacher类的实例，照样无法序列化为JSON。我们可以偷个懒，把任意class的实例变为dict："
+    },
+    {
+      "type": "pre",
+      "text": "print(json.dumps(s, default=lambda obj: obj.__dict__))"
+    },
+    {
+      "type": "p",
+      "text": "因为通常class的实例都有一个__dict__属性，它就是一个dict，用来存储实例变量。也有少数例外，比如定义了__slots__的class。"
+    },
+    {
+      "type": "p",
+      "text": "同样的道理，如果我们要把JSON反序列化为一个Student对象实例，loads()方法首先转换出一个dict对象，然后，我们传入的object_hook函数负责把dict转换为Student实例："
+    },
+    {
+      "type": "pre",
+      "text": "def dict2student(d):\n    return Student(d['name'], d['age'], d['score'])"
+    },
+    {
+      "type": "p",
+      "text": "运行结果如下："
+    },
+    {
+      "type": "pre",
+      "text": ">>> json_str = '{\"age\": 20, \"score\": 88, \"name\": \"Bob\"}'\n>>> print(json.loads(json_str, object_hook=dict2student))\n<__main__.Student object at 0x10cd3c190>"
+    },
+    {
+      "type": "p",
+      "text": "打印出的是反序列化的Student实例对象。"
+    },
+    {
+      "type": "h3",
+      "text": "练习"
+    },
+    {
+      "type": "p",
+      "text": "对中文进行JSON序列化时，json.dumps()提供了一个ensure_ascii参数，观察该参数对结果的影响："
+    },
+    {
+      "type": "pre",
+      "text": "import json\n\nobj = dict(name='小明', age=20)\ns = json.dumps(obj, ensure_ascii=True)\nprint(s)"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "Python语言特定的序列化模块是pickle，但如果要把序列化搞得更通用、更符合Web标准，就可以使用json模块。"
+    },
+    {
+      "type": "p",
+      "text": "json模块的dumps()和loads()函数是定义得非常好的接口的典范。当我们使用时，只需要传入一个必须的参数。但是，当默认的序列化或反序列机制不满足我们的要求时，我们又可以传入更多的参数来定制序列化或反序列化的规则，既做到了接口简单易用，又做到了充分的扩展性和灵活性。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "use_pickle.py"
+    },
+    {
+      "type": "p",
+      "text": "use_json.py"
+    }
+  ],
+  "headings": [
+    "JSON",
+    "JSON进阶",
+    "练习",
+    "小结",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "d = dict(name='Bob', age=20, score=88)",
+    ">>> import pickle\n>>> d = dict(name='Bob', age=20, score=88)\n>>> pickle.dumps(d)\nb'\\x80\\x03}q\\x00(X\\x03\\x00\\x00\\x00ageq\\x01K\\x14X\\x05\\x00\\x00\\x00scoreq\\x02KXX\\x04\\x00\\x00\\x00nameq\\x03X\\x03\\x00\\x00\\x00Bobq\\x04u.'",
+    ">>> f = open('dump.txt', 'wb')\n>>> pickle.dump(d, f)\n>>> f.close()",
+    ">>> f = open('dump.txt', 'rb')\n>>> d = pickle.load(f)\n>>> f.close()\n>>> d\n{'age': 20, 'score': 88, 'name': 'Bob'}",
+    ">>> import json\n>>> d = dict(name='Bob', age=20, score=88)\n>>> json.dumps(d)\n'{\"age\": 20, \"score\": 88, \"name\": \"Bob\"}'",
+    ">>> json_str = '{\"age\": 20, \"score\": 88, \"name\": \"Bob\"}'\n>>> json.loads(json_str)\n{'age': 20, 'score': 88, 'name': 'Bob'}",
+    "import json\n\nclass Student(object):\n    def __init__(self, name, age, score):\n        self.name = name\n        self.age = age\n        self.score = score\n\ns = Student('Bob', 20, 88)\nprint(json.dumps(s))",
+    "Traceback (most recent call last):\n  ...\nTypeError: <__main__.Student object at 0x10603cc50> is not JSON serializable",
+    "def student2dict(std):\n    return {\n        'name': std.name,\n        'age': std.age,\n        'score': std.score\n    }",
+    ">>> print(json.dumps(s, default=student2dict))\n{\"age\": 20, \"name\": \"Bob\", \"score\": 88}",
+    "print(json.dumps(s, default=lambda obj: obj.__dict__))",
+    "def dict2student(d):\n    return Student(d['name'], d['age'], d['score'])",
+    ">>> json_str = '{\"age\": 20, \"score\": 88, \"name\": \"Bob\"}'\n>>> print(json.loads(json_str, object_hook=dict2student))\n<__main__.Student object at 0x10cd3c190>",
+    "import json\n\nobj = dict(name='小明', age=20)\ns = json.dumps(obj, ensure_ascii=True)\nprint(s)"
+  ],
+  "text_block_count": 38
+}

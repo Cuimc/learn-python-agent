@@ -1,0 +1,274 @@
+{
+  "order": 47,
+  "url": "/books/python/error-debug-test/debug/index.html",
+  "title": "调试",
+  "section_slug": "error-debug-test",
+  "section_title": "错误、调试和测试",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>程序能一次写完并正常运行的概率很小，基本不超过1%。总会有各种各样的bug需要修正。有的bug很简单，看看错误信息就知道，有的bug很复杂，我们需要知道出错时，哪些变量的值是正确的，哪些变量的值是错误的，因此，需要一整套调试程序的手段来修复bug。</p>\n<p>第一种方法简单直接粗暴有效，就是用<code>print()</code>把可能有问题的变量打印出来看看：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">foo</span>(<span class=\"hljs-params\">s</span>):\n    n = <span class=\"hljs-built_in\">int</span>(s)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;&gt;&gt;&gt; n = %d&#x27;</span> % n)\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">10</span> / n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">main</span>():\n    foo(<span class=\"hljs-string\">&#x27;0&#x27;</span>)\n\nmain()\n</code></pre>\n<p>执行后在输出中查找打印的变量值：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">$ python err.py\n&gt;&gt;&gt; n = 0\nTraceback (most recent call last):\n  ...\nZeroDivisionError: integer division or modulo by zero\n</code></pre>\n<p>用<code>print()</code>最大的坏处是将来还得删掉它，想想程序里到处都是<code>print()</code>，运行结果也会包含很多垃圾信息。所以，我们又有第二种方法。</p>\n<h3>断言</h3>\n<p>凡是用<code>print()</code>来辅助查看的地方，都可以用断言（assert）来替代：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">foo</span>(<span class=\"hljs-params\">s</span>):\n    n = <span class=\"hljs-built_in\">int</span>(s)\n    <span class=\"hljs-keyword\">assert</span> n != <span class=\"hljs-number\">0</span>, <span class=\"hljs-string\">&#x27;n is zero!&#x27;</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">10</span> / n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">main</span>():\n    foo(<span class=\"hljs-string\">&#x27;0&#x27;</span>)\n</code></pre>\n<p><code>assert</code>的意思是，表达式<code>n != 0</code>应该是<code>True</code>，否则，根据程序运行的逻辑，后面的代码肯定会出错。</p>\n<p>如果断言失败，<code>assert</code>语句本身就会抛出<code>AssertionError</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">$ python err.py\nTraceback (most recent call last):\n  ...\nAssertionError: n is zero!\n</code></pre>\n<p>程序中如果到处充斥着<code>assert</code>，和<code>print()</code>相比也好不到哪去。不过，启动Python解释器时可以用<code>-O</code>参数来关闭<code>assert</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">$ python -O err.py\nTraceback (most recent call last):\n  ...\nZeroDivisionError: division by zero\n</code></pre>\n<div class=\"alert alert-note\">\n<p><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z\" /></svg> 注意<span></span></p>\n<p>断言的开关“-O”是英文大写字母O，不是数字0。\n</p></div>\n<p>关闭后，你可以把所有的<code>assert</code>语句当成<code>pass</code>来看。</p>\n<h3>logging</h3>\n<p>把<code>print()</code>替换为<code>logging</code>是第3种方式，和<code>assert</code>比，<code>logging</code>不会抛出错误，而且可以输出到文件：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">import</span> logging\n\ns = <span class=\"hljs-string\">&#x27;0&#x27;</span>\nn = <span class=\"hljs-built_in\">int</span>(s)\nlogging.info(<span class=\"hljs-string\">&#x27;n = %d&#x27;</span> % n)\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-number\">10</span> / n)\n</code></pre>\n<p><code>logging.info()</code>就可以输出一段文本。运行，发现除了<code>ZeroDivisionError</code>，没有任何信息。怎么回事？</p>\n<p>别急，在<code>import logging</code>之后添加一行配置再试试：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">import</span> logging\nlogging.basicConfig(level=logging.INFO)\n</code></pre>\n<p>看到输出了：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">$ python err.py\nINFO:root:n = 0\nTraceback (most recent call last):\n  File &quot;err.py&quot;, line 8, in &lt;module&gt;\n    print(10 / n)\nZeroDivisionError: division by zero\n</code></pre>\n<p>这就是<code>logging</code>的好处，它允许你指定记录信息的级别，有<code>debug</code>，<code>info</code>，<code>warning</code>，<code>error</code>等几个级别，当我们指定<code>level=INFO</code>时，<code>logging.debug</code>就不起作用了。同理，指定<code>level=WARNING</code>后，<code>debug</code>和<code>info</code>就不起作用了。这样一来，你可以放心地输出不同级别的信息，也不用删除，最后统一控制输出哪个级别的信息。</p>\n<p><code>logging</code>的另一个好处是通过简单的配置，一条语句可以同时输出到不同的地方，比如console和文件。</p>\n<h3>pdb</h3>\n<p>第4种方式是启动Python的调试器pdb，让程序以单步方式运行，可以随时查看运行状态。我们先准备好程序：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># err.py</span>\ns = <span class=\"hljs-string\">&#x27;0&#x27;</span>\nn = <span class=\"hljs-built_in\">int</span>(s)\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-number\">10</span> / n)\n</code></pre>\n<p>然后启动：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">$ python -m pdb err.py\n&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(2)&lt;module&gt;()\n-&gt; s = '0'\n</code></pre>\n<p>以参数<code>-m pdb</code>启动后，pdb定位到下一步要执行的代码<code>-&gt; s = '0'</code>。输入命令<code>l</code>来查看代码：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">(Pdb) l\n  1     # err.py\n  2  -&gt; s = '0'\n  3     n = int(s)\n  4     print(10 / n)\n</code></pre>\n<p>输入命令<code>n</code>可以单步执行代码：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">(Pdb) n\n&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(3)&lt;module&gt;()\n-&gt; n = int(s)\n(Pdb) n\n&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(4)&lt;module&gt;()\n-&gt; print(10 / n)\n</code></pre>\n<p>任何时候都可以输入命令<code>p 变量名</code>来查看变量：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">(Pdb) p s\n'0'\n(Pdb) p n\n0\n</code></pre>\n<p>输入命令<code>q</code>结束调试，退出程序：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">(Pdb) q\n</code></pre>\n<p>这种通过pdb在命令行调试的方法理论上是万能的，但实在是太麻烦了，如果有一千行代码，要运行到第999行得敲多少命令啊。还好，我们还有另一种调试方法。</p>\n<h3>pdb.set_trace()</h3>\n<p>这个方法也是用pdb，但是不需要单步执行，我们只需要<code>import pdb</code>，然后，在可能出错的地方放一个<code>pdb.set_trace()</code>，就可以设置一个断点：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># err.py</span>\n<span class=\"hljs-keyword\">import</span> pdb\n\ns = <span class=\"hljs-string\">&#x27;0&#x27;</span>\nn = <span class=\"hljs-built_in\">int</span>(s)\npdb.set_trace() <span class=\"hljs-comment\"># 运行到这里会自动暂停</span>\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-number\">10</span> / n)\n</code></pre>\n<p>运行代码，程序会自动在<code>pdb.set_trace()</code>暂停并进入pdb调试环境，可以用命令<code>p</code>查看变量，或者用命令<code>c</code>继续运行：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">$ python err.py \n&gt; /Users/michael/Github/learn-python3/samples/debug/err.py(7)&lt;module&gt;()\n-&gt; print(10 / n)\n(Pdb) p n\n0\n(Pdb) c\nTraceback (most recent call last):\n  File &quot;err.py&quot;, line 7, in &lt;module&gt;\n    print(10 / n)\nZeroDivisionError: division by zero\n</code></pre>\n<p>这个方式比直接启动pdb单步调试效率要高很多，但也高不到哪去。</p>\n<h3>IDE</h3>\n<p>如果要比较爽地设置断点、单步执行，就需要一个支持调试功能的IDE。目前比较好的Python IDE有：</p>\n<p>Visual Studio Code：<a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a>，需要安装Python插件。</p>\n<p>PyCharm：<a href=\"http://www.jetbrains.com/pycharm/\" target=\"_blank\">http://www.jetbrains.com/pycharm/</a></p>\n<p>另外，<a href=\"http://www.eclipse.org/\" target=\"_blank\">Eclipse</a>加上<a href=\"http://pydev.org/\" target=\"_blank\">pydev</a>插件也可以调试Python程序。</p>\n<h3>小结</h3>\n<p>写程序最痛苦的事情莫过于调试，程序往往会以你意想不到的流程来运行，你期待执行的语句其实根本没有执行，这时候，就需要调试了。</p>\n<p>虽然用IDE调试起来比较方便，但是最后你会发现，logging才是终极武器。</p>\n<h3>参考源码</h3>\n<p><a href=\"do_assert.py\">do_assert.py</a></p>\n<p><a href=\"do_logging.py\">do_logging.py</a></p>\n<p><a href=\"do_pdb.py\">do_pdb.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "程序能一次写完并正常运行的概率很小，基本不超过1%。总会有各种各样的bug需要修正。有的bug很简单，看看错误信息就知道，有的bug很复杂，我们需要知道出错时，哪些变量的值是正确的，哪些变量的值是错误的，因此，需要一整套调试程序的手段来修复bug。"
+    },
+    {
+      "type": "p",
+      "text": "第一种方法简单直接粗暴有效，就是用print()把可能有问题的变量打印出来看看："
+    },
+    {
+      "type": "pre",
+      "text": "def foo(s):\n    n = int(s)\n    print('>>> n = %d' % n)\n    return 10 / n\n\ndef main():\n    foo('0')\n\nmain()"
+    },
+    {
+      "type": "p",
+      "text": "执行后在输出中查找打印的变量值："
+    },
+    {
+      "type": "pre",
+      "text": "$ python err.py\n>>> n = 0\nTraceback (most recent call last):\n  ...\nZeroDivisionError: integer division or modulo by zero"
+    },
+    {
+      "type": "p",
+      "text": "用print()最大的坏处是将来还得删掉它，想想程序里到处都是print()，运行结果也会包含很多垃圾信息。所以，我们又有第二种方法。"
+    },
+    {
+      "type": "h3",
+      "text": "断言"
+    },
+    {
+      "type": "p",
+      "text": "凡是用print()来辅助查看的地方，都可以用断言（assert）来替代："
+    },
+    {
+      "type": "pre",
+      "text": "def foo(s):\n    n = int(s)\n    assert n != 0, 'n is zero!'\n    return 10 / n\n\ndef main():\n    foo('0')"
+    },
+    {
+      "type": "p",
+      "text": "assert的意思是，表达式n != 0应该是True，否则，根据程序运行的逻辑，后面的代码肯定会出错。"
+    },
+    {
+      "type": "p",
+      "text": "如果断言失败，assert语句本身就会抛出AssertionError："
+    },
+    {
+      "type": "pre",
+      "text": "$ python err.py\nTraceback (most recent call last):\n  ...\nAssertionError: n is zero!"
+    },
+    {
+      "type": "p",
+      "text": "程序中如果到处充斥着assert，和print()相比也好不到哪去。不过，启动Python解释器时可以用-O参数来关闭assert："
+    },
+    {
+      "type": "pre",
+      "text": "$ python -O err.py\nTraceback (most recent call last):\n  ...\nZeroDivisionError: division by zero"
+    },
+    {
+      "type": "p",
+      "text": "注意"
+    },
+    {
+      "type": "p",
+      "text": "断言的开关“-O”是英文大写字母O，不是数字0。"
+    },
+    {
+      "type": "p",
+      "text": "关闭后，你可以把所有的assert语句当成pass来看。"
+    },
+    {
+      "type": "h3",
+      "text": "logging"
+    },
+    {
+      "type": "p",
+      "text": "把print()替换为logging是第3种方式，和assert比，logging不会抛出错误，而且可以输出到文件："
+    },
+    {
+      "type": "pre",
+      "text": "import logging\n\ns = '0'\nn = int(s)\nlogging.info('n = %d' % n)\nprint(10 / n)"
+    },
+    {
+      "type": "p",
+      "text": "logging.info()就可以输出一段文本。运行，发现除了ZeroDivisionError，没有任何信息。怎么回事？"
+    },
+    {
+      "type": "p",
+      "text": "别急，在import logging之后添加一行配置再试试："
+    },
+    {
+      "type": "pre",
+      "text": "import logging\nlogging.basicConfig(level=logging.INFO)"
+    },
+    {
+      "type": "p",
+      "text": "看到输出了："
+    },
+    {
+      "type": "pre",
+      "text": "$ python err.py\nINFO:root:n = 0\nTraceback (most recent call last):\n  File \"err.py\", line 8, in <module>\n    print(10 / n)\nZeroDivisionError: division by zero"
+    },
+    {
+      "type": "p",
+      "text": "这就是logging的好处，它允许你指定记录信息的级别，有debug，info，warning，error等几个级别，当我们指定level=INFO时，logging.debug就不起作用了。同理，指定level=WARNING后，debug和info就不起作用了。这样一来，你可以放心地输出不同级别的信息，也不用删除，最后统一控制输出哪个级别的信息。"
+    },
+    {
+      "type": "p",
+      "text": "logging的另一个好处是通过简单的配置，一条语句可以同时输出到不同的地方，比如console和文件。"
+    },
+    {
+      "type": "h3",
+      "text": "pdb"
+    },
+    {
+      "type": "p",
+      "text": "第4种方式是启动Python的调试器pdb，让程序以单步方式运行，可以随时查看运行状态。我们先准备好程序："
+    },
+    {
+      "type": "pre",
+      "text": "# err.py\ns = '0'\nn = int(s)\nprint(10 / n)"
+    },
+    {
+      "type": "p",
+      "text": "然后启动："
+    },
+    {
+      "type": "pre",
+      "text": "$ python -m pdb err.py\n> /Users/michael/Github/learn-python3/samples/debug/err.py(2)<module>()\n-> s = '0'"
+    },
+    {
+      "type": "p",
+      "text": "以参数-m pdb启动后，pdb定位到下一步要执行的代码-> s = '0'。输入命令l来查看代码："
+    },
+    {
+      "type": "pre",
+      "text": "(Pdb) l\n  1     # err.py\n  2  -> s = '0'\n  3     n = int(s)\n  4     print(10 / n)"
+    },
+    {
+      "type": "p",
+      "text": "输入命令n可以单步执行代码："
+    },
+    {
+      "type": "pre",
+      "text": "(Pdb) n\n> /Users/michael/Github/learn-python3/samples/debug/err.py(3)<module>()\n-> n = int(s)\n(Pdb) n\n> /Users/michael/Github/learn-python3/samples/debug/err.py(4)<module>()\n-> print(10 / n)"
+    },
+    {
+      "type": "p",
+      "text": "任何时候都可以输入命令p 变量名来查看变量："
+    },
+    {
+      "type": "pre",
+      "text": "(Pdb) p s\n'0'\n(Pdb) p n\n0"
+    },
+    {
+      "type": "p",
+      "text": "输入命令q结束调试，退出程序："
+    },
+    {
+      "type": "pre",
+      "text": "(Pdb) q"
+    },
+    {
+      "type": "p",
+      "text": "这种通过pdb在命令行调试的方法理论上是万能的，但实在是太麻烦了，如果有一千行代码，要运行到第999行得敲多少命令啊。还好，我们还有另一种调试方法。"
+    },
+    {
+      "type": "h3",
+      "text": "pdb.set_trace()"
+    },
+    {
+      "type": "p",
+      "text": "这个方法也是用pdb，但是不需要单步执行，我们只需要import pdb，然后，在可能出错的地方放一个pdb.set_trace()，就可以设置一个断点："
+    },
+    {
+      "type": "pre",
+      "text": "# err.py\nimport pdb\n\ns = '0'\nn = int(s)\npdb.set_trace() # 运行到这里会自动暂停\nprint(10 / n)"
+    },
+    {
+      "type": "p",
+      "text": "运行代码，程序会自动在pdb.set_trace()暂停并进入pdb调试环境，可以用命令p查看变量，或者用命令c继续运行："
+    },
+    {
+      "type": "pre",
+      "text": "$ python err.py \n> /Users/michael/Github/learn-python3/samples/debug/err.py(7)<module>()\n-> print(10 / n)\n(Pdb) p n\n0\n(Pdb) c\nTraceback (most recent call last):\n  File \"err.py\", line 7, in <module>\n    print(10 / n)\nZeroDivisionError: division by zero"
+    },
+    {
+      "type": "p",
+      "text": "这个方式比直接启动pdb单步调试效率要高很多，但也高不到哪去。"
+    },
+    {
+      "type": "h3",
+      "text": "IDE"
+    },
+    {
+      "type": "p",
+      "text": "如果要比较爽地设置断点、单步执行，就需要一个支持调试功能的IDE。目前比较好的Python IDE有："
+    },
+    {
+      "type": "p",
+      "text": "Visual Studio Code：https://code.visualstudio.com/，需要安装Python插件。"
+    },
+    {
+      "type": "p",
+      "text": "PyCharm：http://www.jetbrains.com/pycharm/"
+    },
+    {
+      "type": "p",
+      "text": "另外，Eclipse加上pydev插件也可以调试Python程序。"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "写程序最痛苦的事情莫过于调试，程序往往会以你意想不到的流程来运行，你期待执行的语句其实根本没有执行，这时候，就需要调试了。"
+    },
+    {
+      "type": "p",
+      "text": "虽然用IDE调试起来比较方便，但是最后你会发现，logging才是终极武器。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "do_assert.py"
+    },
+    {
+      "type": "p",
+      "text": "do_logging.py"
+    },
+    {
+      "type": "p",
+      "text": "do_pdb.py"
+    }
+  ],
+  "headings": [
+    "断言",
+    "logging",
+    "pdb",
+    "pdb.set_trace()",
+    "IDE",
+    "小结",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "def foo(s):\n    n = int(s)\n    print('>>> n = %d' % n)\n    return 10 / n\n\ndef main():\n    foo('0')\n\nmain()",
+    "$ python err.py\n>>> n = 0\nTraceback (most recent call last):\n  ...\nZeroDivisionError: integer division or modulo by zero",
+    "def foo(s):\n    n = int(s)\n    assert n != 0, 'n is zero!'\n    return 10 / n\n\ndef main():\n    foo('0')",
+    "$ python err.py\nTraceback (most recent call last):\n  ...\nAssertionError: n is zero!",
+    "$ python -O err.py\nTraceback (most recent call last):\n  ...\nZeroDivisionError: division by zero",
+    "import logging\n\ns = '0'\nn = int(s)\nlogging.info('n = %d' % n)\nprint(10 / n)",
+    "import logging\nlogging.basicConfig(level=logging.INFO)",
+    "$ python err.py\nINFO:root:n = 0\nTraceback (most recent call last):\n  File \"err.py\", line 8, in <module>\n    print(10 / n)\nZeroDivisionError: division by zero",
+    "# err.py\ns = '0'\nn = int(s)\nprint(10 / n)",
+    "$ python -m pdb err.py\n> /Users/michael/Github/learn-python3/samples/debug/err.py(2)<module>()\n-> s = '0'",
+    "(Pdb) l\n  1     # err.py\n  2  -> s = '0'\n  3     n = int(s)\n  4     print(10 / n)",
+    "(Pdb) n\n> /Users/michael/Github/learn-python3/samples/debug/err.py(3)<module>()\n-> n = int(s)\n(Pdb) n\n> /Users/michael/Github/learn-python3/samples/debug/err.py(4)<module>()\n-> print(10 / n)",
+    "(Pdb) p s\n'0'\n(Pdb) p n\n0",
+    "(Pdb) q",
+    "# err.py\nimport pdb\n\ns = '0'\nn = int(s)\npdb.set_trace() # 运行到这里会自动暂停\nprint(10 / n)",
+    "$ python err.py \n> /Users/michael/Github/learn-python3/samples/debug/err.py(7)<module>()\n-> print(10 / n)\n(Pdb) p n\n0\n(Pdb) c\nTraceback (most recent call last):\n  File \"err.py\", line 7, in <module>\n    print(10 / n)\nZeroDivisionError: division by zero"
+  ],
+  "text_block_count": 36
+}

@@ -1,0 +1,146 @@
+{
+  "order": 72,
+  "url": "/books/python/built-in-modules/urllib/index.html",
+  "title": "urllib",
+  "section_slug": "built-in-modules",
+  "section_title": "常用内建模块",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p><code>urllib</code>提供了一系列用于操作URL的功能。</p>\n<h3>Get</h3>\n<p><code>urllib</code>的<code>request</code>模块可以非常方便地抓取URL内容，也就是发送一个GET请求到指定的页面，然后返回HTTP的响应：</p>\n<p>例如，对豆瓣的一个URL<code>https://api.douban.com/v2/book/2129650</code>进行抓取，并返回响应：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">from</span> urllib <span class=\"hljs-keyword\">import</span> request\n\n<span class=\"hljs-keyword\">with</span> request.urlopen(<span class=\"hljs-string\">&#x27;https://api.douban.com/v2/book/2129650&#x27;</span>) <span class=\"hljs-keyword\">as</span> f:\n    data = f.read()\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Status:&#x27;</span>, f.status, f.reason)\n    <span class=\"hljs-keyword\">for</span> k, v <span class=\"hljs-keyword\">in</span> f.getheaders():\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;%s: %s&#x27;</span> % (k, v))\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Data:&#x27;</span>, data.decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n</code></pre>\n<p>可以看到HTTP响应的头和JSON数据：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">Status: 200 OK\nServer: nginx\nDate: Tue, 26 May 2015 10:02:27 GMT\nContent-Type: application/json; charset=utf-8\nContent-Length: 2049\nConnection: close\nExpires: Sun, 1 Jan 2006 01:00:00 GMT\nPragma: no-cache\nCache-Control: must-revalidate, no-cache, private\nX-DAE-Node: pidl1\nData: {&quot;rating&quot;:{&quot;max&quot;:10,&quot;numRaters&quot;:16,&quot;average&quot;:&quot;7.4&quot;,&quot;min&quot;:0},&quot;subtitle&quot;:&quot;&quot;,&quot;author&quot;:[&quot;廖雪峰编著&quot;],&quot;pubdate&quot;:&quot;2007-6&quot;,...}\n</code></pre>\n<p>如果我们要想模拟浏览器发送GET请求，就需要使用<code>Request</code>对象，通过往<code>Request</code>对象添加HTTP头，我们就可以把请求伪装成浏览器。例如，模拟iPhone去请求豆瓣首页：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">from</span> urllib <span class=\"hljs-keyword\">import</span> request\n\nreq = request.Request(<span class=\"hljs-string\">&#x27;http://www.douban.com/&#x27;</span>)\nreq.add_header(<span class=\"hljs-string\">&#x27;User-Agent&#x27;</span>, <span class=\"hljs-string\">&#x27;Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25&#x27;</span>)\n<span class=\"hljs-keyword\">with</span> request.urlopen(req) <span class=\"hljs-keyword\">as</span> f:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Status:&#x27;</span>, f.status, f.reason)\n    <span class=\"hljs-keyword\">for</span> k, v <span class=\"hljs-keyword\">in</span> f.getheaders():\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;%s: %s&#x27;</span> % (k, v))\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Data:&#x27;</span>, f.read().decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n</code></pre>\n<p>这样豆瓣会返回适合iPhone的移动版网页：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">...\n    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;\n    &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;\n    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;http://img4.douban.com/pics/cardkit/launcher/57.png&quot; /&gt;\n...\n</code></pre>\n<h3>Post</h3>\n<p>如果要以POST发送一个请求，只需要把参数<code>data</code>以bytes形式传入。</p>\n<p>我们模拟一个微博登录，先读取登录的邮箱和口令，然后按照weibo.cn的登录页的格式以<code>username=xxx&amp;password=xxx</code>的编码传入：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">from</span> urllib <span class=\"hljs-keyword\">import</span> request, parse\n\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Login to weibo.cn...&#x27;</span>)\nemail = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;Email: &#x27;</span>)\npasswd = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;Password: &#x27;</span>)\nlogin_data = parse.urlencode([\n    (<span class=\"hljs-string\">&#x27;username&#x27;</span>, email),\n    (<span class=\"hljs-string\">&#x27;password&#x27;</span>, passwd),\n    (<span class=\"hljs-string\">&#x27;entry&#x27;</span>, <span class=\"hljs-string\">&#x27;mweibo&#x27;</span>),\n    (<span class=\"hljs-string\">&#x27;client_id&#x27;</span>, <span class=\"hljs-string\">&#x27;&#x27;</span>),\n    (<span class=\"hljs-string\">&#x27;savestate&#x27;</span>, <span class=\"hljs-string\">&#x27;1&#x27;</span>),\n    (<span class=\"hljs-string\">&#x27;ec&#x27;</span>, <span class=\"hljs-string\">&#x27;&#x27;</span>),\n    (<span class=\"hljs-string\">&#x27;pagerefer&#x27;</span>, <span class=\"hljs-string\">&#x27;https://passport.weibo.cn/signin/welcome?entry=mweibo&amp;r=http%3A%2F%2Fm.weibo.cn%2F&#x27;</span>)\n])\n\nreq = request.Request(<span class=\"hljs-string\">&#x27;https://passport.weibo.cn/sso/login&#x27;</span>)\nreq.add_header(<span class=\"hljs-string\">&#x27;Origin&#x27;</span>, <span class=\"hljs-string\">&#x27;https://passport.weibo.cn&#x27;</span>)\nreq.add_header(<span class=\"hljs-string\">&#x27;User-Agent&#x27;</span>, <span class=\"hljs-string\">&#x27;Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25&#x27;</span>)\nreq.add_header(<span class=\"hljs-string\">&#x27;Referer&#x27;</span>, <span class=\"hljs-string\">&#x27;https://passport.weibo.cn/signin/login?entry=mweibo&amp;res=wel&amp;wm=3349&amp;r=http%3A%2F%2Fm.weibo.cn%2F&#x27;</span>)\n\n<span class=\"hljs-keyword\">with</span> request.urlopen(req, data=login_data.encode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>)) <span class=\"hljs-keyword\">as</span> f:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Status:&#x27;</span>, f.status, f.reason)\n    <span class=\"hljs-keyword\">for</span> k, v <span class=\"hljs-keyword\">in</span> f.getheaders():\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;%s: %s&#x27;</span> % (k, v))\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;Data:&#x27;</span>, f.read().decode(<span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n</code></pre>\n<p>如果登录成功，我们获得的响应如下：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">Status: 200 OK\nServer: nginx/1.2.0\n...\nSet-Cookie: SSOLoginState=1432620126; path=/; domain=weibo.cn\n...\nData: {&quot;retcode&quot;:20000000,&quot;msg&quot;:&quot;&quot;,&quot;data&quot;:{...,&quot;uid&quot;:&quot;1658384301&quot;}}\n</code></pre>\n<p>如果登录失败，我们获得的响应如下：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">...\nData: {&quot;retcode&quot;:50011015,&quot;msg&quot;:&quot;\\u7528\\u6237\\u540d\\u6216\\u5bc6\\u7801\\u9519\\u8bef&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;example@python.org&quot;,&quot;errline&quot;:536}}\n</code></pre>\n<h3>Handler</h3>\n<p>如果还需要更复杂的控制，比如通过一个Proxy去访问网站，我们需要利用<code>ProxyHandler</code>来处理，示例代码如下：</p>\n<pre class=\"hljs\"><code class=\"language-python\">proxy_handler = urllib.request.ProxyHandler({<span class=\"hljs-string\">&#x27;http&#x27;</span>: <span class=\"hljs-string\">&#x27;http://www.example.com:3128/&#x27;</span>})\nproxy_auth_handler = urllib.request.ProxyBasicAuthHandler()\nproxy_auth_handler.add_password(<span class=\"hljs-string\">&#x27;realm&#x27;</span>, <span class=\"hljs-string\">&#x27;host&#x27;</span>, <span class=\"hljs-string\">&#x27;username&#x27;</span>, <span class=\"hljs-string\">&#x27;password&#x27;</span>)\nopener = urllib.request.build_opener(proxy_handler, proxy_auth_handler)\n<span class=\"hljs-keyword\">with</span> opener.<span class=\"hljs-built_in\">open</span>(<span class=\"hljs-string\">&#x27;http://www.example.com/login.html&#x27;</span>) <span class=\"hljs-keyword\">as</span> f:\n    <span class=\"hljs-keyword\">pass</span>\n</code></pre>\n<h3>小结</h3>\n<p><code>urllib</code>提供的功能就是利用程序去执行各种HTTP请求。如果要模拟浏览器完成特定功能，需要把请求伪装成浏览器。伪装的方法是先监控浏览器发出的请求，再根据浏览器的请求头来伪装，<code>User-Agent</code>头就是用来标识浏览器的。</p>\n<h3>练习</h3>\n<p>利用<code>urllib</code>读取JSON，然后将JSON解析为Python对象：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">from</span> urllib <span class=\"hljs-keyword\">import</span> request\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">fetch_data</span>(<span class=\"hljs-params\">url</span>):\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&#x27;&#x27;</span>\n\n<span class=\"hljs-comment\"># 测试</span>\nURL = <span class=\"hljs-string\">&#x27;https://api.weatherapi.com/v1/current.json?key=b4e8f86b44654e6b86885330242207&amp;q=Beijing&amp;aqi=no&#x27;</span>\ndata = fetch_data(URL)\n<span class=\"hljs-built_in\">print</span>(data)\n<span class=\"hljs-keyword\">assert</span> data[<span class=\"hljs-string\">&#x27;location&#x27;</span>][<span class=\"hljs-string\">&#x27;name&#x27;</span>] == <span class=\"hljs-string\">&#x27;Beijing&#x27;</span>\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;ok&#x27;</span>)\n</code></pre>\n<h3>参考源码</h3>\n<p><a href=\"use_urllib.py\">use_urllib.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "urllib提供了一系列用于操作URL的功能。"
+    },
+    {
+      "type": "h3",
+      "text": "Get"
+    },
+    {
+      "type": "p",
+      "text": "urllib的request模块可以非常方便地抓取URL内容，也就是发送一个GET请求到指定的页面，然后返回HTTP的响应："
+    },
+    {
+      "type": "p",
+      "text": "例如，对豆瓣的一个URLhttps://api.douban.com/v2/book/2129650进行抓取，并返回响应："
+    },
+    {
+      "type": "pre",
+      "text": "from urllib import request\n\nwith request.urlopen('https://api.douban.com/v2/book/2129650') as f:\n    data = f.read()\n    print('Status:', f.status, f.reason)\n    for k, v in f.getheaders():\n        print('%s: %s' % (k, v))\n    print('Data:', data.decode('utf-8'))"
+    },
+    {
+      "type": "p",
+      "text": "可以看到HTTP响应的头和JSON数据："
+    },
+    {
+      "type": "pre",
+      "text": "Status: 200 OK\nServer: nginx\nDate: Tue, 26 May 2015 10:02:27 GMT\nContent-Type: application/json; charset=utf-8\nContent-Length: 2049\nConnection: close\nExpires: Sun, 1 Jan 2006 01:00:00 GMT\nPragma: no-cache\nCache-Control: must-revalidate, no-cache, private\nX-DAE-Node: pidl1\nData: {\"rating\":{\"max\":10,\"numRaters\":16,\"average\":\"7.4\",\"min\":0},\"subtitle\":\"\",\"author\":[\"廖雪峰编著\"],\"pubdate\":\"2007-6\",...}"
+    },
+    {
+      "type": "p",
+      "text": "如果我们要想模拟浏览器发送GET请求，就需要使用Request对象，通过往Request对象添加HTTP头，我们就可以把请求伪装成浏览器。例如，模拟iPhone去请求豆瓣首页："
+    },
+    {
+      "type": "pre",
+      "text": "from urllib import request\n\nreq = request.Request('http://www.douban.com/')\nreq.add_header('User-Agent', 'Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25')\nwith request.urlopen(req) as f:\n    print('Status:', f.status, f.reason)\n    for k, v in f.getheaders():\n        print('%s: %s' % (k, v))\n    print('Data:', f.read().decode('utf-8'))"
+    },
+    {
+      "type": "p",
+      "text": "这样豆瓣会返回适合iPhone的移动版网页："
+    },
+    {
+      "type": "pre",
+      "text": "...\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"format-detection\" content=\"telephone=no\">\n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"http://img4.douban.com/pics/cardkit/launcher/57.png\" />\n..."
+    },
+    {
+      "type": "h3",
+      "text": "Post"
+    },
+    {
+      "type": "p",
+      "text": "如果要以POST发送一个请求，只需要把参数data以bytes形式传入。"
+    },
+    {
+      "type": "p",
+      "text": "我们模拟一个微博登录，先读取登录的邮箱和口令，然后按照weibo.cn的登录页的格式以username=xxx&password=xxx的编码传入："
+    },
+    {
+      "type": "pre",
+      "text": "from urllib import request, parse\n\nprint('Login to weibo.cn...')\nemail = input('Email: ')\npasswd = input('Password: ')\nlogin_data = parse.urlencode([\n    ('username', email),\n    ('password', passwd),\n    ('entry', 'mweibo'),\n    ('client_id', ''),\n    ('savestate', '1'),\n    ('ec', ''),\n    ('pagerefer', 'https://passport.weibo.cn/signin/welcome?entry=mweibo&r=http%3A%2F%2Fm.weibo.cn%2F')\n])\n\nreq = request.Request('https://passport.weibo.cn/sso/login')\nreq.add_header('Origin', 'https://passport.weibo.cn')\nreq.add_header('User-Agent', 'Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25')\nreq.add_header('Referer', 'https://passport.weibo.cn/signin/login?entry=mweibo&res=wel&wm=3349&r=http%3A%2F%2Fm.weibo.cn%2F')\n\nwith request.urlopen(req, data=login_data.encode('utf-8')) as f:\n    print('Status:', f.status, f.reason)\n    for k, v in f.getheaders():\n        print('%s: %s' % (k, v))\n    print('Data:', f.read().decode('utf-8'))"
+    },
+    {
+      "type": "p",
+      "text": "如果登录成功，我们获得的响应如下："
+    },
+    {
+      "type": "pre",
+      "text": "Status: 200 OK\nServer: nginx/1.2.0\n...\nSet-Cookie: SSOLoginState=1432620126; path=/; domain=weibo.cn\n...\nData: {\"retcode\":20000000,\"msg\":\"\",\"data\":{...,\"uid\":\"1658384301\"}}"
+    },
+    {
+      "type": "p",
+      "text": "如果登录失败，我们获得的响应如下："
+    },
+    {
+      "type": "pre",
+      "text": "...\nData: {\"retcode\":50011015,\"msg\":\"\\u7528\\u6237\\u540d\\u6216\\u5bc6\\u7801\\u9519\\u8bef\",\"data\":{\"username\":\"example@python.org\",\"errline\":536}}"
+    },
+    {
+      "type": "h3",
+      "text": "Handler"
+    },
+    {
+      "type": "p",
+      "text": "如果还需要更复杂的控制，比如通过一个Proxy去访问网站，我们需要利用ProxyHandler来处理，示例代码如下："
+    },
+    {
+      "type": "pre",
+      "text": "proxy_handler = urllib.request.ProxyHandler({'http': 'http://www.example.com:3128/'})\nproxy_auth_handler = urllib.request.ProxyBasicAuthHandler()\nproxy_auth_handler.add_password('realm', 'host', 'username', 'password')\nopener = urllib.request.build_opener(proxy_handler, proxy_auth_handler)\nwith opener.open('http://www.example.com/login.html') as f:\n    pass"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "urllib提供的功能就是利用程序去执行各种HTTP请求。如果要模拟浏览器完成特定功能，需要把请求伪装成浏览器。伪装的方法是先监控浏览器发出的请求，再根据浏览器的请求头来伪装，User-Agent头就是用来标识浏览器的。"
+    },
+    {
+      "type": "h3",
+      "text": "练习"
+    },
+    {
+      "type": "p",
+      "text": "利用urllib读取JSON，然后将JSON解析为Python对象："
+    },
+    {
+      "type": "pre",
+      "text": "from urllib import request\n\ndef fetch_data(url):\n    return ''\n\n# 测试\nURL = 'https://api.weatherapi.com/v1/current.json?key=b4e8f86b44654e6b86885330242207&q=Beijing&aqi=no'\ndata = fetch_data(URL)\nprint(data)\nassert data['location']['name'] == 'Beijing'\nprint('ok')"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "use_urllib.py"
+    }
+  ],
+  "headings": [
+    "Get",
+    "Post",
+    "Handler",
+    "小结",
+    "练习",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "from urllib import request\n\nwith request.urlopen('https://api.douban.com/v2/book/2129650') as f:\n    data = f.read()\n    print('Status:', f.status, f.reason)\n    for k, v in f.getheaders():\n        print('%s: %s' % (k, v))\n    print('Data:', data.decode('utf-8'))",
+    "Status: 200 OK\nServer: nginx\nDate: Tue, 26 May 2015 10:02:27 GMT\nContent-Type: application/json; charset=utf-8\nContent-Length: 2049\nConnection: close\nExpires: Sun, 1 Jan 2006 01:00:00 GMT\nPragma: no-cache\nCache-Control: must-revalidate, no-cache, private\nX-DAE-Node: pidl1\nData: {\"rating\":{\"max\":10,\"numRaters\":16,\"average\":\"7.4\",\"min\":0},\"subtitle\":\"\",\"author\":[\"廖雪峰编著\"],\"pubdate\":\"2007-6\",...}",
+    "from urllib import request\n\nreq = request.Request('http://www.douban.com/')\nreq.add_header('User-Agent', 'Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25')\nwith request.urlopen(req) as f:\n    print('Status:', f.status, f.reason)\n    for k, v in f.getheaders():\n        print('%s: %s' % (k, v))\n    print('Data:', f.read().decode('utf-8'))",
+    "...\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"format-detection\" content=\"telephone=no\">\n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"http://img4.douban.com/pics/cardkit/launcher/57.png\" />\n...",
+    "from urllib import request, parse\n\nprint('Login to weibo.cn...')\nemail = input('Email: ')\npasswd = input('Password: ')\nlogin_data = parse.urlencode([\n    ('username', email),\n    ('password', passwd),\n    ('entry', 'mweibo'),\n    ('client_id', ''),\n    ('savestate', '1'),\n    ('ec', ''),\n    ('pagerefer', 'https://passport.weibo.cn/signin/welcome?entry=mweibo&r=http%3A%2F%2Fm.weibo.cn%2F')\n])\n\nreq = request.Request('https://passport.weibo.cn/sso/login')\nreq.add_header('Origin', 'https://passport.weibo.cn')\nreq.add_header('User-Agent', 'Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25')\nreq.add_header('Referer', 'https://passport.weibo.cn/signin/login?entry=mweibo&res=wel&wm=3349&r=http%3A%2F%2Fm.weibo.cn%2F')\n\nwith request.urlopen(req, data=login_data.encode('utf-8')) as f:\n    print('Status:', f.status, f.reason)\n    for k, v in f.getheaders():\n        print('%s: %s' % (k, v))\n    print('Data:', f.read().decode('utf-8'))",
+    "Status: 200 OK\nServer: nginx/1.2.0\n...\nSet-Cookie: SSOLoginState=1432620126; path=/; domain=weibo.cn\n...\nData: {\"retcode\":20000000,\"msg\":\"\",\"data\":{...,\"uid\":\"1658384301\"}}",
+    "...\nData: {\"retcode\":50011015,\"msg\":\"\\u7528\\u6237\\u540d\\u6216\\u5bc6\\u7801\\u9519\\u8bef\",\"data\":{\"username\":\"example@python.org\",\"errline\":536}}",
+    "proxy_handler = urllib.request.ProxyHandler({'http': 'http://www.example.com:3128/'})\nproxy_auth_handler = urllib.request.ProxyBasicAuthHandler()\nproxy_auth_handler.add_password('realm', 'host', 'username', 'password')\nopener = urllib.request.build_opener(proxy_handler, proxy_auth_handler)\nwith opener.open('http://www.example.com/login.html') as f:\n    pass",
+    "from urllib import request\n\ndef fetch_data(url):\n    return ''\n\n# 测试\nURL = 'https://api.weatherapi.com/v1/current.json?key=b4e8f86b44654e6b86885330242207&q=Beijing&aqi=no'\ndata = fetch_data(URL)\nprint(data)\nassert data['location']['name'] == 'Beijing'\nprint('ok')"
+  ],
+  "text_block_count": 14
+}

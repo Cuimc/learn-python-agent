@@ -1,0 +1,309 @@
+{
+  "order": 36,
+  "url": "/books/python/oop/attr/index.html",
+  "title": "获取对象信息",
+  "section_slug": "oop",
+  "section_title": "面向对象编程",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>当我们拿到一个对象的引用时，如何知道这个对象是什么类型、有哪些方法呢？</p>\n<h3>使用type()</h3>\n<p>首先，我们来判断对象类型，使用<code>type()</code>函数：</p>\n<p>基本类型都可以用<code>type()</code>判断：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; type(123)\n&lt;class 'int'&gt;\n&gt;&gt;&gt; type('str')\n&lt;class 'str'&gt;\n&gt;&gt;&gt; type(None)\n&lt;type(None) 'NoneType'&gt;\n</code></pre>\n<p>如果一个变量指向函数或者类，也可以用<code>type()</code>判断：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; type(abs)\n&lt;class 'builtin_function_or_method'&gt;\n&gt;&gt;&gt; type(a)\n&lt;class '__main__.Animal'&gt;\n</code></pre>\n<p>但是<code>type()</code>函数返回的是什么类型呢？它返回对应的Class类型。如果我们要在<code>if</code>语句中判断，就需要比较两个变量的type类型是否相同：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; type(123)==type(456)\nTrue\n&gt;&gt;&gt; type(123)==int\nTrue\n&gt;&gt;&gt; type('abc')==type('123')\nTrue\n&gt;&gt;&gt; type('abc')==str\nTrue\n&gt;&gt;&gt; type('abc')==type(123)\nFalse\n</code></pre>\n<p>判断基本数据类型可以直接写<code>int</code>，<code>str</code>等，但如果要判断一个对象是否是函数怎么办？可以使用<code>types</code>模块中定义的常量：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; import types\n&gt;&gt;&gt; def fn():\n...     pass\n...\n&gt;&gt;&gt; type(fn)==types.FunctionType\nTrue\n&gt;&gt;&gt; type(abs)==types.BuiltinFunctionType\nTrue\n&gt;&gt;&gt; type(lambda x: x)==types.LambdaType\nTrue\n&gt;&gt;&gt; type((x for x in range(10)))==types.GeneratorType\nTrue\n</code></pre>\n<h3>使用isinstance()</h3>\n<p>对于class的继承关系来说，使用<code>type()</code>就很不方便。我们要判断class的类型，可以使用<code>isinstance()</code>函数。</p>\n<p>我们回顾上次的例子，如果继承关系是：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">object -&gt; Animal -&gt; Dog -&gt; Husky\n</code></pre>\n<p>那么，<code>isinstance()</code>就可以告诉我们，一个对象是否是某种类型。先创建3种类型的对象：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; a = Animal()\n&gt;&gt;&gt; d = Dog()\n&gt;&gt;&gt; h = Husky()\n</code></pre>\n<p>然后，判断：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance(h, Husky)\nTrue\n</code></pre>\n<p>没有问题，因为<code>h</code>变量指向的就是Husky对象。</p>\n<p>再判断：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance(h, Dog)\nTrue\n</code></pre>\n<p><code>h</code>虽然自身是Husky类型，但由于Husky是从Dog继承下来的，所以，<code>h</code>也还是Dog类型。换句话说，<code>isinstance()</code>判断的是一个对象是否是该类型本身，或者位于该类型的父继承链上。</p>\n<p>因此，我们可以确信，<code>h</code>还是Animal类型：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance(h, Animal)\nTrue\n</code></pre>\n<p>同理，实际类型是Dog的<code>d</code>也是Animal类型：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance(d, Dog) and isinstance(d, Animal)\nTrue\n</code></pre>\n<p>但是，<code>d</code>不是Husky类型：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance(d, Husky)\nFalse\n</code></pre>\n<p>能用<code>type()</code>判断的基本类型也可以用<code>isinstance()</code>判断：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance('a', str)\nTrue\n&gt;&gt;&gt; isinstance(123, int)\nTrue\n&gt;&gt;&gt; isinstance(b'a', bytes)\nTrue\n</code></pre>\n<p>并且还可以判断一个变量是否是某些类型中的一种，比如下面的代码就可以判断是否是list或者tuple：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; isinstance([1, 2, 3], (list, tuple))\nTrue\n&gt;&gt;&gt; isinstance((1, 2, 3), (list, tuple))\nTrue\n</code></pre>\n<div class=\"alert alert-note\">\n<p><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z\" /></svg> 提示<span></span></p>\n<p>总是优先使用<code>isinstance()</code>判断类型，可以将指定类型及其子类“一网打尽”。\n</p></div>\n<h3>使用dir()</h3>\n<p>如果要获得一个对象的所有属性和方法，可以使用<code>dir()</code>函数，它返回一个包含字符串的list，比如，获得一个str对象的所有属性和方法：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; dir('ABC')\n['__add__', '__class__',..., '__subclasshook__', 'capitalize', 'casefold',..., 'zfill']\n</code></pre>\n<p>类似<code>__xxx__</code>的属性和方法在Python中都是有特殊用途的，比如<code>__len__</code>方法返回长度。在Python中，如果你调用<code>len()</code>函数试图获取一个对象的长度，实际上，在<code>len()</code>函数内部，它自动去调用该对象的<code>__len__()</code>方法，所以，下面的代码是等价的：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; len('ABC')\n3\n&gt;&gt;&gt; 'ABC'.__len__()\n3\n</code></pre>\n<p>我们自己写的类，如果也想用<code>len(myObj)</code>的话，就自己写一个<code>__len__()</code>方法：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; class MyDog(object):\n...     def __len__(self):\n...         return 100\n...\n&gt;&gt;&gt; dog = MyDog()\n&gt;&gt;&gt; len(dog)\n100\n</code></pre>\n<p>剩下的都是普通属性或方法，比如<code>lower()</code>返回小写的字符串：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; 'ABC'.lower()\n'abc'\n</code></pre>\n<p>仅仅把属性和方法列出来是不够的，配合<code>getattr()</code>、<code>setattr()</code>以及<code>hasattr()</code>，我们可以直接操作一个对象的状态：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; class MyObject(object):\n...     def __init__(self):\n...         self.x = 9\n...     def power(self):\n...         return self.x * self.x\n...\n&gt;&gt;&gt; obj = MyObject()\n</code></pre>\n<p>紧接着，可以测试该对象的属性：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; hasattr(obj, 'x') # 有属性'x'吗？\nTrue\n&gt;&gt;&gt; obj.x\n9\n&gt;&gt;&gt; hasattr(obj, 'y') # 有属性'y'吗？\nFalse\n&gt;&gt;&gt; setattr(obj, 'y', 19) # 设置一个属性'y'\n&gt;&gt;&gt; hasattr(obj, 'y') # 有属性'y'吗？\nTrue\n&gt;&gt;&gt; getattr(obj, 'y') # 获取属性'y'\n19\n&gt;&gt;&gt; obj.y # 获取属性'y'\n19\n</code></pre>\n<p>如果试图获取不存在的属性，会抛出AttributeError的错误：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; getattr(obj, 'z') # 获取属性'z'\nTraceback (most recent call last):\n  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;\nAttributeError: 'MyObject' object has no attribute 'z'\n</code></pre>\n<p>可以传入一个default参数，如果属性不存在，就返回默认值：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; getattr(obj, 'z', 404) # 获取属性'z'，如果不存在，返回默认值404\n404\n</code></pre>\n<p>也可以获得对象的方法：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; hasattr(obj, 'power') # 有属性'power'吗？\nTrue\n&gt;&gt;&gt; getattr(obj, 'power') # 获取属性'power'\n&lt;bound method MyObject.power of &lt;__main__.MyObject object at 0x10077a6a0&gt;&gt;\n&gt;&gt;&gt; fn = getattr(obj, 'power') # 获取属性'power'并赋值到变量fn\n&gt;&gt;&gt; fn # fn指向obj.power\n&lt;bound method MyObject.power of &lt;__main__.MyObject object at 0x10077a6a0&gt;&gt;\n&gt;&gt;&gt; fn() # 调用fn()与调用obj.power()是一样的\n81\n</code></pre>\n<h3>小结</h3>\n<p>通过内置的一系列函数，我们可以对任意一个Python对象进行剖析，拿到其内部的数据。要注意的是，只有在不知道对象信息的时候，我们才会去获取对象信息。如果可以直接写：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-built_in\">sum</span> = obj.x + obj.y\n</code></pre>\n<p>就不要写：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-built_in\">sum</span> = <span class=\"hljs-built_in\">getattr</span>(obj, <span class=\"hljs-string\">&#x27;x&#x27;</span>) + <span class=\"hljs-built_in\">getattr</span>(obj, <span class=\"hljs-string\">&#x27;y&#x27;</span>)\n</code></pre>\n<p>一个正确的用法的例子如下：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">readImage</span>(<span class=\"hljs-params\">fp</span>):\n    <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">hasattr</span>(fp, <span class=\"hljs-string\">&#x27;read&#x27;</span>):\n        <span class=\"hljs-keyword\">return</span> readData(fp)\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">None</span>\n</code></pre>\n<p>假设我们希望从文件流fp中读取图像，我们首先要判断该fp对象是否存在read方法，如果存在，则该对象是一个流，如果不存在，则无法读取。<code>hasattr()</code>就派上了用场。</p>\n<p>请注意，在Python这类动态语言中，根据鸭子类型，有<code>read()</code>方法，不代表该fp对象就是一个文件流，它也可能是网络流，也可能是内存中的一个字节流，但只要<code>read()</code>方法返回的是有效的图像数据，就不影响读取图像的功能。</p>\n<h3>参考源码</h3>\n<p><a href=\"get_type.py\">get_type.py</a></p>\n<p><a href=\"attrs.py\">attrs.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "当我们拿到一个对象的引用时，如何知道这个对象是什么类型、有哪些方法呢？"
+    },
+    {
+      "type": "h3",
+      "text": "使用type()"
+    },
+    {
+      "type": "p",
+      "text": "首先，我们来判断对象类型，使用type()函数："
+    },
+    {
+      "type": "p",
+      "text": "基本类型都可以用type()判断："
+    },
+    {
+      "type": "pre",
+      "text": ">>> type(123)\n<class 'int'>\n>>> type('str')\n<class 'str'>\n>>> type(None)\n<type(None) 'NoneType'>"
+    },
+    {
+      "type": "p",
+      "text": "如果一个变量指向函数或者类，也可以用type()判断："
+    },
+    {
+      "type": "pre",
+      "text": ">>> type(abs)\n<class 'builtin_function_or_method'>\n>>> type(a)\n<class '__main__.Animal'>"
+    },
+    {
+      "type": "p",
+      "text": "但是type()函数返回的是什么类型呢？它返回对应的Class类型。如果我们要在if语句中判断，就需要比较两个变量的type类型是否相同："
+    },
+    {
+      "type": "pre",
+      "text": ">>> type(123)==type(456)\nTrue\n>>> type(123)==int\nTrue\n>>> type('abc')==type('123')\nTrue\n>>> type('abc')==str\nTrue\n>>> type('abc')==type(123)\nFalse"
+    },
+    {
+      "type": "p",
+      "text": "判断基本数据类型可以直接写int，str等，但如果要判断一个对象是否是函数怎么办？可以使用types模块中定义的常量："
+    },
+    {
+      "type": "pre",
+      "text": ">>> import types\n>>> def fn():\n...     pass\n...\n>>> type(fn)==types.FunctionType\nTrue\n>>> type(abs)==types.BuiltinFunctionType\nTrue\n>>> type(lambda x: x)==types.LambdaType\nTrue\n>>> type((x for x in range(10)))==types.GeneratorType\nTrue"
+    },
+    {
+      "type": "h3",
+      "text": "使用isinstance()"
+    },
+    {
+      "type": "p",
+      "text": "对于class的继承关系来说，使用type()就很不方便。我们要判断class的类型，可以使用isinstance()函数。"
+    },
+    {
+      "type": "p",
+      "text": "我们回顾上次的例子，如果继承关系是："
+    },
+    {
+      "type": "pre",
+      "text": "object -> Animal -> Dog -> Husky"
+    },
+    {
+      "type": "p",
+      "text": "那么，isinstance()就可以告诉我们，一个对象是否是某种类型。先创建3种类型的对象："
+    },
+    {
+      "type": "pre",
+      "text": ">>> a = Animal()\n>>> d = Dog()\n>>> h = Husky()"
+    },
+    {
+      "type": "p",
+      "text": "然后，判断："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance(h, Husky)\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "没有问题，因为h变量指向的就是Husky对象。"
+    },
+    {
+      "type": "p",
+      "text": "再判断："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance(h, Dog)\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "h虽然自身是Husky类型，但由于Husky是从Dog继承下来的，所以，h也还是Dog类型。换句话说，isinstance()判断的是一个对象是否是该类型本身，或者位于该类型的父继承链上。"
+    },
+    {
+      "type": "p",
+      "text": "因此，我们可以确信，h还是Animal类型："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance(h, Animal)\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "同理，实际类型是Dog的d也是Animal类型："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance(d, Dog) and isinstance(d, Animal)\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "但是，d不是Husky类型："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance(d, Husky)\nFalse"
+    },
+    {
+      "type": "p",
+      "text": "能用type()判断的基本类型也可以用isinstance()判断："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance('a', str)\nTrue\n>>> isinstance(123, int)\nTrue\n>>> isinstance(b'a', bytes)\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "并且还可以判断一个变量是否是某些类型中的一种，比如下面的代码就可以判断是否是list或者tuple："
+    },
+    {
+      "type": "pre",
+      "text": ">>> isinstance([1, 2, 3], (list, tuple))\nTrue\n>>> isinstance((1, 2, 3), (list, tuple))\nTrue"
+    },
+    {
+      "type": "p",
+      "text": "提示"
+    },
+    {
+      "type": "p",
+      "text": "总是优先使用isinstance()判断类型，可以将指定类型及其子类“一网打尽”。"
+    },
+    {
+      "type": "h3",
+      "text": "使用dir()"
+    },
+    {
+      "type": "p",
+      "text": "如果要获得一个对象的所有属性和方法，可以使用dir()函数，它返回一个包含字符串的list，比如，获得一个str对象的所有属性和方法："
+    },
+    {
+      "type": "pre",
+      "text": ">>> dir('ABC')\n['__add__', '__class__',..., '__subclasshook__', 'capitalize', 'casefold',..., 'zfill']"
+    },
+    {
+      "type": "p",
+      "text": "类似__xxx__的属性和方法在Python中都是有特殊用途的，比如__len__方法返回长度。在Python中，如果你调用len()函数试图获取一个对象的长度，实际上，在len()函数内部，它自动去调用该对象的__len__()方法，所以，下面的代码是等价的："
+    },
+    {
+      "type": "pre",
+      "text": ">>> len('ABC')\n3\n>>> 'ABC'.__len__()\n3"
+    },
+    {
+      "type": "p",
+      "text": "我们自己写的类，如果也想用len(myObj)的话，就自己写一个__len__()方法："
+    },
+    {
+      "type": "pre",
+      "text": ">>> class MyDog(object):\n...     def __len__(self):\n...         return 100\n...\n>>> dog = MyDog()\n>>> len(dog)\n100"
+    },
+    {
+      "type": "p",
+      "text": "剩下的都是普通属性或方法，比如lower()返回小写的字符串："
+    },
+    {
+      "type": "pre",
+      "text": ">>> 'ABC'.lower()\n'abc'"
+    },
+    {
+      "type": "p",
+      "text": "仅仅把属性和方法列出来是不够的，配合getattr()、setattr()以及hasattr()，我们可以直接操作一个对象的状态："
+    },
+    {
+      "type": "pre",
+      "text": ">>> class MyObject(object):\n...     def __init__(self):\n...         self.x = 9\n...     def power(self):\n...         return self.x * self.x\n...\n>>> obj = MyObject()"
+    },
+    {
+      "type": "p",
+      "text": "紧接着，可以测试该对象的属性："
+    },
+    {
+      "type": "pre",
+      "text": ">>> hasattr(obj, 'x') # 有属性'x'吗？\nTrue\n>>> obj.x\n9\n>>> hasattr(obj, 'y') # 有属性'y'吗？\nFalse\n>>> setattr(obj, 'y', 19) # 设置一个属性'y'\n>>> hasattr(obj, 'y') # 有属性'y'吗？\nTrue\n>>> getattr(obj, 'y') # 获取属性'y'\n19\n>>> obj.y # 获取属性'y'\n19"
+    },
+    {
+      "type": "p",
+      "text": "如果试图获取不存在的属性，会抛出AttributeError的错误："
+    },
+    {
+      "type": "pre",
+      "text": ">>> getattr(obj, 'z') # 获取属性'z'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAttributeError: 'MyObject' object has no attribute 'z'"
+    },
+    {
+      "type": "p",
+      "text": "可以传入一个default参数，如果属性不存在，就返回默认值："
+    },
+    {
+      "type": "pre",
+      "text": ">>> getattr(obj, 'z', 404) # 获取属性'z'，如果不存在，返回默认值404\n404"
+    },
+    {
+      "type": "p",
+      "text": "也可以获得对象的方法："
+    },
+    {
+      "type": "pre",
+      "text": ">>> hasattr(obj, 'power') # 有属性'power'吗？\nTrue\n>>> getattr(obj, 'power') # 获取属性'power'\n<bound method MyObject.power of <__main__.MyObject object at 0x10077a6a0>>\n>>> fn = getattr(obj, 'power') # 获取属性'power'并赋值到变量fn\n>>> fn # fn指向obj.power\n<bound method MyObject.power of <__main__.MyObject object at 0x10077a6a0>>\n>>> fn() # 调用fn()与调用obj.power()是一样的\n81"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "通过内置的一系列函数，我们可以对任意一个Python对象进行剖析，拿到其内部的数据。要注意的是，只有在不知道对象信息的时候，我们才会去获取对象信息。如果可以直接写："
+    },
+    {
+      "type": "pre",
+      "text": "sum = obj.x + obj.y"
+    },
+    {
+      "type": "p",
+      "text": "就不要写："
+    },
+    {
+      "type": "pre",
+      "text": "sum = getattr(obj, 'x') + getattr(obj, 'y')"
+    },
+    {
+      "type": "p",
+      "text": "一个正确的用法的例子如下："
+    },
+    {
+      "type": "pre",
+      "text": "def readImage(fp):\n    if hasattr(fp, 'read'):\n        return readData(fp)\n    return None"
+    },
+    {
+      "type": "p",
+      "text": "假设我们希望从文件流fp中读取图像，我们首先要判断该fp对象是否存在read方法，如果存在，则该对象是一个流，如果不存在，则无法读取。hasattr()就派上了用场。"
+    },
+    {
+      "type": "p",
+      "text": "请注意，在Python这类动态语言中，根据鸭子类型，有read()方法，不代表该fp对象就是一个文件流，它也可能是网络流，也可能是内存中的一个字节流，但只要read()方法返回的是有效的图像数据，就不影响读取图像的功能。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "get_type.py"
+    },
+    {
+      "type": "p",
+      "text": "attrs.py"
+    }
+  ],
+  "headings": [
+    "使用type()",
+    "使用isinstance()",
+    "使用dir()",
+    "小结",
+    "参考源码"
+  ],
+  "code_blocks": [
+    ">>> type(123)\n<class 'int'>\n>>> type('str')\n<class 'str'>\n>>> type(None)\n<type(None) 'NoneType'>",
+    ">>> type(abs)\n<class 'builtin_function_or_method'>\n>>> type(a)\n<class '__main__.Animal'>",
+    ">>> type(123)==type(456)\nTrue\n>>> type(123)==int\nTrue\n>>> type('abc')==type('123')\nTrue\n>>> type('abc')==str\nTrue\n>>> type('abc')==type(123)\nFalse",
+    ">>> import types\n>>> def fn():\n...     pass\n...\n>>> type(fn)==types.FunctionType\nTrue\n>>> type(abs)==types.BuiltinFunctionType\nTrue\n>>> type(lambda x: x)==types.LambdaType\nTrue\n>>> type((x for x in range(10)))==types.GeneratorType\nTrue",
+    "object -> Animal -> Dog -> Husky",
+    ">>> a = Animal()\n>>> d = Dog()\n>>> h = Husky()",
+    ">>> isinstance(h, Husky)\nTrue",
+    ">>> isinstance(h, Dog)\nTrue",
+    ">>> isinstance(h, Animal)\nTrue",
+    ">>> isinstance(d, Dog) and isinstance(d, Animal)\nTrue",
+    ">>> isinstance(d, Husky)\nFalse",
+    ">>> isinstance('a', str)\nTrue\n>>> isinstance(123, int)\nTrue\n>>> isinstance(b'a', bytes)\nTrue",
+    ">>> isinstance([1, 2, 3], (list, tuple))\nTrue\n>>> isinstance((1, 2, 3), (list, tuple))\nTrue",
+    ">>> dir('ABC')\n['__add__', '__class__',..., '__subclasshook__', 'capitalize', 'casefold',..., 'zfill']",
+    ">>> len('ABC')\n3\n>>> 'ABC'.__len__()\n3",
+    ">>> class MyDog(object):\n...     def __len__(self):\n...         return 100\n...\n>>> dog = MyDog()\n>>> len(dog)\n100",
+    ">>> 'ABC'.lower()\n'abc'",
+    ">>> class MyObject(object):\n...     def __init__(self):\n...         self.x = 9\n...     def power(self):\n...         return self.x * self.x\n...\n>>> obj = MyObject()",
+    ">>> hasattr(obj, 'x') # 有属性'x'吗？\nTrue\n>>> obj.x\n9\n>>> hasattr(obj, 'y') # 有属性'y'吗？\nFalse\n>>> setattr(obj, 'y', 19) # 设置一个属性'y'\n>>> hasattr(obj, 'y') # 有属性'y'吗？\nTrue\n>>> getattr(obj, 'y') # 获取属性'y'\n19\n>>> obj.y # 获取属性'y'\n19",
+    ">>> getattr(obj, 'z') # 获取属性'z'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAttributeError: 'MyObject' object has no attribute 'z'",
+    ">>> getattr(obj, 'z', 404) # 获取属性'z'，如果不存在，返回默认值404\n404",
+    ">>> hasattr(obj, 'power') # 有属性'power'吗？\nTrue\n>>> getattr(obj, 'power') # 获取属性'power'\n<bound method MyObject.power of <__main__.MyObject object at 0x10077a6a0>>\n>>> fn = getattr(obj, 'power') # 获取属性'power'并赋值到变量fn\n>>> fn # fn指向obj.power\n<bound method MyObject.power of <__main__.MyObject object at 0x10077a6a0>>\n>>> fn() # 调用fn()与调用obj.power()是一样的\n81",
+    "sum = obj.x + obj.y",
+    "sum = getattr(obj, 'x') + getattr(obj, 'y')",
+    "def readImage(fp):\n    if hasattr(fp, 'read'):\n        return readData(fp)\n    return None"
+  ],
+  "text_block_count": 36
+}

@@ -1,0 +1,138 @@
+{
+  "order": 67,
+  "url": "/books/python/built-in-modules/struct/index.html",
+  "title": "struct",
+  "section_slug": "built-in-modules",
+  "section_title": "常用内建模块",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>准确地讲，Python没有专门处理字节的数据类型。但由于<code>b'str'</code>可以表示字节，所以，字节数组＝二进制<code>str</code>。而在C语言中，我们可以很方便地用<code>struct</code>、<code>union</code>来处理字节，以及字节和<code>int</code>，<code>float</code>的转换。</p>\n<p>在Python中，比方说要把一个32位无符号整数变成字节，也就是4个长度的<code>bytes</code>，你得配合位运算符这么写：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; n = 10240099\n&gt;&gt;&gt; b1 = (n &amp; 0xff000000) &gt;&gt; 24\n&gt;&gt;&gt; b2 = (n &amp; 0xff0000) &gt;&gt; 16\n&gt;&gt;&gt; b3 = (n &amp; 0xff00) &gt;&gt; 8\n&gt;&gt;&gt; b4 = n &amp; 0xff\n&gt;&gt;&gt; bs = bytes([b1, b2, b3, b4])\n&gt;&gt;&gt; bs\nb'\\x00\\x9c@c'\n</code></pre>\n<p>非常麻烦。如果换成浮点数就无能为力了。</p>\n<p>好在Python提供了一个<code>struct</code>模块来解决<code>bytes</code>和其他二进制数据类型的转换。</p>\n<p><code>struct</code>的<code>pack</code>函数把任意数据类型变成<code>bytes</code>：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; import struct\n&gt;&gt;&gt; struct.pack('&gt;I', 10240099)\nb'\\x00\\x9c@c'\n</code></pre>\n<p><code>pack</code>的第一个参数是处理指令，<code>'&gt;I'</code>的意思是：</p>\n<p><code>&gt;</code>表示字节顺序是big-endian，也就是网络序，<code>I</code>表示4字节无符号整数。</p>\n<p>后面的参数个数要和处理指令一致。</p>\n<p><code>unpack</code>把<code>bytes</code>变成相应的数据类型：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; struct.unpack('&gt;IH', b'\\xf0\\xf0\\xf0\\xf0\\x80\\x80')\n(4042322160, 32896)\n</code></pre>\n<p>根据<code>&gt;IH</code>的说明，后面的<code>bytes</code>依次变为<code>I</code>：4字节无符号整数和<code>H</code>：2字节无符号整数。</p>\n<p>所以，尽管Python不适合编写底层操作字节流的代码，但在对性能要求不高的地方，利用<code>struct</code>就方便多了。</p>\n<p><code>struct</code>模块定义的数据类型可以参考Python官方文档：</p>\n<p><a href=\"https://docs.python.org/3/library/struct.html#format-characters\" target=\"_blank\">https://docs.python.org/3/library/struct.html#format-characters</a></p>\n<p>Windows的位图文件（.bmp）是一种非常简单的文件格式，我们来用<code>struct</code>分析一下。</p>\n<p>首先找一个bmp文件，没有的话用“画图”画一个。</p>\n<p>读入前30个字节来分析：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; s = b'\\x42\\x4d\\x38\\x8c\\x0a\\x00\\x00\\x00\\x00\\x00\\x36\\x00\\x00\\x00\\x28\\x00\\x00\\x00\\x80\\x02\\x00\\x00\\x68\\x01\\x00\\x00\\x01\\x00\\x18\\x00'\n</code></pre>\n<p>BMP格式采用小端方式存储数据，文件头的结构按顺序如下：</p>\n<p>两个字节：<code>'BM'</code>表示Windows位图，<code>'BA'</code>表示OS/2位图；\n一个4字节整数：表示位图大小；\n一个4字节整数：保留位，始终为0；\n一个4字节整数：实际图像的偏移量；\n一个4字节整数：Header的字节数；\n一个4字节整数：图像宽度；\n一个4字节整数：图像高度；\n一个2字节整数：始终为1；\n一个2字节整数：颜色数。</p>\n<p>所以，组合起来用<code>unpack</code>读取：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">&gt;&gt;&gt; struct.unpack('&lt;ccIIIIIIHH', s)\n(b'B', b'M', 691256, 0, 54, 40, 640, 360, 1, 24)\n</code></pre>\n<p>结果显示，<code>b'B'</code>、<code>b'M'</code>说明是Windows位图，位图大小为640x360，颜色数为24。</p>\n<p>请编写一个<code>bmpinfo.py</code>，可以检查任意文件是否是位图文件，如果是，打印出图片大小和颜色数。</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">import</span> base64, struct\nbmp_data = base64.b64decode(<span class=\"hljs-string\">&#x27;Qk1oAgAAAAAAADYAAAAoAAAAHAAAAAoAAAABABAAAAAAADICAAASCwAAEgsAA&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;AAAAAAAAAAA/3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3/&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;/f/9//3//f/9//3//f/9/AHwAfAB8AHwAfAB8AHwAfP9//3//fwB8AHwAfAB8/3//f/9/A&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;HwAfAB8AHz/f/9//3//f/9//38AfAB8AHwAfAB8AHwAfAB8AHz/f/9//38AfAB8/3//f/9&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;//3//fwB8AHz/f/9//3//f/9//3//f/9/AHwAfP9//3//f/9/AHwAfP9//3//fwB8AHz/f&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;/9//3//f/9/AHwAfP9//3//f/9//3//f/9//38AfAB8AHwAfAB8AHwAfP9//3//f/9/AHw&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;AfP9//3//f/9//38AfAB8/3//f/9//3//f/9//3//fwB8AHwAfAB8AHwAfAB8/3//f/9//&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;38AfAB8/3//f/9//3//fwB8AHz/f/9//3//f/9//3//f/9/AHwAfP9//3//f/9/AHwAfP9&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;//3//fwB8AHz/f/9/AHz/f/9/AHwAfP9//38AfP9//3//f/9/AHwAfAB8AHwAfAB8AHwAf&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;AB8/3//f/9/AHwAfP9//38AfAB8AHwAfAB8AHwAfAB8/3//f/9//38AfAB8AHwAfAB8AHw&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;AfAB8/3//f/9/AHwAfAB8AHz/fwB8AHwAfAB8AHwAfAB8AHz/f/9//3//f/9//3//f/9//&#x27;</span> +\n                   <span class=\"hljs-string\">&#x27;3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//38AAA==&#x27;</span>)\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">bmp_info</span>(<span class=\"hljs-params\">data</span>):\n    <span class=\"hljs-keyword\">return</span> {\n        <span class=\"hljs-string\">&#x27;width&#x27;</span>: <span class=\"hljs-number\">200</span>,\n        <span class=\"hljs-string\">&#x27;height&#x27;</span>: <span class=\"hljs-number\">100</span>,\n        <span class=\"hljs-string\">&#x27;color&#x27;</span>: <span class=\"hljs-number\">24</span>\n    }\n\n<span class=\"hljs-comment\"># 测试</span>\nbi = bmp_info(bmp_data)\n<span class=\"hljs-keyword\">assert</span> bi[<span class=\"hljs-string\">&#x27;width&#x27;</span>] == <span class=\"hljs-number\">28</span>\n<span class=\"hljs-keyword\">assert</span> bi[<span class=\"hljs-string\">&#x27;height&#x27;</span>] == <span class=\"hljs-number\">10</span>\n<span class=\"hljs-keyword\">assert</span> bi[<span class=\"hljs-string\">&#x27;color&#x27;</span>] == <span class=\"hljs-number\">16</span>\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;ok&#x27;</span>)\n</code></pre>\n<h3>参考源码</h3>\n<p><a href=\"check_bmp.py\">check_bmp.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "准确地讲，Python没有专门处理字节的数据类型。但由于b'str'可以表示字节，所以，字节数组＝二进制str。而在C语言中，我们可以很方便地用struct、union来处理字节，以及字节和int，float的转换。"
+    },
+    {
+      "type": "p",
+      "text": "在Python中，比方说要把一个32位无符号整数变成字节，也就是4个长度的bytes，你得配合位运算符这么写："
+    },
+    {
+      "type": "pre",
+      "text": ">>> n = 10240099\n>>> b1 = (n & 0xff000000) >> 24\n>>> b2 = (n & 0xff0000) >> 16\n>>> b3 = (n & 0xff00) >> 8\n>>> b4 = n & 0xff\n>>> bs = bytes([b1, b2, b3, b4])\n>>> bs\nb'\\x00\\x9c@c'"
+    },
+    {
+      "type": "p",
+      "text": "非常麻烦。如果换成浮点数就无能为力了。"
+    },
+    {
+      "type": "p",
+      "text": "好在Python提供了一个struct模块来解决bytes和其他二进制数据类型的转换。"
+    },
+    {
+      "type": "p",
+      "text": "struct的pack函数把任意数据类型变成bytes："
+    },
+    {
+      "type": "pre",
+      "text": ">>> import struct\n>>> struct.pack('>I', 10240099)\nb'\\x00\\x9c@c'"
+    },
+    {
+      "type": "p",
+      "text": "pack的第一个参数是处理指令，'>I'的意思是："
+    },
+    {
+      "type": "p",
+      "text": ">表示字节顺序是big-endian，也就是网络序，I表示4字节无符号整数。"
+    },
+    {
+      "type": "p",
+      "text": "后面的参数个数要和处理指令一致。"
+    },
+    {
+      "type": "p",
+      "text": "unpack把bytes变成相应的数据类型："
+    },
+    {
+      "type": "pre",
+      "text": ">>> struct.unpack('>IH', b'\\xf0\\xf0\\xf0\\xf0\\x80\\x80')\n(4042322160, 32896)"
+    },
+    {
+      "type": "p",
+      "text": "根据>IH的说明，后面的bytes依次变为I：4字节无符号整数和H：2字节无符号整数。"
+    },
+    {
+      "type": "p",
+      "text": "所以，尽管Python不适合编写底层操作字节流的代码，但在对性能要求不高的地方，利用struct就方便多了。"
+    },
+    {
+      "type": "p",
+      "text": "struct模块定义的数据类型可以参考Python官方文档："
+    },
+    {
+      "type": "p",
+      "text": "https://docs.python.org/3/library/struct.html#format-characters"
+    },
+    {
+      "type": "p",
+      "text": "Windows的位图文件（.bmp）是一种非常简单的文件格式，我们来用struct分析一下。"
+    },
+    {
+      "type": "p",
+      "text": "首先找一个bmp文件，没有的话用“画图”画一个。"
+    },
+    {
+      "type": "p",
+      "text": "读入前30个字节来分析："
+    },
+    {
+      "type": "pre",
+      "text": ">>> s = b'\\x42\\x4d\\x38\\x8c\\x0a\\x00\\x00\\x00\\x00\\x00\\x36\\x00\\x00\\x00\\x28\\x00\\x00\\x00\\x80\\x02\\x00\\x00\\x68\\x01\\x00\\x00\\x01\\x00\\x18\\x00'"
+    },
+    {
+      "type": "p",
+      "text": "BMP格式采用小端方式存储数据，文件头的结构按顺序如下："
+    },
+    {
+      "type": "p",
+      "text": "两个字节：'BM'表示Windows位图，'BA'表示OS/2位图； 一个4字节整数：表示位图大小； 一个4字节整数：保留位，始终为0； 一个4字节整数：实际图像的偏移量； 一个4字节整数：Header的字节数； 一个4字节整数：图像宽度； 一个4字节整数：图像高度； 一个2字节整数：始终为1； 一个2字节整数：颜色数。"
+    },
+    {
+      "type": "p",
+      "text": "所以，组合起来用unpack读取："
+    },
+    {
+      "type": "pre",
+      "text": ">>> struct.unpack('<ccIIIIIIHH', s)\n(b'B', b'M', 691256, 0, 54, 40, 640, 360, 1, 24)"
+    },
+    {
+      "type": "p",
+      "text": "结果显示，b'B'、b'M'说明是Windows位图，位图大小为640x360，颜色数为24。"
+    },
+    {
+      "type": "p",
+      "text": "请编写一个bmpinfo.py，可以检查任意文件是否是位图文件，如果是，打印出图片大小和颜色数。"
+    },
+    {
+      "type": "pre",
+      "text": "import base64, struct\nbmp_data = base64.b64decode('Qk1oAgAAAAAAADYAAAAoAAAAHAAAAAoAAAABABAAAAAAADICAAASCwAAEgsAA' +\n                   'AAAAAAAAAAA/3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3/' +\n                   '/f/9//3//f/9//3//f/9/AHwAfAB8AHwAfAB8AHwAfP9//3//fwB8AHwAfAB8/3//f/9/A' +\n                   'HwAfAB8AHz/f/9//3//f/9//38AfAB8AHwAfAB8AHwAfAB8AHz/f/9//38AfAB8/3//f/9' +\n                   '//3//fwB8AHz/f/9//3//f/9//3//f/9/AHwAfP9//3//f/9/AHwAfP9//3//fwB8AHz/f' +\n                   '/9//3//f/9/AHwAfP9//3//f/9//3//f/9//38AfAB8AHwAfAB8AHwAfP9//3//f/9/AHw' +\n                   'AfP9//3//f/9//38AfAB8/3//f/9//3//f/9//3//fwB8AHwAfAB8AHwAfAB8/3//f/9//' +\n                   '38AfAB8/3//f/9//3//fwB8AHz/f/9//3//f/9//3//f/9/AHwAfP9//3//f/9/AHwAfP9' +\n                   '//3//fwB8AHz/f/9/AHz/f/9/AHwAfP9//38AfP9//3//f/9/AHwAfAB8AHwAfAB8AHwAf' +\n                   'AB8/3//f/9/AHwAfP9//38AfAB8AHwAfAB8AHwAfAB8/3//f/9//38AfAB8AHwAfAB8AHw' +\n                   'AfAB8/3//f/9/AHwAfAB8AHz/fwB8AHwAfAB8AHwAfAB8AHz/f/9//3//f/9//3//f/9//' +\n                   '3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//38AAA==')\n\ndef bmp_info(data):\n    return {\n        'width': 200,\n        'height': 100,\n        'color': 24\n    }\n\n# 测试\nbi = bmp_info(bmp_data)\nassert bi['width'] == 28\nassert bi['height'] == 10\nassert bi['color'] == 16\nprint('ok')"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "check_bmp.py"
+    }
+  ],
+  "headings": [
+    "参考源码"
+  ],
+  "code_blocks": [
+    ">>> n = 10240099\n>>> b1 = (n & 0xff000000) >> 24\n>>> b2 = (n & 0xff0000) >> 16\n>>> b3 = (n & 0xff00) >> 8\n>>> b4 = n & 0xff\n>>> bs = bytes([b1, b2, b3, b4])\n>>> bs\nb'\\x00\\x9c@c'",
+    ">>> import struct\n>>> struct.pack('>I', 10240099)\nb'\\x00\\x9c@c'",
+    ">>> struct.unpack('>IH', b'\\xf0\\xf0\\xf0\\xf0\\x80\\x80')\n(4042322160, 32896)",
+    ">>> s = b'\\x42\\x4d\\x38\\x8c\\x0a\\x00\\x00\\x00\\x00\\x00\\x36\\x00\\x00\\x00\\x28\\x00\\x00\\x00\\x80\\x02\\x00\\x00\\x68\\x01\\x00\\x00\\x01\\x00\\x18\\x00'",
+    ">>> struct.unpack('<ccIIIIIIHH', s)\n(b'B', b'M', 691256, 0, 54, 40, 640, 360, 1, 24)",
+    "import base64, struct\nbmp_data = base64.b64decode('Qk1oAgAAAAAAADYAAAAoAAAAHAAAAAoAAAABABAAAAAAADICAAASCwAAEgsAA' +\n                   'AAAAAAAAAAA/3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3/' +\n                   '/f/9//3//f/9//3//f/9/AHwAfAB8AHwAfAB8AHwAfP9//3//fwB8AHwAfAB8/3//f/9/A' +\n                   'HwAfAB8AHz/f/9//3//f/9//38AfAB8AHwAfAB8AHwAfAB8AHz/f/9//38AfAB8/3//f/9' +\n                   '//3//fwB8AHz/f/9//3//f/9//3//f/9/AHwAfP9//3//f/9/AHwAfP9//3//fwB8AHz/f' +\n                   '/9//3//f/9/AHwAfP9//3//f/9//3//f/9//38AfAB8AHwAfAB8AHwAfP9//3//f/9/AHw' +\n                   'AfP9//3//f/9//38AfAB8/3//f/9//3//f/9//3//fwB8AHwAfAB8AHwAfAB8/3//f/9//' +\n                   '38AfAB8/3//f/9//3//fwB8AHz/f/9//3//f/9//3//f/9/AHwAfP9//3//f/9/AHwAfP9' +\n                   '//3//fwB8AHz/f/9/AHz/f/9/AHwAfP9//38AfP9//3//f/9/AHwAfAB8AHwAfAB8AHwAf' +\n                   'AB8/3//f/9/AHwAfP9//38AfAB8AHwAfAB8AHwAfAB8/3//f/9//38AfAB8AHwAfAB8AHw' +\n                   'AfAB8/3//f/9/AHwAfAB8AHz/fwB8AHwAfAB8AHwAfAB8AHz/f/9//3//f/9//3//f/9//' +\n                   '3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//38AAA==')\n\ndef bmp_info(data):\n    return {\n        'width': 200,\n        'height': 100,\n        'color': 24\n    }\n\n# 测试\nbi = bmp_info(bmp_data)\nassert bi['width'] == 28\nassert bi['height'] == 10\nassert bi['color'] == 16\nprint('ok')"
+  ],
+  "text_block_count": 22
+}

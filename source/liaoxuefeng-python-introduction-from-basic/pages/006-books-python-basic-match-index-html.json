@@ -1,0 +1,114 @@
+{
+  "order": 6,
+  "url": "/books/python/basic/match/index.html",
+  "title": "模式匹配",
+  "section_slug": "basic",
+  "section_title": "Python基础",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>当我们用<code>if ... elif ... elif ... else ...</code>判断时，会写很长一串代码，可读性较差。</p>\n<p>如果要针对某个变量匹配若干种情况，可以使用<code>match</code>语句。</p>\n<p>例如，某个学生的成绩只能是<code>A</code>、<code>B</code>、<code>C</code>，用<code>if</code>语句编写如下：</p>\n<pre class=\"hljs\"><code class=\"language-python\">score = <span class=\"hljs-string\">&#x27;B&#x27;</span>\n<span class=\"hljs-keyword\">if</span> score == <span class=\"hljs-string\">&#x27;A&#x27;</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is A.&#x27;</span>)\n<span class=\"hljs-keyword\">elif</span> score == <span class=\"hljs-string\">&#x27;B&#x27;</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is B.&#x27;</span>)\n<span class=\"hljs-keyword\">elif</span> score == <span class=\"hljs-string\">&#x27;C&#x27;</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is C.&#x27;</span>)\n<span class=\"hljs-keyword\">else</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;invalid score.&#x27;</span>)\n</code></pre>\n<p>如果用<code>match</code>语句改写，则改写如下：</p>\n<pre class=\"hljs\"><code class=\"language-python\">score = <span class=\"hljs-string\">&#x27;B&#x27;</span>\n\n<span class=\"hljs-keyword\">match</span> score:\n    <span class=\"hljs-keyword\">case</span> <span class=\"hljs-string\">&#x27;A&#x27;</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is A.&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> <span class=\"hljs-string\">&#x27;B&#x27;</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is B.&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> <span class=\"hljs-string\">&#x27;C&#x27;</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is C.&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> _: <span class=\"hljs-comment\"># _表示匹配到其他任何情况</span>\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;score is ???.&#x27;</span>)\n</code></pre>\n<p>使用<code>match</code>语句时，我们依次用<code>case xxx</code>匹配，并且可以在最后（且仅能在最后）加一个<code>case _</code>表示“任意值”，代码较<code>if ... elif ... else ...</code>更易读。</p>\n<h3>复杂匹配</h3>\n<p><code>match</code>语句除了可以匹配简单的单个值外，还可以匹配多个值、匹配一定范围，并且把匹配后的值绑定到变量：</p>\n<pre class=\"hljs\"><code class=\"language-python\">age = <span class=\"hljs-number\">15</span>\n\n<span class=\"hljs-keyword\">match</span> age:\n    <span class=\"hljs-keyword\">case</span> x <span class=\"hljs-keyword\">if</span> x &lt; <span class=\"hljs-number\">10</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&#x27;&lt; 10 years old: <span class=\"hljs-subst\">{x}</span>&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">10</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;10 years old.&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">11</span> | <span class=\"hljs-number\">12</span> | <span class=\"hljs-number\">13</span> | <span class=\"hljs-number\">14</span> | <span class=\"hljs-number\">15</span> | <span class=\"hljs-number\">16</span> | <span class=\"hljs-number\">17</span> | <span class=\"hljs-number\">18</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;11~18 years old.&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">19</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;19 years old.&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> _:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;not sure.&#x27;</span>)\n</code></pre>\n<p>在上面这个示例中，第一个<code>case x if x &lt; 10</code>表示当<code>age &lt; 10</code>成立时匹配，且赋值给变量<code>x</code>，第二个<code>case 10</code>仅匹配单个值，第三个<code>case 11|12|...|18</code>能匹配多个值，用<code>|</code>分隔。</p>\n<p>可见，<code>match</code>语句的<code>case</code>匹配非常灵活。</p>\n<h3>匹配列表</h3>\n<p><code>match</code>语句还可以匹配列表，功能非常强大。</p>\n<p>我们假设用户输入了一个命令，用<code>args = ['gcc', 'hello.c']</code>存储，下面的代码演示了如何用<code>match</code>匹配来解析这个列表：</p>\n<pre class=\"hljs\"><code class=\"language-python\">args = [<span class=\"hljs-string\">&#x27;gcc&#x27;</span>, <span class=\"hljs-string\">&#x27;hello.c&#x27;</span>, <span class=\"hljs-string\">&#x27;world.c&#x27;</span>]\n<span class=\"hljs-comment\"># args = [&#x27;clean&#x27;]</span>\n<span class=\"hljs-comment\"># args = [&#x27;gcc&#x27;]</span>\n\n<span class=\"hljs-keyword\">match</span> args:\n    <span class=\"hljs-comment\"># 如果仅出现gcc，报错:</span>\n    <span class=\"hljs-keyword\">case</span> [<span class=\"hljs-string\">&#x27;gcc&#x27;</span>]:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;gcc: missing source file(s).&#x27;</span>)\n    <span class=\"hljs-comment\"># 出现gcc，且至少指定了一个文件:</span>\n    <span class=\"hljs-keyword\">case</span> [<span class=\"hljs-string\">&#x27;gcc&#x27;</span>, file1, *files]:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;gcc compile: &#x27;</span> + file1 + <span class=\"hljs-string\">&#x27;, &#x27;</span> + <span class=\"hljs-string\">&#x27;, &#x27;</span>.join(files))\n    <span class=\"hljs-comment\"># 仅出现clean:</span>\n    <span class=\"hljs-keyword\">case</span> [<span class=\"hljs-string\">&#x27;clean&#x27;</span>]:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;clean&#x27;</span>)\n    <span class=\"hljs-keyword\">case</span> _:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&#x27;invalid command.&#x27;</span>)\n</code></pre>\n<p>第一个<code>case ['gcc']</code>表示列表仅有<code>'gcc'</code>一个字符串，没有指定文件名，报错；</p>\n<p>第二个<code>case ['gcc', file1, *files]</code>表示列表第一个字符串是<code>'gcc'</code>，第二个字符串绑定到变量<code>file1</code>，后面的任意个字符串绑定到<code>*files</code>（符号<code>*</code>的作用将在<a href=\"../../function/parameter/index.html\">函数的参数</a>中讲解），它实际上表示至少指定一个文件；</p>\n<p>第三个<code>case ['clean']</code>表示列表仅有<code>'clean'</code>一个字符串；</p>\n<p>最后一个<code>case _</code>表示其他所有情况。</p>\n<p>可见，<code>match</code>语句的匹配规则非常灵活，可以写出非常简洁的代码。</p>\n<h3>参考源码</h3>\n<p><a href=\"do_match.py\">do_match.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "当我们用if ... elif ... elif ... else ...判断时，会写很长一串代码，可读性较差。"
+    },
+    {
+      "type": "p",
+      "text": "如果要针对某个变量匹配若干种情况，可以使用match语句。"
+    },
+    {
+      "type": "p",
+      "text": "例如，某个学生的成绩只能是A、B、C，用if语句编写如下："
+    },
+    {
+      "type": "pre",
+      "text": "score = 'B'\nif score == 'A':\n    print('score is A.')\nelif score == 'B':\n    print('score is B.')\nelif score == 'C':\n    print('score is C.')\nelse:\n    print('invalid score.')"
+    },
+    {
+      "type": "p",
+      "text": "如果用match语句改写，则改写如下："
+    },
+    {
+      "type": "pre",
+      "text": "score = 'B'\n\nmatch score:\n    case 'A':\n        print('score is A.')\n    case 'B':\n        print('score is B.')\n    case 'C':\n        print('score is C.')\n    case _: # _表示匹配到其他任何情况\n        print('score is ???.')"
+    },
+    {
+      "type": "p",
+      "text": "使用match语句时，我们依次用case xxx匹配，并且可以在最后（且仅能在最后）加一个case _表示“任意值”，代码较if ... elif ... else ...更易读。"
+    },
+    {
+      "type": "h3",
+      "text": "复杂匹配"
+    },
+    {
+      "type": "p",
+      "text": "match语句除了可以匹配简单的单个值外，还可以匹配多个值、匹配一定范围，并且把匹配后的值绑定到变量："
+    },
+    {
+      "type": "pre",
+      "text": "age = 15\n\nmatch age:\n    case x if x < 10:\n        print(f'< 10 years old: {x}')\n    case 10:\n        print('10 years old.')\n    case 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18:\n        print('11~18 years old.')\n    case 19:\n        print('19 years old.')\n    case _:\n        print('not sure.')"
+    },
+    {
+      "type": "p",
+      "text": "在上面这个示例中，第一个case x if x < 10表示当age < 10成立时匹配，且赋值给变量x，第二个case 10仅匹配单个值，第三个case 11|12|...|18能匹配多个值，用|分隔。"
+    },
+    {
+      "type": "p",
+      "text": "可见，match语句的case匹配非常灵活。"
+    },
+    {
+      "type": "h3",
+      "text": "匹配列表"
+    },
+    {
+      "type": "p",
+      "text": "match语句还可以匹配列表，功能非常强大。"
+    },
+    {
+      "type": "p",
+      "text": "我们假设用户输入了一个命令，用args = ['gcc', 'hello.c']存储，下面的代码演示了如何用match匹配来解析这个列表："
+    },
+    {
+      "type": "pre",
+      "text": "args = ['gcc', 'hello.c', 'world.c']\n# args = ['clean']\n# args = ['gcc']\n\nmatch args:\n    # 如果仅出现gcc，报错:\n    case ['gcc']:\n        print('gcc: missing source file(s).')\n    # 出现gcc，且至少指定了一个文件:\n    case ['gcc', file1, *files]:\n        print('gcc compile: ' + file1 + ', ' + ', '.join(files))\n    # 仅出现clean:\n    case ['clean']:\n        print('clean')\n    case _:\n        print('invalid command.')"
+    },
+    {
+      "type": "p",
+      "text": "第一个case ['gcc']表示列表仅有'gcc'一个字符串，没有指定文件名，报错；"
+    },
+    {
+      "type": "p",
+      "text": "第二个case ['gcc', file1, *files]表示列表第一个字符串是'gcc'，第二个字符串绑定到变量file1，后面的任意个字符串绑定到*files（符号*的作用将在函数的参数中讲解），它实际上表示至少指定一个文件；"
+    },
+    {
+      "type": "p",
+      "text": "第三个case ['clean']表示列表仅有'clean'一个字符串；"
+    },
+    {
+      "type": "p",
+      "text": "最后一个case _表示其他所有情况。"
+    },
+    {
+      "type": "p",
+      "text": "可见，match语句的匹配规则非常灵活，可以写出非常简洁的代码。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "do_match.py"
+    }
+  ],
+  "headings": [
+    "复杂匹配",
+    "匹配列表",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "score = 'B'\nif score == 'A':\n    print('score is A.')\nelif score == 'B':\n    print('score is B.')\nelif score == 'C':\n    print('score is C.')\nelse:\n    print('invalid score.')",
+    "score = 'B'\n\nmatch score:\n    case 'A':\n        print('score is A.')\n    case 'B':\n        print('score is B.')\n    case 'C':\n        print('score is C.')\n    case _: # _表示匹配到其他任何情况\n        print('score is ???.')",
+    "age = 15\n\nmatch age:\n    case x if x < 10:\n        print(f'< 10 years old: {x}')\n    case 10:\n        print('10 years old.')\n    case 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18:\n        print('11~18 years old.')\n    case 19:\n        print('19 years old.')\n    case _:\n        print('not sure.')",
+    "args = ['gcc', 'hello.c', 'world.c']\n# args = ['clean']\n# args = ['gcc']\n\nmatch args:\n    # 如果仅出现gcc，报错:\n    case ['gcc']:\n        print('gcc: missing source file(s).')\n    # 出现gcc，且至少指定了一个文件:\n    case ['gcc', file1, *files]:\n        print('gcc compile: ' + file1 + ', ' + ', '.join(files))\n    # 仅出现clean:\n    case ['clean']:\n        print('clean')\n    case _:\n        print('invalid command.')"
+  ],
+  "text_block_count": 16
+}

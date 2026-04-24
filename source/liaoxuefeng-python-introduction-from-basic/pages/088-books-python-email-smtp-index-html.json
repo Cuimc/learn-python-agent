@@ -1,0 +1,252 @@
+{
+  "order": 88,
+  "url": "/books/python/email/smtp/index.html",
+  "title": "SMTP发送邮件",
+  "section_slug": "email",
+  "section_title": "电子邮件",
+  "content_html": "\n        <div style=\"display:flex; max-width:100%; padding-bottom:16px\">\n    <div style=\"flex-shrink:0; padding-top:6px; padding-right:16px;\">\n        <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">\n            <img style=\"width:50px; height:50px; border-radius:50%;\" src=\"http://thirdqq.qlogo.cn/ek_qqapp/AQVJKMtqeFCGNEZqicOj7qb7mnpcJiaZNlEOf0iasx2DicuEycbIG9cQktWUBxWR1dFWfLMI2Ilt/100\">\n        </a>\n    </div>\n    <div style=\"flex-grow:1; overflow:auto;\">\n        <span style=\"line-height:32px\">\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\">廖雪峰</a>\n            <a href=\"https://github.com/michaelliao\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 98 98\" style=\"width:24px;height:24px\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z\" fill=\"#777\"/></svg>\n            </a>\n            <a href=\"https://weibo.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 48 48\" style=\"width:24px;height:24px\"><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM30.9558 23.9232C30.5556 23.8002 30.281 23.7209 30.489 23.1895C30.944 22.0353 30.9911 21.0398 30.4968 20.3259C29.5749 18.9933 27.0487 19.0647 24.1536 20.2902C24.1536 20.2902 23.2435 20.6908 23.4789 19.965C23.9222 18.5174 23.8555 17.3077 23.1651 16.6057C21.5959 15.0153 17.4182 16.6652 13.8366 20.2863C11.1574 22.9951 9.6 25.8705 9.6 28.3573C9.6 33.1087 15.6294 36 21.5253 36C29.2572 36 34.4 31.4588 34.4 27.8536C34.4039 25.6722 32.5877 24.4348 30.9558 23.9232ZM36.3756 15.2385C34.4263 13.2052 31.5514 12.4312 28.8977 12.9626C28.2834 13.0859 27.8943 13.6558 28.0254 14.2296C28.1564 14.8072 28.7584 15.173 29.3727 15.0498C31.2606 14.6724 33.3042 15.2231 34.6884 16.6672C36.0725 18.1112 36.4493 20.079 35.8555 21.8042C35.663 22.3664 35.9906 22.9671 36.5885 23.1481C37.1865 23.3291 37.8253 23.0211 38.0178 22.4627V22.4588C38.8532 20.0367 38.3249 17.2679 36.3756 15.2385ZM33.379 18.043C32.3937 17.0057 30.9411 16.6101 29.6033 16.8846C29.0554 16.9935 28.7072 17.5102 28.8218 18.0309C28.9408 18.5516 29.4801 18.8825 30.0238 18.7695C30.6778 18.6363 31.3913 18.8301 31.8713 19.3346C32.3512 19.8432 32.4829 20.5334 32.2747 21.1388C32.1049 21.6434 32.3937 22.1883 32.9288 22.3538C33.4639 22.5152 34.0331 22.2408 34.2072 21.7322C34.6276 20.493 34.3643 19.0803 33.379 18.043Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M21.5449 34.2946C16.8375 34.7665 12.7735 32.6129 12.4675 29.4916C12.1615 26.3663 15.7313 23.4552 20.4347 22.9832C25.1421 22.5113 29.2061 24.6649 29.5082 27.7862C29.8181 30.9115 26.2483 33.8266 21.5449 34.2946ZM22.5305 25.7576C20.1452 25.1636 17.4508 26.2998 16.4149 28.3052C15.358 30.3505 16.3814 32.623 18.7876 33.3646C21.2856 34.134 24.2265 32.9539 25.2499 30.7492C26.2608 28.5883 24.9993 26.3676 22.5305 25.7576Z\" clip-rule=\"evenodd\"></path><path fill=\"#d85b53\" fill-rule=\"evenodd\" d=\"M22.3091 29.0269C22.1337 29.3139 21.7452 29.4495 21.4444 29.3299 21.1437 29.2143 21.0517 28.8913 21.223 28.6122 21.3985 28.3332 21.7702 28.1976 22.0668 28.3092 22.3676 28.4129 22.4762 28.7358 22.3091 29.0269M20.7093 30.9804C20.2247 31.718 19.1846 32.0409 18.4034 31.702 17.6348 31.3671 17.405 30.51 17.8896 29.7883 18.37 29.0707 19.3725 28.7517 20.1495 29.0627 20.9349 29.3857 21.1855 30.2349 20.7093 30.9804\" clip-rule=\"evenodd\"></path></svg>\n            </a>\n            <a href=\"https://zhihu.com/people/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#1084e4\" viewBox=\"60 60 904 904\" style=\"width:24px;height:24px\"><path d=\"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-90.7 477.8l-.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3zm346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-.1 0 0zm216 94.3l56.8-38.1h45.6-.1V364.7H596.7v302.5h14.1z\"/></svg>\n            </a>\n            <a href=\"https://twitter.com/liaoxuefeng\" target=\"_blank\" style=\"margin-left:5px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 112.197 112.197\" style=\"width:24px;height:24px\"><circle cx=\"56.099\" cy=\"56.098\" r=\"56.098\" fill=\"#55acee\"></circle><path fill=\"#f1f2f2\" d=\"M90.461 40.316a26.753 26.753 0 0 1-7.702 2.109 13.445 13.445 0 0 0 5.897-7.417 26.843 26.843 0 0 1-8.515 3.253 13.396 13.396 0 0 0-9.79-4.233c-7.404 0-13.409 6.005-13.409 13.409 0 1.051.119 2.074.349 3.056-11.144-.559-21.025-5.897-27.639-14.012a13.351 13.351 0 0 0-1.816 6.742c0 4.651 2.369 8.757 5.965 11.161a13.314 13.314 0 0 1-6.073-1.679l-.001.17c0 6.497 4.624 11.916 10.757 13.147a13.362 13.362 0 0 1-3.532.471c-.866 0-1.705-.083-2.523-.239 1.706 5.326 6.657 9.203 12.526 9.312a26.904 26.904 0 0 1-16.655 5.74c-1.08 0-2.15-.063-3.197-.188a37.929 37.929 0 0 0 20.553 6.025c24.664 0 38.152-20.432 38.152-38.153 0-.581-.013-1.16-.039-1.734a27.192 27.192 0 0 0 6.692-6.94z\"></path></svg>\n            </a>\n        </span>\n        <br>\n        <span>资深软件开发工程师，业余马拉松选手。</span>\n    </div>\n</div>\n<p>SMTP是发送邮件的协议，Python内置对SMTP的支持，可以发送纯文本邮件、HTML邮件以及带附件的邮件。</p>\n<p>Python对SMTP支持有<code>smtplib</code>和<code>email</code>两个模块，<code>email</code>负责构造邮件，<code>smtplib</code>负责发送邮件。</p>\n<p>首先，我们来构造一个最简单的纯文本邮件：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">from</span> email.mime.text <span class=\"hljs-keyword\">import</span> MIMEText\nmsg = MIMEText(<span class=\"hljs-string\">&#x27;hello, send by Python...&#x27;</span>, <span class=\"hljs-string\">&#x27;plain&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>)\n</code></pre>\n<p>注意到构造<code>MIMEText</code>对象时，第一个参数就是邮件正文，第二个参数是MIME的subtype，传入<code>'plain'</code>表示纯文本，最终的MIME就是<code>'text/plain'</code>，最后一定要用<code>utf-8</code>编码保证多语言兼容性。</p>\n<p>然后，通过SMTP发出去：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 输入Email地址和口令:</span>\nfrom_addr = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;From: &#x27;</span>)\npassword = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;Password: &#x27;</span>)\n<span class=\"hljs-comment\"># 输入收件人地址:</span>\nto_addr = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;To: &#x27;</span>)\n<span class=\"hljs-comment\"># 输入SMTP服务器地址:</span>\nsmtp_server = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;SMTP server: &#x27;</span>)\n\n<span class=\"hljs-keyword\">import</span> smtplib\nserver = smtplib.SMTP(smtp_server, <span class=\"hljs-number\">25</span>) <span class=\"hljs-comment\"># SMTP协议默认端口是25</span>\nserver.set_debuglevel(<span class=\"hljs-number\">1</span>)\nserver.login(from_addr, password)\nserver.sendmail(from_addr, [to_addr], msg.as_string())\nserver.quit()\n</code></pre>\n<p>我们用<code>set_debuglevel(1)</code>就可以打印出和SMTP服务器交互的所有信息。SMTP协议就是简单的文本命令和响应。<code>login()</code>方法用来登录SMTP服务器，<code>sendmail()</code>方法就是发邮件，由于可以一次发给多个人，所以传入一个<code>list</code>，邮件正文是一个<code>str</code>，<code>as_string()</code>把<code>MIMEText</code>对象变成<code>str</code>。</p>\n<p>如果一切顺利，就可以在收件人信箱中收到我们刚发送的Email：</p>\n<p><img src=\"email-1.png\" alt=\"send-mail\" loading=\"lazy\"></p>\n<p>仔细观察，发现如下问题：</p>\n<ol>\n<li>邮件没有主题；</li>\n<li>收件人的名字没有显示为友好的名字，比如<code>Mr Green &lt;green@example.com&gt;</code>；</li>\n<li>明明收到了邮件，却提示不在收件人中。</li>\n</ol>\n<p>这是因为邮件主题、如何显示发件人、收件人等信息并不是通过SMTP协议发给MTA，而是包含在发给MTA的文本中的，所以，我们必须把<code>From</code>、<code>To</code>和<code>Subject</code>添加到<code>MIMEText</code>中，才是一封完整的邮件：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-keyword\">from</span> email <span class=\"hljs-keyword\">import</span> encoders\n<span class=\"hljs-keyword\">from</span> email.header <span class=\"hljs-keyword\">import</span> Header\n<span class=\"hljs-keyword\">from</span> email.mime.text <span class=\"hljs-keyword\">import</span> MIMEText\n<span class=\"hljs-keyword\">from</span> email.utils <span class=\"hljs-keyword\">import</span> parseaddr, formataddr\n\n<span class=\"hljs-keyword\">import</span> smtplib\n    \n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">_format_addr</span>(<span class=\"hljs-params\">s</span>):\n    name, addr = parseaddr(s)\n    <span class=\"hljs-keyword\">return</span> formataddr((Header(name, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>).encode(), addr))\n\nfrom_addr = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;From: &#x27;</span>)\npassword = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;Password: &#x27;</span>)\nto_addr = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;To: &#x27;</span>)\nsmtp_server = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&#x27;SMTP server: &#x27;</span>)\n\nmsg = MIMEText(<span class=\"hljs-string\">&#x27;hello, send by Python...&#x27;</span>, <span class=\"hljs-string\">&#x27;plain&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>)\nmsg[<span class=\"hljs-string\">&#x27;From&#x27;</span>] = _format_addr(<span class=\"hljs-string\">&#x27;Python爱好者 &lt;%s&gt;&#x27;</span> % from_addr)\nmsg[<span class=\"hljs-string\">&#x27;To&#x27;</span>] = _format_addr(<span class=\"hljs-string\">&#x27;管理员 &lt;%s&gt;&#x27;</span> % to_addr)\nmsg[<span class=\"hljs-string\">&#x27;Subject&#x27;</span>] = Header(<span class=\"hljs-string\">&#x27;来自SMTP的问候……&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>).encode()\n    \nserver = smtplib.SMTP(smtp_server, <span class=\"hljs-number\">25</span>)\nserver.set_debuglevel(<span class=\"hljs-number\">1</span>)\nserver.login(from_addr, password)\nserver.sendmail(from_addr, [to_addr], msg.as_string())\nserver.quit()\n</code></pre>\n<p>我们编写了一个函数<code>_format_addr()</code>来格式化一个邮件地址。注意不能简单地传入<code>name &lt;addr@example.com&gt;</code>，因为如果包含中文，需要通过<code>Header</code>对象进行编码。</p>\n<p><code>msg['To']</code>接收的是字符串而不是list，如果有多个邮件地址，用<code>,</code>分隔即可。</p>\n<p>再发送一遍邮件，就可以在收件人邮箱中看到正确的标题、发件人和收件人：</p>\n<p><img src=\"email-2.png\" alt=\"mail-with-header\" loading=\"lazy\"></p>\n<p>你看到的收件人的名字很可能不是我们传入的<code>管理员</code>，因为很多邮件服务商在显示邮件时，会把收件人名字自动替换为用户注册的名字，但是其他收件人名字的显示不受影响。</p>\n<p>如果我们查看Email的原始内容，可以看到如下经过编码的邮件头：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">From: =?utf-8?b?UHl0aG9u54ix5aW96ICF?= &lt;xxxxxx@163.com&gt;\nTo: =?utf-8?b?566h55CG5ZGY?= &lt;xxxxxx@qq.com&gt;\nSubject: =?utf-8?b?5p2l6IeqU01UUOeahOmXruWAmeKApuKApg==?=\n</code></pre>\n<p>这就是经过<code>Header</code>对象编码的文本，包含utf-8编码信息和Base64编码的文本。如果我们自己来手动构造这样的编码文本，显然比较复杂。</p>\n<h3>发送HTML邮件</h3>\n<p>如果我们要发送HTML邮件，而不是普通的纯文本文件怎么办？方法很简单，在构造<code>MIMEText</code>对象时，把HTML字符串传进去，再把第二个参数由<code>plain</code>变为<code>html</code>就可以了：</p>\n<pre class=\"hljs\"><code class=\"language-python\">msg = MIMEText(<span class=\"hljs-string\">&#x27;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&#x27;</span> +\n    <span class=\"hljs-string\">&#x27;&lt;p&gt;send by &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;...&lt;/p&gt;&#x27;</span> +\n    <span class=\"hljs-string\">&#x27;&lt;/body&gt;&lt;/html&gt;&#x27;</span>, <span class=\"hljs-string\">&#x27;html&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>)\n</code></pre>\n<p>再发送一遍邮件，你将看到以HTML显示的邮件：</p>\n<p><img src=\"email-3.png\" alt=\"html-mail\" loading=\"lazy\"></p>\n<h3>发送附件</h3>\n<p>如果Email中要加上附件怎么办？带附件的邮件可以看做包含若干部分的邮件：文本和各个附件本身，所以，可以构造一个<code>MIMEMultipart</code>对象代表邮件本身，然后往里面加上一个<code>MIMEText</code>作为邮件正文，再继续往里面加上表示附件的<code>MIMEBase</code>对象即可：</p>\n<pre class=\"hljs\"><code class=\"language-python\"><span class=\"hljs-comment\"># 邮件对象:</span>\nmsg = MIMEMultipart()\nmsg[<span class=\"hljs-string\">&#x27;From&#x27;</span>] = _format_addr(<span class=\"hljs-string\">&#x27;Python爱好者 &lt;%s&gt;&#x27;</span> % from_addr)\nmsg[<span class=\"hljs-string\">&#x27;To&#x27;</span>] = _format_addr(<span class=\"hljs-string\">&#x27;管理员 &lt;%s&gt;&#x27;</span> % to_addr)\nmsg[<span class=\"hljs-string\">&#x27;Subject&#x27;</span>] = Header(<span class=\"hljs-string\">&#x27;来自SMTP的问候……&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>).encode()\n\n<span class=\"hljs-comment\"># 邮件正文是MIMEText:</span>\nmsg.attach(MIMEText(<span class=\"hljs-string\">&#x27;send with file...&#x27;</span>, <span class=\"hljs-string\">&#x27;plain&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n\n<span class=\"hljs-comment\"># 添加附件就是加上一个MIMEBase，从本地读取一个图片:</span>\n<span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(<span class=\"hljs-string\">&#x27;/Users/michael/Downloads/test.png&#x27;</span>, <span class=\"hljs-string\">&#x27;rb&#x27;</span>) <span class=\"hljs-keyword\">as</span> f:\n    <span class=\"hljs-comment\"># 设置附件的MIME和文件名，这里是png类型:</span>\n    mime = MIMEBase(<span class=\"hljs-string\">&#x27;image&#x27;</span>, <span class=\"hljs-string\">&#x27;png&#x27;</span>, filename=<span class=\"hljs-string\">&#x27;test.png&#x27;</span>)\n    <span class=\"hljs-comment\"># 加上必要的头信息:</span>\n    mime.add_header(<span class=\"hljs-string\">&#x27;Content-Disposition&#x27;</span>, <span class=\"hljs-string\">&#x27;attachment&#x27;</span>, filename=<span class=\"hljs-string\">&#x27;test.png&#x27;</span>)\n    mime.add_header(<span class=\"hljs-string\">&#x27;Content-ID&#x27;</span>, <span class=\"hljs-string\">&#x27;&lt;0&gt;&#x27;</span>)\n    mime.add_header(<span class=\"hljs-string\">&#x27;X-Attachment-Id&#x27;</span>, <span class=\"hljs-string\">&#x27;0&#x27;</span>)\n    <span class=\"hljs-comment\"># 把附件的内容读进来:</span>\n    mime.set_payload(f.read())\n    <span class=\"hljs-comment\"># 用Base64编码:</span>\n    encoders.encode_base64(mime)\n    <span class=\"hljs-comment\"># 添加到MIMEMultipart:</span>\n    msg.attach(mime)\n</code></pre>\n<p>然后，按正常发送流程把<code>msg</code>（注意类型已变为<code>MIMEMultipart</code>）发送出去，就可以收到如下带附件的邮件：</p>\n<p><img src=\"email-4.png\" alt=\"mimemultipart\" loading=\"lazy\"></p>\n<h3>发送图片</h3>\n<p>如果要把一个图片嵌入到邮件正文中怎么做？直接在HTML邮件中链接图片地址行不行？答案是，大部分邮件服务商都会自动屏蔽带有外链的图片，因为不知道这些链接是否指向恶意网站。</p>\n<p>要把图片嵌入到邮件正文中，我们只需按照发送附件的方式，先把邮件作为附件添加进去，然后，在HTML中通过引用<code>src=&quot;cid:0&quot;</code>就可以把附件作为图片嵌入了。如果有多个图片，给它们依次编号，然后引用不同的<code>cid:x</code>即可。</p>\n<p>把上面代码加入<code>MIMEMultipart</code>的<code>MIMEText</code>从<code>plain</code>改为<code>html</code>，然后在适当的位置引用图片：</p>\n<pre class=\"hljs\"><code class=\"language-python\">msg.attach(MIMEText(<span class=\"hljs-string\">&#x27;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&#x27;</span> +\n    <span class=\"hljs-string\">&#x27;&lt;p&gt;&lt;img src=&quot;cid:0&quot;&gt;&lt;/p&gt;&#x27;</span> +\n    <span class=\"hljs-string\">&#x27;&lt;/body&gt;&lt;/html&gt;&#x27;</span>, <span class=\"hljs-string\">&#x27;html&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n</code></pre>\n<p>再次发送，就可以看到图片直接嵌入到邮件正文的效果：</p>\n<p><img src=\"email-5.png\" alt=\"email-inline-image\" loading=\"lazy\"></p>\n<h3>同时支持HTML和Plain格式</h3>\n<p>如果我们发送HTML邮件，收件人通过浏览器或者Outlook之类的软件是可以正常浏览邮件内容的，但是，如果收件人使用的设备太古老，查看不了HTML邮件怎么办？</p>\n<p>办法是在发送HTML的同时再附加一个纯文本，如果收件人无法查看HTML格式的邮件，就可以自动降级查看纯文本邮件。</p>\n<p>利用<code>MIMEMultipart</code>就可以组合一个HTML和Plain，要注意指定<code>subtype</code>是<code>alternative</code>：</p>\n<pre class=\"hljs\"><code class=\"language-python\">msg = MIMEMultipart(<span class=\"hljs-string\">&#x27;alternative&#x27;</span>)\nmsg[<span class=\"hljs-string\">&#x27;From&#x27;</span>] = ...\nmsg[<span class=\"hljs-string\">&#x27;To&#x27;</span>] = ...\nmsg[<span class=\"hljs-string\">&#x27;Subject&#x27;</span>] = ...\n\nmsg.attach(MIMEText(<span class=\"hljs-string\">&#x27;hello&#x27;</span>, <span class=\"hljs-string\">&#x27;plain&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\nmsg.attach(MIMEText(<span class=\"hljs-string\">&#x27;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&#x27;</span>, <span class=\"hljs-string\">&#x27;html&#x27;</span>, <span class=\"hljs-string\">&#x27;utf-8&#x27;</span>))\n<span class=\"hljs-comment\"># 正常发送msg对象...</span>\n</code></pre>\n<h3>加密SMTP</h3>\n<p>使用标准的25端口连接SMTP服务器时，使用的是明文传输，发送邮件的整个过程可能会被窃听。要更安全地发送邮件，可以加密SMTP会话，实际上就是先创建SSL安全连接，然后再使用SMTP协议发送邮件。</p>\n<p>某些邮件服务商，例如Gmail，提供的SMTP服务必须要加密传输。我们来看看如何通过Gmail提供的安全SMTP发送邮件。</p>\n<p>必须知道，Gmail的SMTP端口是587，因此，修改代码如下：</p>\n<pre class=\"hljs\"><code class=\"language-python\">smtp_server = <span class=\"hljs-string\">&#x27;smtp.gmail.com&#x27;</span>\nsmtp_port = <span class=\"hljs-number\">587</span>\nserver = smtplib.SMTP(smtp_server, smtp_port)\nserver.starttls()\n<span class=\"hljs-comment\"># 剩下的代码和前面的一模一样:</span>\nserver.set_debuglevel(<span class=\"hljs-number\">1</span>)\n...\n</code></pre>\n<p>只需要在创建<code>SMTP</code>对象后，立刻调用<code>starttls()</code>方法，就创建了安全连接。后面的代码和前面的发送邮件代码完全一样。</p>\n<p>如果因为网络问题无法连接Gmail的SMTP服务器，请相信我们的代码是没有问题的，你需要对你的网络设置做必要的调整。</p>\n<h3>小结</h3>\n<p>使用Python的smtplib发送邮件十分简单，只要掌握了各种邮件类型的构造方法，正确设置好邮件头，就可以顺利发出。</p>\n<p>构造一个邮件对象就是一个<code>Messag</code>对象，如果构造一个<code>MIMEText</code>对象，就表示一个文本邮件对象，如果构造一个<code>MIMEImage</code>对象，就表示一个作为附件的图片，要把多个对象组合起来，就用<code>MIMEMultipart</code>对象，而<code>MIMEBase</code>可以表示任何对象。它们的继承关系如下：</p>\n<pre class=\"hljs\"><code class=\"language-plain\">Message\n+- MIMEBase\n   +- MIMEMultipart\n   +- MIMENonMultipart\n      +- MIMEMessage\n      +- MIMEText\n      +- MIMEImage\n</code></pre>\n<p>这种嵌套关系就可以构造出任意复杂的邮件。你可以通过<a href=\"https://docs.python.org/3/library/email.mime.html\" target=\"_blank\">email.mime文档</a>查看它们所在的包以及详细的用法。</p>\n<h3>参考源码</h3>\n<p><a href=\"send_mail.py\">send_mail.py</a></p>\n\n    ",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "SMTP是发送邮件的协议，Python内置对SMTP的支持，可以发送纯文本邮件、HTML邮件以及带附件的邮件。"
+    },
+    {
+      "type": "p",
+      "text": "Python对SMTP支持有smtplib和email两个模块，email负责构造邮件，smtplib负责发送邮件。"
+    },
+    {
+      "type": "p",
+      "text": "首先，我们来构造一个最简单的纯文本邮件："
+    },
+    {
+      "type": "pre",
+      "text": "from email.mime.text import MIMEText\nmsg = MIMEText('hello, send by Python...', 'plain', 'utf-8')"
+    },
+    {
+      "type": "p",
+      "text": "注意到构造MIMEText对象时，第一个参数就是邮件正文，第二个参数是MIME的subtype，传入'plain'表示纯文本，最终的MIME就是'text/plain'，最后一定要用utf-8编码保证多语言兼容性。"
+    },
+    {
+      "type": "p",
+      "text": "然后，通过SMTP发出去："
+    },
+    {
+      "type": "pre",
+      "text": "# 输入Email地址和口令:\nfrom_addr = input('From: ')\npassword = input('Password: ')\n# 输入收件人地址:\nto_addr = input('To: ')\n# 输入SMTP服务器地址:\nsmtp_server = input('SMTP server: ')\n\nimport smtplib\nserver = smtplib.SMTP(smtp_server, 25) # SMTP协议默认端口是25\nserver.set_debuglevel(1)\nserver.login(from_addr, password)\nserver.sendmail(from_addr, [to_addr], msg.as_string())\nserver.quit()"
+    },
+    {
+      "type": "p",
+      "text": "我们用set_debuglevel(1)就可以打印出和SMTP服务器交互的所有信息。SMTP协议就是简单的文本命令和响应。login()方法用来登录SMTP服务器，sendmail()方法就是发邮件，由于可以一次发给多个人，所以传入一个list，邮件正文是一个str，as_string()把MIMEText对象变成str。"
+    },
+    {
+      "type": "p",
+      "text": "如果一切顺利，就可以在收件人信箱中收到我们刚发送的Email："
+    },
+    {
+      "type": "p",
+      "text": "仔细观察，发现如下问题："
+    },
+    {
+      "type": "li",
+      "text": "邮件没有主题；"
+    },
+    {
+      "type": "li",
+      "text": "收件人的名字没有显示为友好的名字，比如Mr Green ；"
+    },
+    {
+      "type": "li",
+      "text": "明明收到了邮件，却提示不在收件人中。"
+    },
+    {
+      "type": "p",
+      "text": "这是因为邮件主题、如何显示发件人、收件人等信息并不是通过SMTP协议发给MTA，而是包含在发给MTA的文本中的，所以，我们必须把From、To和Subject添加到MIMEText中，才是一封完整的邮件："
+    },
+    {
+      "type": "pre",
+      "text": "from email import encoders\nfrom email.header import Header\nfrom email.mime.text import MIMEText\nfrom email.utils import parseaddr, formataddr\n\nimport smtplib\n    \ndef _format_addr(s):\n    name, addr = parseaddr(s)\n    return formataddr((Header(name, 'utf-8').encode(), addr))\n\nfrom_addr = input('From: ')\npassword = input('Password: ')\nto_addr = input('To: ')\nsmtp_server = input('SMTP server: ')\n\nmsg = MIMEText('hello, send by Python...', 'plain', 'utf-8')\nmsg['From'] = _format_addr('Python爱好者 <%s>' % from_addr)\nmsg['To'] = _format_addr('管理员 <%s>' % to_addr)\nmsg['Subject'] = Header('来自SMTP的问候……', 'utf-8').encode()\n    \nserver = smtplib.SMTP(smtp_server, 25)\nserver.set_debuglevel(1)\nserver.login(from_addr, password)\nserver.sendmail(from_addr, [to_addr], msg.as_string())\nserver.quit()"
+    },
+    {
+      "type": "p",
+      "text": "我们编写了一个函数_format_addr()来格式化一个邮件地址。注意不能简单地传入name ，因为如果包含中文，需要通过Header对象进行编码。"
+    },
+    {
+      "type": "p",
+      "text": "msg['To']接收的是字符串而不是list，如果有多个邮件地址，用,分隔即可。"
+    },
+    {
+      "type": "p",
+      "text": "再发送一遍邮件，就可以在收件人邮箱中看到正确的标题、发件人和收件人："
+    },
+    {
+      "type": "p",
+      "text": "你看到的收件人的名字很可能不是我们传入的管理员，因为很多邮件服务商在显示邮件时，会把收件人名字自动替换为用户注册的名字，但是其他收件人名字的显示不受影响。"
+    },
+    {
+      "type": "p",
+      "text": "如果我们查看Email的原始内容，可以看到如下经过编码的邮件头："
+    },
+    {
+      "type": "pre",
+      "text": "From: =?utf-8?b?UHl0aG9u54ix5aW96ICF?= <xxxxxx@163.com>\nTo: =?utf-8?b?566h55CG5ZGY?= <xxxxxx@qq.com>\nSubject: =?utf-8?b?5p2l6IeqU01UUOeahOmXruWAmeKApuKApg==?="
+    },
+    {
+      "type": "p",
+      "text": "这就是经过Header对象编码的文本，包含utf-8编码信息和Base64编码的文本。如果我们自己来手动构造这样的编码文本，显然比较复杂。"
+    },
+    {
+      "type": "h3",
+      "text": "发送HTML邮件"
+    },
+    {
+      "type": "p",
+      "text": "如果我们要发送HTML邮件，而不是普通的纯文本文件怎么办？方法很简单，在构造MIMEText对象时，把HTML字符串传进去，再把第二个参数由plain变为html就可以了："
+    },
+    {
+      "type": "pre",
+      "text": "msg = MIMEText('<html><body><h1>Hello</h1>' +\n    '<p>send by <a href=\"http://www.python.org\">Python</a>...</p>' +\n    '</body></html>', 'html', 'utf-8')"
+    },
+    {
+      "type": "p",
+      "text": "再发送一遍邮件，你将看到以HTML显示的邮件："
+    },
+    {
+      "type": "h3",
+      "text": "发送附件"
+    },
+    {
+      "type": "p",
+      "text": "如果Email中要加上附件怎么办？带附件的邮件可以看做包含若干部分的邮件：文本和各个附件本身，所以，可以构造一个MIMEMultipart对象代表邮件本身，然后往里面加上一个MIMEText作为邮件正文，再继续往里面加上表示附件的MIMEBase对象即可："
+    },
+    {
+      "type": "pre",
+      "text": "# 邮件对象:\nmsg = MIMEMultipart()\nmsg['From'] = _format_addr('Python爱好者 <%s>' % from_addr)\nmsg['To'] = _format_addr('管理员 <%s>' % to_addr)\nmsg['Subject'] = Header('来自SMTP的问候……', 'utf-8').encode()\n\n# 邮件正文是MIMEText:\nmsg.attach(MIMEText('send with file...', 'plain', 'utf-8'))\n\n# 添加附件就是加上一个MIMEBase，从本地读取一个图片:\nwith open('/Users/michael/Downloads/test.png', 'rb') as f:\n    # 设置附件的MIME和文件名，这里是png类型:\n    mime = MIMEBase('image', 'png', filename='test.png')\n    # 加上必要的头信息:\n    mime.add_header('Content-Disposition', 'attachment', filename='test.png')\n    mime.add_header('Content-ID', '<0>')\n    mime.add_header('X-Attachment-Id', '0')\n    # 把附件的内容读进来:\n    mime.set_payload(f.read())\n    # 用Base64编码:\n    encoders.encode_base64(mime)\n    # 添加到MIMEMultipart:\n    msg.attach(mime)"
+    },
+    {
+      "type": "p",
+      "text": "然后，按正常发送流程把msg（注意类型已变为MIMEMultipart）发送出去，就可以收到如下带附件的邮件："
+    },
+    {
+      "type": "h3",
+      "text": "发送图片"
+    },
+    {
+      "type": "p",
+      "text": "如果要把一个图片嵌入到邮件正文中怎么做？直接在HTML邮件中链接图片地址行不行？答案是，大部分邮件服务商都会自动屏蔽带有外链的图片，因为不知道这些链接是否指向恶意网站。"
+    },
+    {
+      "type": "p",
+      "text": "要把图片嵌入到邮件正文中，我们只需按照发送附件的方式，先把邮件作为附件添加进去，然后，在HTML中通过引用src=\"cid:0\"就可以把附件作为图片嵌入了。如果有多个图片，给它们依次编号，然后引用不同的cid:x即可。"
+    },
+    {
+      "type": "p",
+      "text": "把上面代码加入MIMEMultipart的MIMEText从plain改为html，然后在适当的位置引用图片："
+    },
+    {
+      "type": "pre",
+      "text": "msg.attach(MIMEText('<html><body><h1>Hello</h1>' +\n    '<p><img src=\"cid:0\"></p>' +\n    '</body></html>', 'html', 'utf-8'))"
+    },
+    {
+      "type": "p",
+      "text": "再次发送，就可以看到图片直接嵌入到邮件正文的效果："
+    },
+    {
+      "type": "h3",
+      "text": "同时支持HTML和Plain格式"
+    },
+    {
+      "type": "p",
+      "text": "如果我们发送HTML邮件，收件人通过浏览器或者Outlook之类的软件是可以正常浏览邮件内容的，但是，如果收件人使用的设备太古老，查看不了HTML邮件怎么办？"
+    },
+    {
+      "type": "p",
+      "text": "办法是在发送HTML的同时再附加一个纯文本，如果收件人无法查看HTML格式的邮件，就可以自动降级查看纯文本邮件。"
+    },
+    {
+      "type": "p",
+      "text": "利用MIMEMultipart就可以组合一个HTML和Plain，要注意指定subtype是alternative："
+    },
+    {
+      "type": "pre",
+      "text": "msg = MIMEMultipart('alternative')\nmsg['From'] = ...\nmsg['To'] = ...\nmsg['Subject'] = ...\n\nmsg.attach(MIMEText('hello', 'plain', 'utf-8'))\nmsg.attach(MIMEText('<html><body><h1>Hello</h1></body></html>', 'html', 'utf-8'))\n# 正常发送msg对象..."
+    },
+    {
+      "type": "h3",
+      "text": "加密SMTP"
+    },
+    {
+      "type": "p",
+      "text": "使用标准的25端口连接SMTP服务器时，使用的是明文传输，发送邮件的整个过程可能会被窃听。要更安全地发送邮件，可以加密SMTP会话，实际上就是先创建SSL安全连接，然后再使用SMTP协议发送邮件。"
+    },
+    {
+      "type": "p",
+      "text": "某些邮件服务商，例如Gmail，提供的SMTP服务必须要加密传输。我们来看看如何通过Gmail提供的安全SMTP发送邮件。"
+    },
+    {
+      "type": "p",
+      "text": "必须知道，Gmail的SMTP端口是587，因此，修改代码如下："
+    },
+    {
+      "type": "pre",
+      "text": "smtp_server = 'smtp.gmail.com'\nsmtp_port = 587\nserver = smtplib.SMTP(smtp_server, smtp_port)\nserver.starttls()\n# 剩下的代码和前面的一模一样:\nserver.set_debuglevel(1)\n..."
+    },
+    {
+      "type": "p",
+      "text": "只需要在创建SMTP对象后，立刻调用starttls()方法，就创建了安全连接。后面的代码和前面的发送邮件代码完全一样。"
+    },
+    {
+      "type": "p",
+      "text": "如果因为网络问题无法连接Gmail的SMTP服务器，请相信我们的代码是没有问题的，你需要对你的网络设置做必要的调整。"
+    },
+    {
+      "type": "h3",
+      "text": "小结"
+    },
+    {
+      "type": "p",
+      "text": "使用Python的smtplib发送邮件十分简单，只要掌握了各种邮件类型的构造方法，正确设置好邮件头，就可以顺利发出。"
+    },
+    {
+      "type": "p",
+      "text": "构造一个邮件对象就是一个Messag对象，如果构造一个MIMEText对象，就表示一个文本邮件对象，如果构造一个MIMEImage对象，就表示一个作为附件的图片，要把多个对象组合起来，就用MIMEMultipart对象，而MIMEBase可以表示任何对象。它们的继承关系如下："
+    },
+    {
+      "type": "pre",
+      "text": "Message\n+- MIMEBase\n   +- MIMEMultipart\n   +- MIMENonMultipart\n      +- MIMEMessage\n      +- MIMEText\n      +- MIMEImage"
+    },
+    {
+      "type": "p",
+      "text": "这种嵌套关系就可以构造出任意复杂的邮件。你可以通过email.mime文档查看它们所在的包以及详细的用法。"
+    },
+    {
+      "type": "h3",
+      "text": "参考源码"
+    },
+    {
+      "type": "p",
+      "text": "send_mail.py"
+    }
+  ],
+  "headings": [
+    "发送HTML邮件",
+    "发送附件",
+    "发送图片",
+    "同时支持HTML和Plain格式",
+    "加密SMTP",
+    "小结",
+    "参考源码"
+  ],
+  "code_blocks": [
+    "from email.mime.text import MIMEText\nmsg = MIMEText('hello, send by Python...', 'plain', 'utf-8')",
+    "# 输入Email地址和口令:\nfrom_addr = input('From: ')\npassword = input('Password: ')\n# 输入收件人地址:\nto_addr = input('To: ')\n# 输入SMTP服务器地址:\nsmtp_server = input('SMTP server: ')\n\nimport smtplib\nserver = smtplib.SMTP(smtp_server, 25) # SMTP协议默认端口是25\nserver.set_debuglevel(1)\nserver.login(from_addr, password)\nserver.sendmail(from_addr, [to_addr], msg.as_string())\nserver.quit()",
+    "from email import encoders\nfrom email.header import Header\nfrom email.mime.text import MIMEText\nfrom email.utils import parseaddr, formataddr\n\nimport smtplib\n    \ndef _format_addr(s):\n    name, addr = parseaddr(s)\n    return formataddr((Header(name, 'utf-8').encode(), addr))\n\nfrom_addr = input('From: ')\npassword = input('Password: ')\nto_addr = input('To: ')\nsmtp_server = input('SMTP server: ')\n\nmsg = MIMEText('hello, send by Python...', 'plain', 'utf-8')\nmsg['From'] = _format_addr('Python爱好者 <%s>' % from_addr)\nmsg['To'] = _format_addr('管理员 <%s>' % to_addr)\nmsg['Subject'] = Header('来自SMTP的问候……', 'utf-8').encode()\n    \nserver = smtplib.SMTP(smtp_server, 25)\nserver.set_debuglevel(1)\nserver.login(from_addr, password)\nserver.sendmail(from_addr, [to_addr], msg.as_string())\nserver.quit()",
+    "From: =?utf-8?b?UHl0aG9u54ix5aW96ICF?= <xxxxxx@163.com>\nTo: =?utf-8?b?566h55CG5ZGY?= <xxxxxx@qq.com>\nSubject: =?utf-8?b?5p2l6IeqU01UUOeahOmXruWAmeKApuKApg==?=",
+    "msg = MIMEText('<html><body><h1>Hello</h1>' +\n    '<p>send by <a href=\"http://www.python.org\">Python</a>...</p>' +\n    '</body></html>', 'html', 'utf-8')",
+    "# 邮件对象:\nmsg = MIMEMultipart()\nmsg['From'] = _format_addr('Python爱好者 <%s>' % from_addr)\nmsg['To'] = _format_addr('管理员 <%s>' % to_addr)\nmsg['Subject'] = Header('来自SMTP的问候……', 'utf-8').encode()\n\n# 邮件正文是MIMEText:\nmsg.attach(MIMEText('send with file...', 'plain', 'utf-8'))\n\n# 添加附件就是加上一个MIMEBase，从本地读取一个图片:\nwith open('/Users/michael/Downloads/test.png', 'rb') as f:\n    # 设置附件的MIME和文件名，这里是png类型:\n    mime = MIMEBase('image', 'png', filename='test.png')\n    # 加上必要的头信息:\n    mime.add_header('Content-Disposition', 'attachment', filename='test.png')\n    mime.add_header('Content-ID', '<0>')\n    mime.add_header('X-Attachment-Id', '0')\n    # 把附件的内容读进来:\n    mime.set_payload(f.read())\n    # 用Base64编码:\n    encoders.encode_base64(mime)\n    # 添加到MIMEMultipart:\n    msg.attach(mime)",
+    "msg.attach(MIMEText('<html><body><h1>Hello</h1>' +\n    '<p><img src=\"cid:0\"></p>' +\n    '</body></html>', 'html', 'utf-8'))",
+    "msg = MIMEMultipart('alternative')\nmsg['From'] = ...\nmsg['To'] = ...\nmsg['Subject'] = ...\n\nmsg.attach(MIMEText('hello', 'plain', 'utf-8'))\nmsg.attach(MIMEText('<html><body><h1>Hello</h1></body></html>', 'html', 'utf-8'))\n# 正常发送msg对象...",
+    "smtp_server = 'smtp.gmail.com'\nsmtp_port = 587\nserver = smtplib.SMTP(smtp_server, smtp_port)\nserver.starttls()\n# 剩下的代码和前面的一模一样:\nserver.set_debuglevel(1)\n...",
+    "Message\n+- MIMEBase\n   +- MIMEMultipart\n   +- MIMENonMultipart\n      +- MIMEMessage\n      +- MIMEText\n      +- MIMEImage"
+  ],
+  "text_block_count": 38
+}
